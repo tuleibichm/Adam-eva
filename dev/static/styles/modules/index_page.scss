@@ -1,0 +1,23 @@
+/* contacts */
+.contacts__wrapper{
+  display: flex;
+}
+.map{
+  flex-grow: 1;
+}
+.contacts{
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 443px;
+  width: 100%;
+  min-height: 369px;
+  line-height: 30px;
+  flex-direction: column;
+}
+.contacts__title{
+  font-size: 28px;
+  line-height: 36px;
+  color: #7b5431;
+}
