@@ -9,6 +9,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   background-color: #ffffff;
   background-image: url("../images/logo.svg");
   background-position: center;
@@ -34,7 +35,7 @@
   &:before{
     content: '';
     display: block;
-    width: 230px;
+    width: 185px;
   }
 }
 

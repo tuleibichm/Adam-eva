@@ -6,6 +6,43 @@ block variables
     - var pageClass = 'index-page'
 
 block content
+    section.cover
+        img(src="static/images/BG_first_scroll.jpg")
+        .cover__content
+            h2.cover__title Online dating and professional matchmaking in Ukraine
+            p.cover_description Take the first step to new relationships now. Get a personal consultation with the expert matchmaker on Skype absolutely free
+            button.button#bookCall Book a call
+    section.features
+        .section__title We help men around the world meet the woman of their dreams
+        .container
+            .features__list
+                .features__item
+                    span.icon_partnersForLife
+                    p 87% of clients find partners for life
+                .features__item
+                    span.icon_experience
+                    p 19 Years of experience
+                .features__item
+                    span.icon_vatchedPairs
+                    p Over 500 successfully matched pairs
+                .features__item
+                    span.icon_ukrGirl
+                    p Over 1000 profiles of Ukrainian girls
+                .features__item
+                    span.icon_verifieldProfiles
+                    p All ladies profiles verified by our experts
+
+    section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
+        .container
+            h2.quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
+            p.quickForm__description We will gladly help you to choose the best way to search for your second half
+            .quickForm__wrapper
+                form
+                    .quickForm__formBox
+                        input.field(type="text" placeholder="Skype or Phone number")
+                        input.field(type="text" placeholder="Preferred time")
+                        button.button#sendQuickForm Book a call
+
     section.contacts__wrapper
         .map
             iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.150641118089!2d30.7336534155504!3d46.48532947912625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631962cbb44c1%3A0x1dbe78653ee6c8ba!2z0JPQsNCy0LDQvdC90LDRjyDRg9C7Liwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1561150906772!5m2!1sru!2sua" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen)
@@ -13,14 +50,14 @@ block content
             .contacts__title Contact us
             .contacts__data
                 div
-                    span Adress:
+                    strong Adress:
                     a Street, Odessa, Ukraine
                 div
-                    span Phone number:
+                    strong Phone number:
                     a +38 (068) 120-03-00
                 div
-                    span E-mail:
+                    strong E-mail:
                     a info@adam-and-eva.com
                 div
-                    span Skype:
+                    strong Skype:
                     a odesa_135
