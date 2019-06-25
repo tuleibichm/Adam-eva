@@ -8,10 +8,11 @@ block variables
 block content
     section.cover
         img(src="static/images/BG_first_scroll.jpg")
-        .cover__content
-            h2.cover__title Online dating and professional matchmaking in Ukraine
-            p.cover_description Take the first step to new relationships now. Get a personal consultation with the expert matchmaker on Skype absolutely free
-            button.button#bookCall Book a call
+        .container
+            .cover__content
+                h2.cover__title Online dating and professional matchmaking in Ukraine
+                p.cover_description Take the first step to new relationships now. Get a personal consultation with the expert matchmaker on Skype absolutely free
+                button.button#bookCall Book a call
     section.features
         .section__title We help men around the world meet the woman of their dreams
         .container
@@ -54,6 +55,18 @@ block content
                         input.field(type="email" placeholder="Email" id="email" name="email")
                         input.field(type="password" placeholder="Password" id="password" name="password")
                         button.button#sendRegForm Sign up for free
+    section.featuresMini
+        .container
+            .featuresMini__list
+                .featuresMini__item
+                    span.featuresMini__icon.iconMoneyBack
+                    span.featuresMini__text Anti-scam money back guarantee
+                .featuresMini__item
+                    span.featuresMini__icon.iconGoldList
+                    span.featuresMini__text We are in Gold List of FSU marriage agencies
+                .featuresMini__item
+                    span.featuresMini__icon.iconVettedLadies
+                    span.featuresMini__text Only personally vetted ladies listed
     section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
         .container
             h2.quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
@@ -64,6 +77,28 @@ block content
                         input.field(type="text" placeholder="Skype or Phone number" id="phone" name="phone")
                         input.field(type="text" placeholder="Preferred time" id="time" name="time")
                         button.button#sendQuickForm Book a call
+    section.stories
+        .container
+            .section__title Love Stories
+            .stories__list.slider#storiesSlider
+                .stories__item
+                    .elipseFrame
+                        img(src="static/images/MaskGroup.jpg")
+                    .story__title Sam and Tatiana
+                    .story__description
+                        p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                .stories__item
+                    .elipseFrame
+                        img(src="static/images/MaskGroup.jpg")
+                    .story__title Sam and Tatiana
+                    .story__description
+                        p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                .stories__item
+                    .elipseFrame
+                        img(src="static/images/MaskGroup.jpg")
+                    .story__title Sam and Tatiana
+                    .story__description
+                        p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
     section.contactsWrapper
         .map

@@ -20,7 +20,7 @@ module.exports = function () {
     });
 
     $.gulp.task('js:dev', () => {
-        return $.gulp.src([scriptsPATH.input + '*.js',
+        return $.gulp.src([scriptsPATH.input + '**/*.js',
             '!' + scriptsPATH.input + 'libs.min.js'])
             .pipe($.gulp.dest(scriptsPATH.ouput))
             .pipe($.browserSync.reload({

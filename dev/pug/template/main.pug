@@ -9,13 +9,10 @@ html(lang="ru-RU")
 		meta(name="keywords" content="")
 		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
 
-
 	body(class=pageClass)
 		.wrapper
 			include ../modules/header/header
 			.content
 				block content
 			include ../modules/footer/footer
-		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/main.js")
-		block script

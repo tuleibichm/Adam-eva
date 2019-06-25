@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section, iframe {
 }
 body {
   line-height: 1;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 ol, ul {
   list-style: none;
@@ -49,6 +51,7 @@ button{
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+  outline: none;
 }
 input{
   background-color: transparent;
@@ -69,6 +72,7 @@ a{
 p{
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 12px;
 }
 .wrapper{
   display: flex;
@@ -78,7 +82,9 @@ p{
 .container{
   margin: 0 auto;
   padding: 0 70px;
-  //width: calc(100% - 140px);
+  max-width: 1366px;
+  position: relative;
+  width: 100%;
 }
 .content{
   flex-grow: 1;
