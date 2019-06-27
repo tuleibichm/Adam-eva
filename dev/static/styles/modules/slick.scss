@@ -101,14 +101,8 @@
 .slick-initialized .slick-slide
 {
   display: flex;
-  &:first-child{
-    justify-content: flex-start;
-  }
-  &:nth-child(2){
-    justify-content: center;
-  }
-  &:last-child{
-    justify-content: flex-end;
+  >div{
+    width: 100%;
   }
 }
 .slick-loading .slick-slide
@@ -145,17 +139,5 @@
 .slick-active{
   button{
     background-color: #c9a876;
-  }
-}
-
-@media (max-width: 1023px){
-  .slick-initialized .slick-slide
-  {
-    &:first-child{
-      justify-content: center;
-    }
-    &:last-child{
-      justify-content: center;
-    }
   }
 }

@@ -67,16 +67,24 @@ block content
                 .featuresMini__item
                     span.featuresMini__icon.iconVettedLadies
                     span.featuresMini__text Only personally vetted ladies listed
-    section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
+    section.videoTestimonials
         .container
-            h2.quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
-            p.quickForm__description We will gladly help you to choose the best way to search for your second half
-            .quickForm__wrapper
-                form
-                    .quickForm__formBox
-                        input.field(type="text" placeholder="Skype or Phone number" id="phone" name="phone")
-                        input.field(type="text" placeholder="Preferred time" id="time" name="time")
-                        button.button#sendQuickForm Book a call
+            .section__title Testimonials
+            .videoTestimonials__list.slider#testimonialsSlider
+                .videoTestimonial__item
+                    .video.paused
+                        .video__view
+                            video
+                                source(src="/static/video/big_buck_bunny.mp4" type="video/mp4")
+                            .video__controlls
+                        span.video__title Sam, 42 y.o. from US
+                .videoTestimonial__item
+                    .video.paused
+                        .video__view
+                            video
+                                source(src="/static/video/big_buck_bunny.mp4" type="video/mp4")
+                            .video__controlls
+                        span.video__title Sam, 42 y.o. from US
     section.stories
         .container
             .section__title Love Stories
@@ -100,6 +108,16 @@ block content
                     .story__description
                         p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
+    section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
+        .container
+            h2.quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
+            p.quickForm__description We will gladly help you to choose the best way to search for your second half
+            .quickForm__wrapper
+                form
+                    .quickForm__formBox
+                        input.field(type="text" placeholder="Skype or Phone number" id="phone" name="phone")
+                        input.field(type="text" placeholder="Preferred time" id="time" name="time")
+                        button.button#sendQuickForm Book a call
     section.contactsWrapper
         .map
             iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.150641118089!2d30.7336534155504!3d46.48532947912625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631962cbb44c1%3A0x1dbe78653ee6c8ba!2z0JPQsNCy0LDQvdC90LDRjyDRg9C7Liwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1561150906772!5m2!1sru!2sua" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen)

@@ -25,7 +25,33 @@ include('static/js/vendor/jquery.min.js', function (){
                         slidesToShow: 1
                     }
                 }]
-            })
+            });
+            $('#testimonialsSlider').slick({
+                infinite: false,
+                slidesToShow: 2,
+                arrows: false,
+                dots: true,
+                centerPadding: '17px',
+                responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
         });
+        if($('.video')){
+            function videoControll(){
+                if($(this).hasClass("paused")){
+                    this.getElementsByTagName('video')[0].play();
+                    $(this).addClass("played").removeClass("paused");
+                } else if($(this).hasClass("played")){
+                    this.getElementsByTagName('video')[0].pause();
+                    $(this).addClass("paused").removeClass("played");
+                }
+            }
+            $('.video').click(videoControll);
+        }
     }
 });
