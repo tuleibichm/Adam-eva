@@ -5,9 +5,12 @@
   min-height: 570px;
   overflow: hidden;
   img{
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     display: block;
     position: absolute;
+    transform: translate(-50%, 0);
+    margin-left: 50%;
     top: 0;
     left: 0;
   }
@@ -123,13 +126,12 @@
     &:before{
       content: '';
       display: inline-block;
-      width: 17px;
-      height: 13px;
+      width: 21px;
       margin-right: 12px;
-      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='17' height='13' viewBox='0 0 17 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.70711 9.88847L15 0.208374L16.4142 1.68151L5.70711 12.8348L0 6.88985L1.41421 5.41671L5.70711 9.88847Z' fill='%23E7C565'/%3E%3C/svg%3E");
+      height: 21px;
+      vertical-align: top;
     }
   }
 }
@@ -273,6 +275,7 @@
 /* section stories */
 .stories{
   background-image: url("../images/Love_stories.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 60px;
   .section__title{
@@ -319,14 +322,16 @@
 }
 .stories .slick-initialized .slick-slide
 {
-  display: flex;
-  &:first-child{
+  >div{
+    display: flex;
+  }
+  &:first-child>div{
     justify-content: flex-start;
   }
-  &:nth-child(2){
+  &:nth-child(2)>div{
     justify-content: center;
   }
-  &:last-child{
+  &:last-child>div{
     justify-content: flex-end;
   }
 }
@@ -342,8 +347,126 @@
   }
 }
 /* end section stories */
-
-
+/* section tariffs */
+.tariffs{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.03) 100%);
+}
+.tariffs__list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.tariffs__item{
+  display: flex!important;
+  flex-grow: 1;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 15px 15px 40px rgba(222, 222, 222, 0.6);
+  padding: 110px 15px 35px;
+  margin: 0;
+  align-items: center;
+  height: 100%;
+}
+.tariffs__mark{
+  width: 40px;
+  height: 41px;
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tariffs__label{
+  background-color: #C99445;
+  border-radius: 0 0 0 50px;
+  width: 180px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  line-height: 52px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "RobotoBold";
+}
+.tariffs__label-red{
+  background-color: #F25E1F;
+}
+.tariffs__label-pink{
+  background-color: #FA285A;
+}
+.tariffs__title{
+  font-family: "RobotoMedium";
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  max-width: 306px;
+  margin: 0 auto 32px;
+}
+.tariffs__descripion{
+  max-width: 306px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "RobotoLight";
+  margin: 0 auto 28px;
+}
+.tariffs__features{
+  padding: 0;
+  margin: 0 auto 37px;
+  max-width: 306px;
+  width: 100%;
+  flex-grow: 1;
+  li{
+    margin-bottom: 12px;
+  }
+}
+.tariffs .button{
+  margin: 0 auto;
+  display: block;
+}
+.button-red{
+  background-color: #D57C55;
+  box-shadow: 10px 10px 20px rgba(255, 142, 61, 0.55);
+}
+.button-pink{
+  background: #EF6082;
+  box-shadow: 10px 10px 20px rgba(239, 106, 180, 0.55);
+}
+.tariffs .slick-list{
+  margin: 0 -9px;
+}
+.tariffs .slick-slide{
+  margin: 0 9px;
+}
+/* end section tariffs */
+/* section simpleInfo */
+.simpleInfo{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/BG_girl_in_white_dress.jpg");
+  min-height: 825px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 77px 0;
+}
+.simpleInfo__content{
+  display: flex;
+  flex-direction: column;
+  max-width: 576px;
+}
+.simpleInfo__title{
+  font-size: 30px;
+  line-height: 35px;
+  color: #7B5431;
+  margin-bottom: 57px;
+}
+.simpleInfo__text{
+  margin-bottom: 79px;
+}
+/* end section simpleInfo */
 
 
 

@@ -44,17 +44,13 @@
   font-family: "RobotoMedium";
 }
 .navigation__item{
-  display: flex;
-  align-items: center;
-  a{
-    display: block;
-    color: #ffffff;
-    font-size: 18px;
-    height: 42px;
-    line-height: 42px;
-    padding: 0 23px;
-    font-weight: 500;
-  }
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 23px;
+  font-weight: 500;
   &:hover{
     background-color: #375b90;
   }
@@ -85,10 +81,8 @@
     background-size: 55%;
   }
   .navigation__item{
-    a{
-      padding: 0 15px;
-      font-size: 16px;
-    }
+    padding: 0 15px;
+    font-size: 16px;
   }
   .auth{
     a{

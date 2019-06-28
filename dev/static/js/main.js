@@ -40,6 +40,27 @@ include('static/js/vendor/jquery.min.js', function (){
                     }
                 }]
             });
+            $('#tariffsSlider').slick({
+                infinite: false,
+                slidesToShow: 3,
+                arrows: false,
+                dots: true,
+                centerPadding: '16px',
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+            }).on('setPosition', function (event, slick) {
+                slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+            });
         });
         if($('.video')){
             function videoControll(){

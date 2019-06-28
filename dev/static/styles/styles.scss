@@ -34,9 +34,33 @@ body {
   line-height: 1;
   max-width: 1920px;
   margin: 0 auto;
+  color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.03) 100%);
 }
 ol, ul {
   list-style: none;
+  margin-top: 24px;
+  padding: 0 0 0 50px;
+  li{
+    font-family: "RobotoLight";
+    line-height: 22px;
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 30px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 22px;
+      width: 22px;
+      margin-right: 5px;
+      vertical-align: top;
+    }
+  }
 }
 blockquote, q {
   quotes: none;
@@ -62,8 +86,8 @@ input{
   outline: none;
 }
 b, strong{
-  font-weight: bold;
-  margin-right: 3px;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 table {
   border-collapse: collapse;
@@ -71,11 +95,38 @@ table {
 }
 a{
   text-decoration: none;
+  color: #C9A876;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 p{
   margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "RobotoLight";
+}
+h1{
+  color: #7B5431;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'RobotoMedium';
+}
+h2{
+  font-size: 25px;
+  line-height: 29px;
+  color: #7B5431;
+  margin-bottom: 24px;
+  text-align: center;
+}
+h3{
+  text-transform: uppercase;
+  margin-bottom: 12px;
   font-size: 17px;
   line-height: 28px;
+  font-family: "RobotoLight";
 }
 .wrapper{
   display: flex;
@@ -101,12 +152,41 @@ p{
   padding-top: 62px;
   padding-bottom: 59px;
 }
+.section__text{
+  padding: 43px 0;
+  width: 100%;
+  max-width: 972px;
+  margin: 0 auto;
+  text-align: justify;
+}
 
 
 
 @media (max-width: 1365px){
   .container{
     padding: 0 30px;
+  }
+}
+@media (max-width: 768px){
+  ol, ul {
+    padding: 0 0 0 15px;
+    li{
+      font-family: "RobotoLight";
+      line-height: 22px;
+      margin-bottom: 24px;
+      &:before{
+        content: '';
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 22px;
+        width: 22px;
+        vertical-align: top;
+      }
+    }
+  }
+  .container{
+    padding: 0 10px;
   }
 }
 /****** end COMMON ******/

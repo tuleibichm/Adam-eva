@@ -112,9 +112,7 @@
 .slick-vertical .slick-slide
 {
   display: block;
-
   height: auto;
-
   border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
@@ -136,7 +134,7 @@
     display: block;
   }
 }
-.slick-active{
+.slick-dots .slick-active{
   button{
     background-color: #c9a876;
   }
