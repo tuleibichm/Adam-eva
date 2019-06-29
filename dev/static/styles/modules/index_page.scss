@@ -44,10 +44,11 @@
 /* end section cover */
 /* section features */
 .features{
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 .features__list{
   display: flex;
+  padding-top: 9px;
   justify-content: space-between;
 }
 .features__item{
@@ -73,7 +74,7 @@
 .quickForm{
   min-height: 336px;
   background-size: cover;
-  padding: 45px 0 52px;
+  padding: 44px 0 52px;
 }
 .quickForm__title{
   color: #ffffff;
@@ -83,7 +84,7 @@
   font-size: 27px;
   line-height: 36px;
   font-family: "RobotoBold";
-  margin: 0 auto 13px;
+  margin: 0 auto 9px;
 }
 .quickForm__description{
   color: #ffffff;
@@ -108,7 +109,7 @@
 /* end section quickForm */
 /* section regForm */
 .regFormWrapper{
-  padding: 46px 0;
+  padding: 58px 0 48px;
   background-size: cover;
   .container{
     display: flex;
@@ -117,7 +118,11 @@
   }
 }
 .regFormText{
-  max-width: 360px;
+  max-width: 386px;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
   li{
     font-size: 18px;
     line-height: 21px;
@@ -147,12 +152,17 @@
   line-height: 34px;
   color: #ffffff;
   margin-bottom: 29px;
+  font-family: "RobotoMedium";
 }
 .regForm{
   width: 100%;
-  max-width: 323px;
+  max-width: 310px;
+  margin-top: -14px;
   .field{
     margin-bottom: 10px;
+  }
+  .button{
+    margin-top: 10px;
   }
 }
 .regForm__box{
@@ -167,6 +177,10 @@
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 13px;
+}
+.regForm__title-second{
+  margin-bottom: 19px;
+
 }
 .regForm__social{
   display: flex;
@@ -256,7 +270,7 @@
   border: 7px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  background-size: 25px;
+  background-size: 35px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -277,7 +291,7 @@
   background-image: url("../images/Love_stories.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 60px;
+  padding-bottom: 44px;
   .section__title{
     padding: 25px 0 42px;
   }
@@ -317,7 +331,7 @@
 .story__description{
   p{
     font-size: 17px;
-    line-height: 25px;
+    line-height: 28px;
   }
 }
 .stories .slick-initialized .slick-slide
@@ -352,21 +366,22 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.03) 100%);
 }
 .tariffs__list{
+  position: relative;
+  margin: -12px 0 -195px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
 }
 .tariffs__item{
   display: flex!important;
-  flex-grow: 1;
   flex-direction: column;
   position: relative;
   background-color: #ffffff;
   box-shadow: 15px 15px 40px rgba(222, 222, 222, 0.6);
-  padding: 110px 15px 35px;
+  padding: 114px 15px 35px;
   margin: 0;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
+  width: calc((100% - 32px) / 3);
 }
 .tariffs__mark{
   width: 40px;
@@ -380,8 +395,8 @@
 .tariffs__label{
   background-color: #C99445;
   border-radius: 0 0 0 50px;
-  width: 180px;
-  height: 50px;
+  padding: 0 37px;
+  height: 52px;
   position: absolute;
   top: 0;
   right: 0;
@@ -450,27 +465,35 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 77px 0;
+  padding: 80px 0;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .simpleInfo__content{
   display: flex;
   flex-direction: column;
-  max-width: 576px;
+  max-width: 605px;
+  align-items: center;
 }
 .simpleInfo__title{
   font-size: 30px;
   line-height: 35px;
   color: #7B5431;
   margin-bottom: 57px;
+  width: 100%;
+  font-family: "RobotoMedium";
 }
 .simpleInfo__text{
   margin-bottom: 79px;
+  p{
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'RobotoRegular';
+  }
 }
 /* end section simpleInfo */
-
-
-
-
 
 /* section contacts */
 .contactsWrapper{

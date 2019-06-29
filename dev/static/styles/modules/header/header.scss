@@ -12,7 +12,7 @@
   z-index: 1;
   background-color: #ffffff;
   background-image: url("../images/logo.svg");
-  background-position: center;
+  background-position: 43% 30%;
   background-repeat: no-repeat;
   border-bottom-right-radius: 52px;
   box-shadow: 2px 2px 10px rgba(177, 177, 177, 0.55);
@@ -74,8 +74,7 @@
     }
   }
 }
-
-@media (max-width: 1366px){
+@media (max-width: 1365px){
   .logo{
     width: 250px;
     background-size: 55%;

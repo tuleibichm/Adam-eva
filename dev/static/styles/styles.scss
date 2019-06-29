@@ -148,9 +148,10 @@ h3{
   text-align: center;
   color: #7B5431;
   font-size: 30px;
-  line-height: 38px;
+  line-height: 35px;
   padding-top: 62px;
   padding-bottom: 59px;
+  font-family: "RobotoMedium";
 }
 .section__text{
   padding: 43px 0;
@@ -159,9 +160,6 @@ h3{
   margin: 0 auto;
   text-align: justify;
 }
-
-
-
 @media (max-width: 1365px){
   .container{
     padding: 0 30px;
