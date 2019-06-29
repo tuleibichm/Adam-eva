@@ -1,0 +1,136 @@
+extends template/main
+
+block variables
+
+    - var title = 'Список девушек'
+    - var pageClass = 'ladies-list'
+
+block content
+    section.candidate
+        .container
+            .section__title Members Gallery
+            .filter
+                form(action)
+                    .filter__box
+                        .filter__fieldGroup
+                            span Age:
+                            label.filter__label(for="age")
+                                select.field(type="range" id="age" name="age")
+                                    option(value="Yes") Yes
+                                    option(value="No") No
+                                span
+                        .filter__fieldGroup
+                            span Children:
+                            label.filter__label(for="children")
+                                select.field(id="children" name="children")
+                                    option(value="Yes") Yes
+                                    option(value="No") No
+                                span
+                        .filter__fieldGroup
+                            span Hair color:
+                            label.filter__label(for="hairColor")
+                                select.field(id="hairColor" name="hairColor")
+                                    option(value="Yes") Yes
+                                    option(value="No") No
+                                    option(value="Any") Any
+                                span
+                        .filter__fieldGroup
+                            span City:
+                            label.filter__label(for="city")
+                                select.field(id="city" name="city")
+                                    option(value="Yes") Yes
+                                    option(value="No") No
+                                span
+                        .filter__fieldGroup
+                            span Search by Name, ID
+                            label.filter__label(for="searchField")
+                                input.field(type="text" id="searchField" name="searchField")
+                                span.iconSearch
+            .candidate__list
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image1.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image2.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image3.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image4.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image5.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image6.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image7.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidate__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidate__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+            .button.button-white Show more ladies
+            .pagination
+               .pagination__list
+                   a.pagination__item.prevArrow.prevArrow-disable(href="#")
+                   a.pagination__item(href="#") 1
+                   a.pagination__item.active(href="#") 2
+                   a.pagination__item(href="#") 3
+                   a.pagination__item(href="#") 4
+                   a.pagination__item(href="#") ...
+                   a.pagination__item(href="#") 5
+                   a.pagination__item.nextArrow(href="#")
+    section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
+        .container
+            .quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
+            p.quickForm__description We will gladly help you to choose the best way to search for your second half
+            .quickForm__wrapper
+                form
+                    .quickForm__formBox
+                        input.field(type="text" placeholder="Skype or Phone number" id="phone" name="phone")
+                        input.field(type="text" placeholder="Preferred time" id="time" name="time")
+                        button.button#sendQuickForm Book a call
+    section.contactsWrapper
+        .map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.150641118089!2d30.7336534155504!3d46.48532947912625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631962cbb44c1%3A0x1dbe78653ee6c8ba!2z0JPQsNCy0LDQvdC90LDRjyDRg9C7Liwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1561150906772!5m2!1sru!2sua" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen)
+        .contacts
+            .contacts__title Contact us
+            .contacts__data
+                div
+                    strong Adress:
+                    a Street, Odessa, Ukraine
+                div
+                    strong Phone number:
+                    a +38 (068) 120-03-00
+                div
+                    strong E-mail:
+                    a info@adam-and-eva.com
+                div
+                    strong Skype:
+                    a odesa_135
