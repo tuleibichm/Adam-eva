@@ -1,0 +1,136 @@
+extends template/main
+
+block variables
+
+    - var title = 'Карточка девушки'
+    - var pageClass = 'ladies-item'
+
+block content
+    section
+        .container
+            .breadcrumbs
+                a.breadcrumbs__item(href="#") Members Gallery
+                a.breadcrumbs__item(href="#") Name
+    section.candidateProfile
+        .container
+            .candidateProfile__box
+                .candidateProfile__photo
+                    img(src="static/images/media/avatar.jpg")
+                    .thumbPhoto
+                        .thumbPhoto__item
+                            img(src="static/images/media/avatar.jpg")
+                        .thumbPhoto__item
+                            img(src="static/images/media/avatar.jpg")
+                        .thumbPhoto__item
+                            img(src="static/images/media/avatar.jpg")
+                        .thumbPhoto__item
+                            img(src="static/images/media/avatar.jpg")
+                        .thumbPhoto__item
+                            img(src="static/images/media/avatar.jpg")
+                        .thumbPhoto__item
+                            img(src="static/images/media/avatar.jpg")
+                    .button.button-white View all
+                .candidateProfile__info
+                    .candidateProfile__general
+                        .candidateProfile__interaction
+                            a.button.button-interaction.iconSendLetter Send letter
+                            a.button.button-interaction.iconArrangeVideodate Arrange videodate
+                            a.button.button-interaction.iconArrangeLiveDate Arrange live date
+                            a.button.button-interaction.iconSendGift Send a gift
+                            a.button.button-interaction.iconBookRomanceTour Book romance tour
+                            a.button.button-interaction.iconAddToTavorite Add to favorite
+                        .candidateProfile__mainData
+                            header
+                                .candidateProfile__name Svetlana
+                                .candidateProfile__ID ID: sn0807
+                            footer
+                                .candidateProfile__fact
+                                    span Date of birth:
+                                    span 29-May-199
+                                .candidateProfile__fact
+                                    span Height:
+                                    span 175 cm
+                                .candidateProfile__fact
+                                    span Body type:
+                                    span 65 kg
+                                .candidateProfile__fact
+                                    span Hair color:
+                                    span Blonde
+                                .candidateProfile__fact
+                                    span Eyes color:
+                                    span Green
+                                .candidateProfile__fact
+                                    span Drinking, smoking:
+                                    span No, no
+                                .candidateProfile__fact
+                                    span Date of birth:
+                                    span 29-May-199
+                                .candidateProfile__fact
+                                    span Height:
+                                    span 175 cm
+                                .candidateProfile__fact
+                                    span Body type:
+                                    span 65 kg
+                                .candidateProfile__fact
+                                    span Hair color:
+                                    span Blonde
+                                .candidateProfile__fact
+                                    span Eyes color:
+                                    span Green
+                                .candidateProfile__fact
+                                    span Drinking, smoking:
+                                    span No, no
+                    .candidateProfile__about
+                        .candidateProfile__aboutText
+                            strong About Me
+                            p I am feminine, humorous and kind lady.) My friends say I am very responsible and a great friend. Sometimes I can be serious)). I am a faithful person by nature, and I believe faithfulness is the only possible format of serious relationships. I am many-sided personality and enjoy many things in life. I am an educated person. As a woman I am sensitive, mild and tender. I am a classical woman with traditional family-oriented values, I am here to meet a good man for me and create a family together. I am sincere, kind and honest lady and wish to meet a man with alike qualities and goals.
+                            strong My Dream Man
+                            p My man is life loving person with a good sense of humor. He is wise, noble, attentive and charming. I see my man as a leader, I have a respect for my man. I like when a man knows how to find approach to his lady.) My man is comunicative person and likes to talk to his woman much.) I hope we can have mutual hobbies and raise more things in common together.
+                            strong Hobbies
+                            p Main hobbies- dancing, I do this on a professional basis actually. I am a trainer also. I go to fitness 4 times a week, swimming 2 times a week. Other sports I like are bicycling and roller skating. In the summer I adore beach volleyball and can play the whole day. Ice-skating in the winter. I love to play guitar and do this often. I attend actor's school because I like to express emotions in a beautiful way.)) I think it is so romantic!) I love traveling and want to travel much in the future.
+    section.seen
+        .container
+            .section__title Recently viewed
+            .candidateSlider__list.slider#seenSlider
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image1.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image2.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image6.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image7.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807

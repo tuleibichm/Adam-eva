@@ -31,7 +31,7 @@ include('static/js/vendor/jquery.min.js', function (){
                 slidesToShow: 2,
                 arrows: false,
                 dots: true,
-                centerPadding: '17px',
+                centerPadding: '16px',
                 responsive: [
                 {
                     breakpoint: 767,
@@ -60,6 +60,31 @@ include('static/js/vendor/jquery.min.js', function (){
                     }]
             }).on('setPosition', function (event, slick) {
                 slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+            });
+            $('#seenSlider').slick({
+                infinite: false,
+                slidesToShow: 6,
+                arrows: false,
+                dots: true,
+                centerPadding: '16px',
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }]
             });
         });
         if($('.video')){

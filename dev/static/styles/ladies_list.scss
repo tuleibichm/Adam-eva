@@ -51,7 +51,7 @@
     display: block;
   }
 }
-.candidate{
+.candidateList{
   padding-bottom: 55px;
 }
 .candidate__list{
@@ -72,6 +72,7 @@
   img{
     display: block;
     margin: auto;
+    max-width: 100%;
   }
   footer{
     display: flex;
@@ -92,6 +93,56 @@
   line-height: 20px;
   font-family: 'RobotoMedium';
 }
+/**/
+.candidateSlider__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+  .slick-slide{
+    margin: 0 8px;
+  }
+}
+.candidateSlider__item{
+  margin: 0 8px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:hover{
+    text-decoration: none;
+  }
+  img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  footer{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 31px;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: #EBEBEB;
+  }
+}
+.slick-slide .candidateSlider__item{
+  margin: 0;
+}
+.candidateSlider__title{
+  padding: 9px 10px 10px;
+  color: #284269;
+  font-size: 17px;
+  background-color: #F3F3F2;
+  line-height: 20px;
+  font-family: 'RobotoMedium';
+}
+.candidateSlider__list .slick-track{
+  margin: 0;
+}
+/**/
 .button-white{
   background-color: #ffffff;
   box-shadow: 7px 7px 15px rgba(215, 179, 124, 0.4);
@@ -138,4 +189,141 @@
 .nextArrow-disable,
 .prevArrow-disable{
   fill: #000000;
+}
+.seen{
+  padding-bottom: 70px;
+}
+.breadcrumbs{
+  padding: 50px 0;
+  a{
+    color: #7B5431;
+    font-size: 20px;
+    line-height: 23px;
+    &:not(:last-child):after{
+      content: ">";
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+}
+.candidateProfile__box{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.candidateProfile__photo{
+  max-width: 312px;
+  width: 100%;
+  margin-right: 10px;
+  img{
+    width: 100%;
+    margin: 0 auto 24px;
+    display: block;
+  }
+}
+.thumbPhoto{
+  display: grid;
+  grid-template-columns: 96px 96px 96px;
+  grid-template-rows: 96px 96px;
+  grid-gap: 14px 12px;
+  margin-bottom: 40px;
+  .thumbPhoto__item{
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #E3E3E3;
+  }
+}
+.candidateProfile__info{
+  max-width: 864px;
+  width: 100%;
+}
+.candidateProfile__interaction{
+  width: 100%;
+  max-width: 258px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.button-interaction{
+  max-width: 258px;
+  background-color: #ffffff;
+  color: #8C8C8C;
+  font-family: 'RobotoMedium';
+  font-size: 16px;
+  line-height: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  box-shadow: 7px 7px 15px rgba(215, 179, 124, 0.4);
+  &:before{
+    content: '';
+    display: block;
+    margin-right: 24px;
+    width: 34px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.candidateProfile__general{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.candidateProfile__mainData{
+  max-width: 554px;
+  width: 100%;
+  header{
+    display: flex;
+    align-items: center;
+    height: 67px;
+    justify-content: space-around;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #ffffff;
+    color: #284269;
+    margin-bottom: 5px;
+  }
+  footer{
+    column-count: 2;
+    padding: 27px 10px 32px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+  }
+}
+.candidateProfile__name{
+  font-family: 'RobotoMedium';
+  font-size: 24px;
+  line-height: 28px;
+}
+.candidateProfile__ID{
+  font-size: 18px;
+  line-height: 21px;
+}
+.candidateProfile__fact{
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  span{
+    max-width: 110px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 30px;
+    &:first-child{
+      font-family: 'RobotoMedium';
+      color: #284269;
+    }
+  }
+}
+.candidateProfile__about{
+  display: flex;
+  justify-content: center;
+}
+.candidateProfile__aboutText{
+  width: 100%;
+  max-width: 789px;
+  padding: 30px;
 }
