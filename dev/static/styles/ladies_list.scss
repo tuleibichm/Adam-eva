@@ -320,10 +320,15 @@
 }
 .candidateProfile__about{
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .candidateProfile__aboutText{
   width: 100%;
   max-width: 789px;
   padding: 30px;
+  background-color: #F0F0F0;
+  &:not(:last-child){
+    margin-bottom: 40px;
+  }
 }

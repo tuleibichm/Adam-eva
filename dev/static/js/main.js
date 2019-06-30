@@ -87,17 +87,46 @@ include('static/js/vendor/jquery.min.js', function (){
                     }]
             });
         });
-        if($('.video')){
-            function videoControll(){
-                if($(this).hasClass("paused")){
-                    this.getElementsByTagName('video')[0].play();
-                    $(this).addClass("played").removeClass("paused");
-                } else if($(this).hasClass("played")){
-                    this.getElementsByTagName('video')[0].pause();
-                    $(this).addClass("paused").removeClass("played");
-                }
+    }
+    if($('.video')){
+        function videoControll(){
+            if($(this).hasClass("paused")){
+                this.getElementsByTagName('video')[0].play();
+                $(this).addClass("played").removeClass("paused");
+            } else if($(this).hasClass("played")){
+                this.getElementsByTagName('video')[0].pause();
+                $(this).addClass("paused").removeClass("played");
             }
-            $('.video').click(videoControll);
         }
+        $('.video').click(videoControll);
+    }
+    if($('.modal')){
+        var btnOpen = $('button.modalOpen');
+        btnOpen.click(function () {
+            var modalData = $(this).data("modal");
+            $('.' + modalData).fadeIn(300);
+            return false;
+        });
+
+        $(document).mouseup(function (e){ // событие клика по веб-документу
+            var div = $(".modal__box"); // тут указываем ID элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                $(".modal").fadeOut(300);
+                return false;
+            }
+        });
+        $('.close').click(function () {
+            $(".modal").fadeOut(300);
+            return false;
+        });
+        $(document).keydown(function(e) {
+            if( e.keyCode === 27 ) {
+                $(".modal").fadeOut(300);
+                return false;
+            }
+        });
+
+
     }
 });

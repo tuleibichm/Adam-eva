@@ -1,0 +1,23 @@
+.modal.modalRegForm
+    .modal__box(style="background-image: url('static/images/Background_registration_popup.jpg');')")
+        span.close
+        .regFormText
+            .regFormText__title Join for free
+            ul
+                li Get access to the profiles of girls
+                li Make video dates
+                li Make meetings live
+                li Book Dating tours
+        .regForm
+            form
+                .regForm__box
+                    .regForm__title LOGIN WITH
+                    .regForm__social
+                        a.socialLink.fb(href="#")
+                        a.socialLink.gg(href="#")
+                    .regForm__title.regForm__title-second OR SIGN IN VIA EMAIL ADDRESS
+                    input.field(type="text" placeholder="Name" id="name" name="name")
+                    input.field(type="number" placeholder="Age" id="age" name="age")
+                    input.field(type="email" placeholder="Email" id="email" name="email")
+                    input.field(type="password" placeholder="Password" id="password" name="password")
+                    button.button#sendRegForm Sign up for free

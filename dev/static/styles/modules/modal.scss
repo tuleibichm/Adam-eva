@@ -1,0 +1,46 @@
+.modal{
+  width: 100%;
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  .regForm{
+    margin-top: 0;
+  }
+}
+.modal__box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 840px;
+  position: absolute;
+  padding: 39px 76px 44px 33px;
+}
+.close{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .modal {
+    .regFormText{
+      display: none;
+    }
+  }
+  .modal__box{
+    justify-content: center;
+    background-image: none!important;
+  }
+
+}
