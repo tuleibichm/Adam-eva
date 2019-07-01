@@ -101,7 +101,7 @@ include('static/js/vendor/jquery.min.js', function (){
         $('.video').click(videoControll);
     }
     if($('.modal')){
-        var btnOpen = $('button.modalOpen');
+        var btnOpen = $('.modalOpen');
         btnOpen.click(function () {
             var modalData = $(this).data("modal");
             $('.' + modalData).fadeIn(300);
@@ -126,7 +126,8 @@ include('static/js/vendor/jquery.min.js', function (){
                 return false;
             }
         });
-
-
+    }
+    if($('.percentLine')){
+        $('.percentLine span').css("width", $('.percentLine').data("percent") + "%");
     }
 });

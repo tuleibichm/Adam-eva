@@ -105,6 +105,10 @@
   justify-content: space-between;
   display: flex;
   align-items: center;
+  .field{
+    font-size: 16px;
+    height: 35px;
+  }
 }
 /* end section quickForm */
 /* section regForm */
@@ -159,6 +163,8 @@
   max-width: 310px;
   margin-top: -14px;
   .field{
+    font-size: 16px;
+
     margin-bottom: 10px;
     height: 35px;
   }

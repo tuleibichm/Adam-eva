@@ -1,0 +1,87 @@
+extends template/main
+
+block variables
+
+    - var title = 'Редактирование профиля'
+    - var pageClass = 'my-profile-edit'
+
+block content
+    section.myProfileHeader
+        .container
+            .myProfileHeader__box
+                .sidebar__title My Account
+                .aboutProfile
+                    .aboutProfile__box
+                        .aboutProfile__text Fill out the profile to increase your chance to find the perfect lady
+                        a.aboutProfile__button + Add personal details
+                        .aboutProfile__strength
+                            span Profile Strength: 15%
+                            .percentLine(data-percent="15")
+                                span
+    section.myProfile
+        .container
+            .myProfile__box
+                .sidebar
+                    .sidebar__list
+                        a.sidebar__item.sidebar__item-active.iconMyProfile(href="#") My profile
+                        a.sidebar__item.iconViwedProfiles(href="#") Viewed profiles
+                        a.sidebar__item.iconBalance(href="#") Balance & Payment history
+                        a.sidebar__item.iconSpecialOffers(href="#") Special offers
+                            span 1
+                .profile
+                    .tabs
+                        a.tabs__item.tabs__item-active(href="#") Main info
+                        a.tabs__item(href="#") Personal Details
+                        a.tabs__item(href="#") Ideal lady
+                    form
+                        .profile__content
+                            .profile__photoBox
+                                .profile__avatar
+                                    img(src="static/images/media/man.jpg")
+                                .profile__galleryList
+                                    .profile__galleryItem.iconPlus
+                                        img(src="static/images/media/man.jpg")
+                                    .profile__galleryItem.iconPlus
+                                    .profile__galleryItem.iconPlus
+                            .profile__infoList
+                                .profile__infoItem
+                                    label Name:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Last name:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Date of birth:
+                                    .controll__group
+                                        select.field(type="range" name="age")
+                                            option(value="Yes") Yes
+                                            option(value="No") No
+                                        select.field(type="range" name="age")
+                                            option(value="Yes") Yes
+                                            option(value="No") No
+                                        select.field(type="range" name="age")
+                                            option(value="Yes") Yes
+                                            option(value="No") No
+                                .profile__infoItem
+                                    label Email Address:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Your country:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Your city:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Phone:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Viber/Whatsapp:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label Your name on skype:
+                                    input.field(type="text")
+                                .profile__infoItem
+                                    label
+                                    .profile__buttonWrapper
+                                        button.button Save
+                                        button.button.button-red Cancel
