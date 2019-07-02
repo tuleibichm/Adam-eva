@@ -1,0 +1,126 @@
+extends template/main
+
+block variables
+
+    - var title = 'Мой профиль'
+    - var pageClass = 'my-profile'
+
+block content
+    section.myProfileHeader
+        .container
+            .myProfileHeader__box
+                .sidebar__title My Account
+                .aboutProfile
+                    .aboutProfile__box
+                        .aboutProfile__text Fill out the profile to increase your chance to find the perfect lady
+                        a.aboutProfile__button + Add personal details
+                        .aboutProfile__strength
+                            span Profile Strength: 15%
+                            .percentLine(data-percent="15")
+                                span
+    section.myProfile
+        .container
+            .myProfile__box
+                .sidebar
+                    .sidebar__list
+                        a.sidebar__item.sidebar__item-active.iconMyProfile(href="#") My profile
+                        a.sidebar__item.iconViwedProfiles(href="#") Viewed profiles
+                        a.sidebar__item.iconBalance(href="#") Balance & Payment history
+                        a.sidebar__item.iconSpecialOffers(href="#") Special offers
+                            span 1
+                .profile
+                    .tabs
+                        a.tabs__item(href="#") Main info
+                        a.tabs__item.tabs__item-active(href="#") Personal Details
+                        a.tabs__item(href="#") Ideal lady
+                    .profile__content
+                        .profile__DetailsList
+                            .profile__DetailsItem
+                                label.profileKey Your Children (if any, their age):
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Would you like to have more children?
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Your education:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey What is your current job?
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Do you smoke?
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Can you tolerate lady's smoking?
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Height *
+                                span.profileValue 178 cm
+                            .profile__DetailsItem
+                                label.profileKey Weight *
+                                span.profileValue 88 kg
+                            .profile__DetailsItem
+                                label.profileKey What is your native language?
+                                span.profileValue American
+                            .profile__DetailsItem
+                                label.profileKey What foreign languages do you speak?
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Marital status:
+                                span.profileValue None
+                            .profile__DetailsItem
+                                label.profileKey If you are divorced, please, give us the termination dates of all your previous marriages
+                                span.profileValue Never married
+                            .profile__DetailsItem
+                                label.profileKey Is social drinking acceptable for you?
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Do you have any major health problems?
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey If yes then, please, specify:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Your hobbies and interests:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Your religion:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Description:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Give at least 5 reasons why you can be good husband?
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey How will a woman's live improve when she becomes your wife?
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Indicate city and country where you plan to reside when you get married?
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Do you own property where you live at the moment?
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Your annual income in USD or EUR
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey
+                                .profile__buttonWrapper
+                                    button.button Save
+                                    button.button.button-red Cancel

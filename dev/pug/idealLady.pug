@@ -1,0 +1,59 @@
+extends template/main
+
+block variables
+
+    - var title = 'Мой профиль'
+    - var pageClass = 'my-profile'
+
+block content
+    section.myProfileHeader
+        .container
+            .myProfileHeader__box
+                .sidebar__title My Account
+                .aboutProfile
+                    .aboutProfile__box
+                        .aboutProfile__text Fill out the profile to increase your chance to find the perfect lady
+                        a.aboutProfile__button + Add personal details
+                        .aboutProfile__strength
+                            span Profile Strength: 15%
+                            .percentLine(data-percent="15")
+                                span
+    section.myProfile
+        .container
+            .myProfile__box
+                .sidebar
+                    .sidebar__list
+                        a.sidebar__item.sidebar__item-active.iconMyProfile(href="#") My profile
+                        a.sidebar__item.iconViwedProfiles(href="#") Viewed profiles
+                        a.sidebar__item.iconBalance(href="#") Balance & Payment history
+                        a.sidebar__item.iconSpecialOffers(href="#") Special offers
+                            span 1
+                .profile
+                    .tabs
+                        a.tabs__item(href="#") Main info
+                        a.tabs__item(href="#") Personal Details
+                        a.tabs__item.tabs__item-active(href="#") Ideal lady
+                    .profile__content
+                        a.editProfile(href="editProfile.html") Edit
+                        .profile__DetailsList
+                            .profile__DetailsItem
+                                span.profileKey Her age:
+                                span.profileValue 25-35
+                            .profile__DetailsItem
+                                span.profileKey Her height:
+                                span.profileValue 160-170 cm
+                            .profile__DetailsItem
+                                span.profileKey Her hair color:
+                                span.profileValue Any
+                            .profile__DetailsItem
+                                span.profileKey Her eyes color:
+                                span.profileValue Any
+                            .profile__DetailsItem
+                                span.profileKey Her children:
+                                span.profileValue Any
+                            .profile__DetailsItem
+                                span.profileKey Describe the lady’s personality that suit you best:
+                                span.profileValue Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            .profile__DetailsItem
+                                span.profileKey Other important criteria for your match:
+                                span.profileValue Lorem ipsum dolor sit amet

@@ -1,0 +1,69 @@
+extends template/main
+
+block variables
+
+    - var title = 'Мой профиль'
+    - var pageClass = 'my-profile'
+
+block content
+    section.myProfileHeader
+        .container
+            .myProfileHeader__box
+                .sidebar__title My Account
+                .aboutProfile
+                    .aboutProfile__box
+                        .aboutProfile__text Fill out the profile to increase your chance to find the perfect lady
+                        a.aboutProfile__button + Add personal details
+                        .aboutProfile__strength
+                            span Profile Strength: 15%
+                            .percentLine(data-percent="15")
+                                span
+    section.myProfile
+        .container
+            .myProfile__box
+                .sidebar
+                    .sidebar__list
+                        a.sidebar__item.sidebar__item-active.iconMyProfile(href="#") My profile
+                        a.sidebar__item.iconViwedProfiles(href="#") Viewed profiles
+                        a.sidebar__item.iconBalance(href="#") Balance & Payment history
+                        a.sidebar__item.iconSpecialOffers(href="#") Special offers
+                            span 1
+                .profile
+                    .tabs
+                        a.tabs__item(href="#") Main info
+                        a.tabs__item.tabs__item-active(href="#") Personal Details
+                        a.tabs__item(href="#") Ideal lady
+                    .profile__content
+                        .profile__DetailsList
+                            .profile__DetailsItem
+                                label.profileKey Her age:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Her height:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Her hair color:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Her eyes color:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey Her children:
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Describe the lady’s personality that suit you best:
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
+                            .profile__DetailsItem
+                                label.profileKey Other important criteria for your match:
+                                input.field(type="text")
+                            .profile__DetailsItem
+                                label.profileKey
+                                .profile__buttonWrapper
+                                    button.button Save
+                                    button.button.button-red Cancel
