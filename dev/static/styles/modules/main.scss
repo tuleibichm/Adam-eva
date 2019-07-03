@@ -988,9 +988,9 @@
   box-shadow: 10px 10px 40px rgba(208, 208, 208, 0.6);
 }
 .tabs__item{
-  width: calc(100% / 3);
   text-align: center;
   font-size: 16px;
+  flex-grow: 1;
   line-height: 40px;
   height: 40px;
   color: #000000;
@@ -1007,6 +1007,9 @@
   position: relative;
   justify-content: space-between;
   min-height: 409px;
+}
+.candidate__list-column{
+  flex-direction: column;
 }
 .profile__photoBox{
   display: flex;
@@ -1154,5 +1157,44 @@
     line-height: 22px;
     color: #7B5431;
     font-family: 'RobotoMedium';
+  }
+}
+.myProfile .candidate__list{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+.viewAll{
+  color: #C9A876;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  width: 60px;
+  margin: 0 auto;
+  border-bottom: 1px dotted #C9A876;
+}
+.balance{
+  flex-direction: column;
+}
+.balance__title{
+  font-family: 'RobotoMedium';
+  margin-bottom: 40px;
+  color: #7B5431;
+  font-size: 30px;
+  line-height: 35px;
+}
+.balance__add{
+  display: flex;
+  align-items: center;
+  margin-bottom: 52px;
+  .field{
+    height: 40px;
+    font-size: 25px;
+    line-height: 29px;
+    width: 214px;
+    margin-right: 28px;
+  }
+  .button{
+    height: 45px;
+    width: 180px;
   }
 }

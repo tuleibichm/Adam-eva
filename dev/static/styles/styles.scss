@@ -92,6 +92,25 @@ b, strong{
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  width: 100%;
+}
+tr{
+  background-color: #F5F5F5;
+  &:nth-child(2n+1){
+    background-color: rgba(231, 231, 231, 0.3);
+  }
+}
+tr:first-child{
+  background-color: #D6BE9C;
+  box-shadow: 10px 10px 40px rgba(220, 182, 127, 0.55);
+  td{
+    color: #ffffff;
+  }
+}
+td{
+  height: 40px;
+  padding: 10px 45px;
+  vertical-align: middle;
 }
 a{
   text-decoration: none;

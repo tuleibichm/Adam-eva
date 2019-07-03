@@ -1,0 +1,61 @@
+extends template/main
+
+block variables
+
+    - var title = 'Мой профиль'
+    - var pageClass = 'my-profile'
+
+block content
+    section.myProfileHeader
+        .container
+            .myProfileHeader__box
+                .sidebar__title My Account
+                .aboutProfile
+                    .aboutProfile__box
+                        .aboutProfile__text Fill out the profile to increase your chance to find the perfect lady
+                        a.aboutProfile__button + Add personal details
+                        .aboutProfile__strength
+                            span Profile Strength: 15%
+                            .percentLine(data-percent="15")
+                                span
+    section.myProfile
+        .container
+            .myProfile__box
+                .sidebar
+                    include modules/sidebar/sidebar
+                .profile
+                    .profile__content.balance
+                        .balance__title Account Balance:	$2,200.65
+                        .balance__add
+                            input.field(type="number" placeholder="0")
+                            button.button Add funds
+                        .balance__title Payment history
+                        table
+                            tr
+                                td Date
+                                td Transaction
+                                td Amount
+                            tr
+                                td May 29, 2019
+                                td Videodate
+                                td -$99.0
+                            tr
+                                td May 29, 2019
+                                td Videodate
+                                td -$99.00
+                            tr
+                                td May 29, 2019
+                                td Videodate
+                                td -$99.00
+                            tr
+                                td May 29, 2019
+                                td Videodate
+                                td -$99.00
+                            tr
+                                td May 29, 2019
+                                td Videodate
+                                td -$99.00
+                            tr
+                                td May 29, 2019
+                                td Videodate
+                                td -$99.00
