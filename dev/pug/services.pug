@@ -1,0 +1,34 @@
+extends template/main
+
+block variables
+
+    - var title = 'Услуги'
+    - var pageClass = 'services'
+
+block content
+    section.myProfileHeader
+        .container
+            .myProfileHeader__box
+                .sidebar__title My Account
+                .aboutProfile
+                    .aboutProfile__box
+                        .aboutProfile__text Fill out the profile to increase your chance to find the perfect lady
+                        a.aboutProfile__button + Add personal details
+                        .aboutProfile__strength
+                            span Profile Strength: 15%
+                            .percentLine(data-percent="15")
+                                span
+    section.myProfile
+        .container
+            .myProfile__box
+                include modules/sidebar/sidebar
+                .servicesList
+                    .services__item(style="background-image: url('/static/images/couple-romance-tour.png');")
+                        a.services__title
+                            span Romance tours to Ukraine
+                    .services__item(style="background-image: url('/static/images/couple-romance-tour.png');")
+                        a.services__title
+                            span Professional Matchmaking Program
+                    .services__item(style="background-image: url('/static/images/couple-romance-tour.png');")
+                        a.services__title
+                            span Ladies profiless
