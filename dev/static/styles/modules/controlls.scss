@@ -9,6 +9,9 @@
   color: #ffffff;
   font-size: 18px;
   cursor: pointer;
+  &:hover{
+    background-color: #C99445;
+  }
 }
 .field{
   background-color: #F1F1F1;

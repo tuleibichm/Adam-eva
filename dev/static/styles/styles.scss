@@ -116,9 +116,12 @@ a{
   text-decoration: none;
   color: #C9A876;
   outline: none;
-  &:hover{
-    text-decoration: underline;
+}
+.section__text{
+  a:hover{
+    color: #7B5431;
   }
+
 }
 p{
   margin-bottom: 12px;
