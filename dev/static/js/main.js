@@ -130,4 +130,42 @@ include('static/js/vendor/jquery.min.js', function (){
     if($('.percentLine')){
         $('.percentLine span').css("width", $('.percentLine').data("percent") + "%");
     }
+
+    if($('.forMoreText')){
+        var btnMore = document.createElement('button');
+        $(btnMore).addClass('button button-more');
+        $('.forMoreText').parent().append(btnMore);
+        $(btnMore).click(function () {
+            $(this).siblings('.forMoreText').toggleClass('fullHeight');
+            $(this).toggleClass('fullHeight');
+        });
+    }
+
+    function successMessage(text) {
+        if($('.successMessage')){
+            $('.successMessage').remove();
+        }
+        var successMessage = document.createElement('div');
+        successMessage.classList.add('successMessage');
+        document.body.appendChild(successMessage);
+        $('.successMessage').text(text).fadeIn(500);
+        setTimeout(function () {
+            $('.successMessage').fadeOut(500);
+            $('.successMessage').remove();
+        }, 5000);
+    }
+
+    function setListener() {
+        $('#sendLetter').click(function () {
+            successMessage("Email successfully sent");
+        });
+        $('#sendGift').click(function () {
+            successMessage("Gift successfully sent");
+        });
+        $('#addToFavorite').click(function () {
+            successMessage("Your request has been accepted. We will contact you in advance for further details.");
+        });
+    }
+    setListener();
+
 });

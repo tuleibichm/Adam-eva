@@ -117,12 +117,6 @@ a{
   color: #C9A876;
   outline: none;
 }
-.section__text{
-  a:hover{
-    color: #7B5431;
-  }
-
-}
 p{
   margin-bottom: 12px;
   font-size: 16px;
@@ -184,10 +178,14 @@ h3{
 .section__text{
   padding: 43px 0;
   width: 100%;
-  max-width: 972px;
+  max-width: 1017px;
   margin: 0 auto;
   text-align: justify;
+  a:hover{
+    color: #7B5431;
+  }
 }
+
 
 
 

@@ -16,10 +16,15 @@
 .modal__box{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   max-width: 840px;
   position: absolute;
-  padding: 39px 76px 44px 33px;
+  background-color: #ffffff;
+  padding: 25px 70px 35px;
+  &.modal__box-row{
+    flex-direction: row;
+  }
 }
 .close{
   width: 55px;
@@ -31,6 +36,56 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+.successMessage{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  color: white;
+  background-color: #C9A876;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 490px;
+  font-size: 17px;
+  line-height: 21px;
+}
+.modal__title{
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 19px;
+}
+.modalRegForm{
+  .modal__box{
+     padding: 39px 76px 44px 33px;
+  }
+}
+.modalNotEnoughMoney{
+  .modal__box{
+    max-width: 636px;
+  }
+  label{
+    width: 100%;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input{
+    max-width: 295px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .button{
+    min-width: 152px;
+  }
+}
 
 @media (max-width: 767px) {
   .modal {
@@ -39,8 +94,17 @@
     }
   }
   .modal__box{
+    padding-left: 38px;
+    padding-right: 38px;
     justify-content: center;
     background-image: none!important;
   }
-
+  .successMessage{
+    bottom: 0;
+  }
+  .modalNotEnoughMoney{
+    form{
+      flex-direction: column;
+    }
+  }
 }

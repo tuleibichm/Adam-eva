@@ -1,6 +1,6 @@
 .modal.modalRegForm(style="display: none;")
-    .modal__box(style="background-image: url('static/images/Background_registration_popup.jpg');')")
-        span.close
+    .modal__box.modal__box-row(style="background-image: url('static/images/Background_registration_popup.jpg');')")
+        span.close.close-white
         .regFormText
             .regFormText__title Join for free
             ul
@@ -21,3 +21,12 @@
                     input.field(type="email" placeholder="Email" id="email" name="email")
                     input.field(type="password" placeholder="Password" id="password" name="password")
                     button.button#sendRegForm Sign up for free
+
+.modal.modalNotEnoughMoney(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title Please top up your balance to proceed
+        label Account Balance:	$15.00
+        form
+            input.field(type="text" placeholder="200" id="sum" name="sum")
+            button.button#sendPay Add funds
