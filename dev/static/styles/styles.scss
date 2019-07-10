@@ -185,37 +185,6 @@ h3{
     color: #7B5431;
   }
 }
-
-
-
-
-@media (max-width: 1365px){
-  .container{
-    padding: 0 30px;
-  }
-}
-@media (max-width: 768px){
-  ol, ul {
-    padding: 0 0 0 15px;
-    li{
-      font-family: "RobotoLight";
-      line-height: 22px;
-      margin-bottom: 24px;
-      &:before{
-        content: '';
-        display: inline-block;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 22px;
-        width: 22px;
-        vertical-align: top;
-      }
-    }
-  }
-  .container{
-    padding: 0 10px;
-  }
-}
 /****** end COMMON ******/
 //Модули
 @import "modules/modules";

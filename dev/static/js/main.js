@@ -5,6 +5,13 @@ function include(uri, callback) {
     document.head.appendChild(script);
 }
 include('static/js/vendor/jquery.min.js', function (){
+    $('.openMenu').click(function () {
+        $(this).siblings('nav').show(300);
+    });
+    $('.closeMenu').click(function () {
+       $(this).closest('nav').hide(300);
+    });
+
     if($('.slider')){
         include('static/js/vendor/slick.js', function (){
             $('#storiesSlider').slick({

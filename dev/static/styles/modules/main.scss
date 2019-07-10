@@ -2,7 +2,7 @@
 .cover{
   position: relative;
   display: flex;
-  min-height: 570px;
+  height: 570px;
   overflow: hidden;
   img{
     min-width: 100%;
@@ -61,6 +61,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 30px;
+    background-size: contain;
   }
   p{
     max-width: 180px;
@@ -241,6 +242,7 @@
 .videoTestimonials__list{
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 .videoTestimonial__item{
   width: calc((100% - 18px) / 2);
@@ -302,11 +304,15 @@
   .section__title{
     padding: 25px 0 42px;
   }
+  .slick-dots{
+    bottom: -25px;
+  }
 }
 .stories__list{
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-direction: column;
 }
 .stories__item{
   width: 100%;
@@ -314,6 +320,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 .elipseFrame{
   width: 210px;
@@ -354,17 +361,6 @@
   }
   &:last-child>div{
     justify-content: flex-end;
-  }
-}
-@media (max-width: 1023px){
-  .stories .slick-initialized .slick-slide
-  {
-    &:first-child{
-      justify-content: center;
-    }
-    &:last-child{
-      justify-content: center;
-    }
   }
 }
 /* end section stories */
