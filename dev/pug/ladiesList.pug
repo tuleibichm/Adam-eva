@@ -14,18 +14,16 @@ block content
                     .filter__box
                         .filter__fieldGroup
                             span Age:
-                            label.filter__label(for="age")
-                                select.field(type="range" id="age" name="age")
-                                    option(value="Yes") Yes
-                                    option(value="No") No
-                                span
+                            label.filter__label
+                                .ui-fromAge
+                                .ageSlider(data-min="18" data-max="56")
+                                .ui-toAge
                         .filter__fieldGroup
                             span Children:
                             label.filter__label(for="children")
                                 select.field(id="children" name="children")
                                     option(value="Yes") Yes
                                     option(value="No") No
-                                span
                         .filter__fieldGroup
                             span Hair color:
                             label.filter__label(for="hairColor")
@@ -33,14 +31,12 @@ block content
                                     option(value="Yes") Yes
                                     option(value="No") No
                                     option(value="Any") Any
-                                span
                         .filter__fieldGroup
                             span City:
                             label.filter__label(for="city")
                                 select.field(id="city" name="city")
                                     option(value="Yes") Yes
                                     option(value="No") No
-                                span
                         .filter__fieldGroup
                             span Search by Name, ID
                             label.filter__label(for="searchField")

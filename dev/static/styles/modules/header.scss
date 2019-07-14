@@ -39,6 +39,11 @@
   }
 }
 
+nav{
+  .closeMenu{
+    display: none;
+  }
+}
 .navigation{
   display: flex;
   font-family: "RobotoMedium";
@@ -99,6 +104,7 @@
 
 .auth{
   display: flex;
+  align-items: flex-end;
   div:first-child{
     margin-right: 25px;
   }
@@ -110,6 +116,7 @@
     line-height: 42px;
     color: #ffffff;
     position: relative;
+    width: fit-content;
     &:after{
       content: '';
       border-bottom: 1px dashed;
@@ -144,6 +151,12 @@
     width: 180px;
     height: 78px;
     background-size: 110px;
+  }
+  .header__content:before{
+    width: 150px;
+  }
+  .navigation__item{
+    margin: 0 10px;
   }
 }
 @media (max-width: 768px){
@@ -191,6 +204,7 @@
       height: 30px;
       line-height: 25px;
       text-align: right;
+      font-family: "RobotoMedium";
     }
   }
   .header__topLine{
@@ -206,6 +220,9 @@
     top: 0;
     left: 0;
     z-index: 9;
+    .closeMenu{
+      display: block;
+    }
   }
   .navigation{
     flex-direction: column;

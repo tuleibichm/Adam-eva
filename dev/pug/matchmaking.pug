@@ -1,0 +1,132 @@
+extends template/main
+
+block variables
+
+    - var title = 'Matchmaking'
+    - var pageClass = 'index-page'
+
+block content
+    section.cover(style="background-image: url('static/images/bg_cover-2.jpg');")
+        .container
+            .cover__content
+                .cover__title Your perfect lady waiting for you in Ukraine. Meet her with the help of a professional matchmaking program
+                p.cover_description Take the first step to new relationships now. Get a personal consultation with the expert matchmaker on Skype absolutely free
+                button.button#bookCall Book a call
+    section.features
+        .container
+            .section__title We help men around the world meet the woman of their dreams
+            .features__list
+                .features__item
+                    span.icon_partnersForLife
+                    p 87% of clients find partners for life
+                .features__item
+                    span.icon_experience
+                    p 19 Years of experience
+                .features__item
+                    span.icon_vatchedPairs
+                    p Over 500 successfully matched pairs
+                .features__item
+                    span.icon_ukrGirl
+                    p Over 1000 profiles of Ukrainian girls
+                .features__item
+                    span.icon_verifieldProfiles
+                    p All ladies profiles verified by our experts
+    section.simpleInfo.simpleInfo-matchmakingPage(style="background-image: url('static/images/bg_simpleInfo-2.jpg');")
+        .container
+            .simpleInfo__content
+                .simpleInfo__title Our mission is to unite hearts across the seas and oceans
+                .simpleInfo__text
+                    p For over 19 years, we have been successfully helping men around the world find their other half here in Ukraine. And we are proud that we have the highest success rate in this difficult business. More than 87% of appeals end with the beginning of a new relationship.
+                    p Our experienced international matchmakers assist single men in finding the right woman, basing on his personal inner criteria and individual vision of future family. It helps a lot that we know each lady personally and can greatly advise in your search.
+    section.scrollingBox
+        .container
+            .scrollingBox_textWrapper
+                .scrollingBox__title 9 simple steps to find your Ukrainian bride
+                .scrollingBox__description Our Matchmaking expert possesses a lot of secret effective ways to lead you to your dreams, guiding you across ladies profiles and considering only those of ladies who might make good wives for you personally, avoiding ladies who are not for you. Time is the most precious asset you may ever have. Our matchmaker helps you to save your time and increase your chances to succeed in your search. We have compiled 9 simple steps that will help you find the woman of your dreams in just a few months.
+                .scrollingBox__list.accordion
+                    .scrollingBox__item 1. First questionnaire (Pre-interview form completion)
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 2. Complementary 40 min Skype call with your matchmakerProfile development
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 3. Your full profile development
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 4. Presenting potential candidates
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 5. Pre-introduction stage
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 6. Personal introductions in Ukraine*
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 7. Matchmaker’s personal review of Introductions
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 8. Getting ready for decision
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+                    .scrollingBox__item 9. ProPost-matchmaking support and coaching file development
+                    p.scrollingBox__itemContent You complete the form with several questions so your matchmaker checks on important details and shedule your free Skype. Before the Skype iterview she will email you some recommendations on how to be prepared for live Skype with your matchmaker.
+    section.features
+        .container
+            .section__title What are the advantages of matchmaking for you?
+            .features__list
+                .features__item
+                    span.icon_chanceToFind
+                    p The chance to find your love 5 times higher
+                .features__item
+                    span.icon_guidance
+                    p Guidance on every stage of effective dating
+                .features__item
+                    span.icon_money
+                    p More value for money - save time and emotional resources!
+                .features__item
+                    span.icon_educationProgram
+                    p Revolutional relationships educational program
+            p.features_description Our Matchmaking expert possesses a huge amount of secret effective ways to lead you to your dreams, guiding you across ladies profiles and considering only those of ladies who might make good wives for you personally, avoiding ladies who are not for you. Life time is the most precious asset you may ever have. Our matchmaker effectively helps you to save your lifetime and considerably increase your chances to succeed in your search.  This matchmaking work requires efforts on your side too, as we have to work in close cooperation with you to reach success.
+    section.stories
+        .container
+            .section__title Love Stories
+            .stories__list.slider#storiesSlider
+                .stories__item
+                    .elipseFrame
+                        img(src="static/images/MaskGroup.jpg")
+                    .story__title Sam and Tatiana
+                    .story__description
+                        p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                .stories__item
+                    .elipseFrame
+                        img(src="static/images/MaskGroup.jpg")
+                    .story__title Sam and Tatiana
+                    .story__description
+                        p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                .stories__item
+                    .elipseFrame
+                        img(src="static/images/MaskGroup.jpg")
+                    .story__title Sam and Tatiana
+                    .story__description
+                        p Now Marina is on the process of collecting the documents for visa and travel to New Zealand to meet Steve and his family. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+
+    section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
+        .container
+            .quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
+            p.quickForm__description We will gladly help you to choose the best way to search for your second half
+            .quickForm__wrapper
+                form
+                    .quickForm__formBox
+                        input.field(type="text" placeholder="Skype or Phone number" id="phone" name="phone")
+                        input.field(type="text" placeholder="Preferred time" id="time" name="time")
+                        button.button#sendQuickForm Book a call
+    section.contactsWrapper
+        .map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.150641118089!2d30.7336534155504!3d46.48532947912625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631962cbb44c1%3A0x1dbe78653ee6c8ba!2z0JPQsNCy0LDQvdC90LDRjyDRg9C7Liwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1561150906772!5m2!1sru!2sua" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen)
+        .contacts
+            .contacts__title Contact us
+            .contacts__data
+                div
+                    strong Adress:
+                    a Street, Odessa, Ukraine
+                div
+                    strong Phone number:
+                    a +38 (068) 120-03-00
+                div
+                    strong E-mail:
+                    a info@adam-and-eva.com
+                div
+                    strong Skype:
+                    a odesa_135

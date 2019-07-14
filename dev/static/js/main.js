@@ -5,6 +5,35 @@ function include(uri, callback) {
     document.head.appendChild(script);
 }
 include('static/js/vendor/jquery.min.js', function (){
+    include('static/js/vendor/jquery-ui.min.js', function (){
+
+        /* range slider */
+        (function () {
+            var el = $('.ageSlider'),
+                min = el.data("min") || 0,
+                max = el.data("max") || 10;
+            el.slider({
+                max: max,
+                min: min,
+                range: true,
+                values: [ min, max ],
+                slide: function( event, ui ) {
+                    $(".ui-fromAge").text(ui.values[ 0 ]);
+                    $(".ui-toAge").text(ui.values[ 1 ]);
+                },
+                create: function ( event, ui ) {
+                    $(".ui-fromAge").text(min);
+                    $(".ui-toAge").text(max);
+                }
+            });
+        })();
+
+        $( "select.field" ).selectmenu();
+        $( ".accordion" ).accordion();
+    });
+
+
+
     $('.openMenu').click(function () {
         $(this).siblings('nav').show(300);
     });

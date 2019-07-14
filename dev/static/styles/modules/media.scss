@@ -8,6 +8,17 @@
   .container{
     padding: 0 20px;
   }
+  .candidate__list{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 12px
+  }
+  .candidate__item{
+    min-width: 147px;
+  }
+  .candidateProfile__box{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 767px){
   ol, ul {
@@ -27,20 +38,27 @@
       }
     }
   }
-  /*-----------------------------------*/
-  .cover__title{
-    font-size: 28px;
-    line-height: 34px;
-    margin-bottom: 27px;
-  }
-
-
-
   .section__title{
     font-size: 24px;
     line-height: 28px;
-    padding: 35px 0 30px;
+    padding: 40px 0 30px;
   }
+  /*-----------------COVER Section------------------*/
+  .cover{
+    background-image: url("../images/bg_cover-mob.jpg");
+  }
+  .cover__content{
+    padding: 30px 0 40px;
+  }
+  .cover__title{
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .cover_description{
+    flex-grow: 1;
+  }
+  /*-----------------features Section------------------*/
   .features{
     background-color: #ffffff;
   }
@@ -48,34 +66,53 @@
     flex-wrap: wrap;
   }
   .features__item{
+    width: 45%;
     span{
       width: 77px;
       height: 84px;
-      margin-right: 25px;
+      margin-bottom: 20px;
     }
     p{
-      text-align: left;
+      font-size: 17px;
+      line-height: 21px;
       font-family: "RobotoRegular";
     }
   }
+  /*-----------------featuresMini Section------------------*/
+
   .featuresMini__list{
+    padding-top: 40px;
     flex-direction: column;
   }
+  .featuresMini__item{
+    margin-bottom: 40px;
+  }
+  /*-----------------tariffs Section------------------*/
+
   .tariffs{
-    background-color: #ffffff;
+    background: #ffffff;
   }
   .tariffs__list{
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 0 -30px;
   }
   .tariffs__item{
+    padding-bottom: 60px;
     max-width: 450px;
     width: 100%;
     &:not(:last-child){
       margin-bottom: 60px;
     }
   }
+  .tariffs__descripion{
+    margin-bottom: 60px;
+  }
+  .tariffs__features{
+    display: none;
+  }
+  /*-----------------regFormWrapper Section------------------*/
+
   .regFormWrapper{
     padding: 47px 0 98px;
     background-position-y: 40%;
@@ -88,20 +125,23 @@
     align-items: center;
   }
   .regFormText__title{
-    font-size: 24px;
-    line-height: 38px;
-    margin-bottom: 28px;
+    margin-bottom: 36px;
   }
   .regFormText__description{
-    font-size: 20px;
+    font-size: 21px;
     line-height: 34px;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
   .regFormText ul{
-    margin-bottom: 70px;
+    margin-bottom: 80px;
   }
+  .regForm{
+    margin-top: 0;
+  }
+  /*-----------------simpleInfo Section------------------*/
+
   .simpleInfo{
-    padding-bottom: 44px;
+    padding-bottom: 60px;
     min-height: 693px;
     background-position: right;
   }
@@ -112,10 +152,13 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+    margin-bottom: 40px;
   }
   .simpleInfo__text {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
+  /*-----------------videoTestimonials Section------------------*/
+
   .videoTestimonials{
     background: #ffffff;
     .slick-list{
@@ -137,22 +180,30 @@
     font-size: 16px;
     font-family: "RobotoRegular";
   }
+  /*-----------------quickForm Section------------------*/
+
   .quickForm__title{
-    font-size: 19px;
-    line-height: 28px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
   .quickForm__description{
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 67px;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 36px;
   }
   .quickForm__wrapper{
     max-width: 500px;
   }
   .quickForm__formBox{
+    padding: 40px 20px 37px;
     flex-direction: column;
-
+  }
+  .quickForm__formBox{
+    .field{
+      margin-bottom: 12px;
+      &:last-child{
+        margin-bottom: 37px;
+      }
+    }
   }
   .contacts__title{
     font-size: 24px;
@@ -163,5 +214,60 @@
   .contacts{
     max-width: 100%;
     min-height: 350px;
+  }
+  .pagination{
+    justify-content: center;
+  }
+  .filter__box{
+    flex-wrap: wrap;
+    padding: 14px;
+    border-radius: 0;
+    margin-bottom: 32px;
+  }
+  .filter__fieldGroup:last-child{
+      order: 1;
+      width: 100%;
+  }
+  .candidate__list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .candidateProfile__box{
+    flex-direction: column;
+  }
+  .candidateProfile__photo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 100%;
+    >img{
+      width: 45%;
+    }
+  }
+  .thumbPhoto{
+    width: 45%;
+    grid-template-columns: 73px 73px;
+    grid-template-rows: 73px 73px;
+  }
+  .viewAllPhoto{
+    position: absolute;
+  }
+  .candidateProfile__general{
+    flex-direction: column;
+    align-items: center;
+  }
+  .candidateProfile__mainData{
+    footer{
+      column-count: 1;
+    }
+  }
+  .candidateProfile__aboutText{
+    background-color: #ffffff;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 567px){
+  .candidate__list{
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -6,16 +6,15 @@ block variables
     - var pageClass = 'index-page'
 
 block content
-    section.cover
-        img(src="static/images/BG_first_scroll.jpg")
+    section.cover(style="background-image: url('static/images/bg_cover.jpg');")
         .container
             .cover__content
                 .cover__title Online dating and professional matchmaking in Ukraine
                 p.cover_description Take the first step to new relationships now. Get a personal consultation with the expert matchmaker on Skype absolutely free
                 button.button#bookCall Book a call
     section.features
-        .section__title We help men around the world meet the woman of their dreams
         .container
+            .section__title We help men around the world meet the woman of their dreams
             .features__list
                 .features__item
                     span.icon_partnersForLife
@@ -32,7 +31,7 @@ block content
                 .features__item
                     span.icon_verifieldProfiles
                     p All ladies profiles verified by our experts
-    section.regFormWrapper(style="background-image: url('static/images/BG_girl_in_black_dress.jpg');')")
+    section.regFormWrapper
         .container
             .regFormText
                 .regFormText__title Over 1000 verified profiles of Ukrainian beauties
@@ -50,11 +49,11 @@ block content
                             a.socialLink.fb(href="#")
                             a.socialLink.gg(href="#")
                         .regForm__title.regForm__title-second OR VIA EMAIL ADDRESS
-                        input.field(type="text" placeholder="Name" id="name" name="name")
-                        input.field(type="number" placeholder="Age" id="age" name="age")
-                        input.field(type="email" placeholder="Email" id="email" name="email")
-                        input.field(type="password" placeholder="Password" id="password" name="password")
-                        button.button#sendRegForm Sign up for free
+                        input.field(type="text" placeholder="Name" id="regForm-name" name="name")
+                        input.field(type="number" placeholder="Age" id="regForm-age" name="age")
+                        input.field(type="email" placeholder="Email" id="regForm-email" name="email")
+                        input.field(type="password" placeholder="Password" id="regForm-password" name="password")
+                        button.button Sign up for free
     section.featuresMini
         .container
             .featuresMini__list
@@ -106,7 +105,7 @@ block content
                         li Professional matchmaker help
                         li We undertake the organization of your residence in Ukraine
                     button.button.button-pink Learn more
-    section.simpleInfo
+    section.simpleInfo(style="background-image: url('static/images/bg_simpleInfo.jpg');")
         .container
             .simpleInfo__content
                 .simpleInfo__title Lorem ipsum dolor sit amet
