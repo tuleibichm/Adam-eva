@@ -13,12 +13,18 @@
         <div class="header__topLine">International Dating and Matchmaking agency</div>
         <div class="container">
           <div class="header__content">
+            <div class="openMenu"><span></span><span></span><span></span></div>
             <nav>
-              <div class="navigation"><a class="navigation__item" href="#">Contact us</a><a class="navigation__item" href="ladiesList.html">Ladies</a><a class="navigation__item" href="#">Tours</a><a class="navigation__item" href="#">Services</a><a class="navigation__item" href="#">FAQ</a><a class="navigation__item" href="#">About us</a></div>
+              <div class="close close-white closeMenu"></div>
+              <div class="navigation"><a class="navigation__item" href="#">Contact us</a><a class="navigation__item" href="ladiesList.html">Ladies</a><a class="navigation__item" href="#">Tours</a>
+                <div class="navigation__item dropdown">Services
+                  <div class="dropdown__list"><a class="dropdown__item">Prices</a><a class="dropdown__item">Introduction</a><a class="dropdown__item">Matchmaking</a><a class="dropdown__item">Romance tours</a></div>
+                </div><a class="navigation__item" href="#">FAQ</a><a class="navigation__item" href="#">About us</a>
+              </div>
             </nav>
             <div class="auth">
-              <div class="auth__singin"><a href="myProfile.html">Login</a></div>
-              <div class="auth__singup"><a class="modalOpen" data-modal="modalRegForm">Sign up</a></div>
+              <div class="auth__singin"><a href="#">Login</a></div>
+              <div class="auth__singup"><a href="#">Sign up</a></div>
             </div>
           </div>
         </div>
@@ -84,7 +90,7 @@
         </div>
       </footer>
       <div class="modal modalRegForm" style="display: none;">
-        <div class="modal__box" style="background-image: url('static/images/Background_registration_popup.jpg');')"><span class="close"></span>
+        <div class="modal__box modal__box-row" style="background-image: url('static/images/Background_registration_popup.jpg');')"><span class="close close-white"></span>
           <div class="regFormText">
             <div class="regFormText__title">Join for free</div>
             <ul>
@@ -108,6 +114,16 @@
               </div>
             </form>
           </div>
+        </div>
+      </div>
+      <div class="modal modalNotEnoughMoney" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">Please top up your balance to proceed</div>
+          <label>Account Balance:	$15.00</label>
+          <form>
+            <input class="field" type="text" placeholder="200" id="sum" name="sum">
+            <button class="button" id="sendPay">Add funds</button>
+          </form>
         </div>
       </div>
     </div>

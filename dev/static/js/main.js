@@ -29,7 +29,11 @@ include('static/js/vendor/jquery.min.js', function (){
         })();
 
         $( "select.field" ).selectmenu();
-        $( ".accordion" ).accordion();
+        $( ".accordion" ).accordion({
+            heightStyle: 'content',
+            collapsible: true,
+            active: false
+        });
     });
 
 
