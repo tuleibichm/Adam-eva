@@ -23,8 +23,11 @@
 	width: 1px;
 }
 .ui-helper-reset {
+	padding: 0;
 	border: 0;
 	outline: 0;
+	font-size: 17px;
+	line-height: 28px;
 	text-decoration: none;
 	padding: 17px 0 22px;
 	list-style: none;
@@ -177,7 +180,7 @@
 	display: block;
 	cursor: pointer;
 	position: relative;
-	padding: 12px 40px 12px 0;
+	padding: 12px 0;
 	font-size: 100%;
 	outline: none;
 	border-bottom: 1px dotted #ffffff;
@@ -185,11 +188,6 @@
 .ui-accordion .ui-accordion-content {
 	border-top: 0;
 	overflow: auto;
-}
-.ui-accordion-header-active{
-	&:after{
-		transform: rotate(180deg);
-	}
 }
 .ui-autocomplete {
 	position: absolute;
@@ -731,14 +729,17 @@ button.ui-button::-moz-focus-inner {
 .ui-slider .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
-	width: 1.2em;
-	height: 1.2em;
+	width: 5px;
+	height: 20px;
+	background-color: #577C9B;
 	cursor: default;
 	-ms-touch-action: none;
 	touch-action: none;
+	outline: none;
 }
 .ui-slider .ui-slider-range {
 	position: absolute;
+	height: 6px;
 	z-index: 1;
 	font-size: .7em;
 	display: block;
@@ -753,15 +754,16 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-slider-horizontal {
-	height: .8em;
+	height: 6px;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 .ui-slider-horizontal .ui-slider-handle {
-	top: -.3em;
-	margin-left: -.6em;
+	top: -7px;
 }
 .ui-slider-horizontal .ui-slider-range {
 	top: 0;
 	height: 100%;
+	background-color: #D6BE9C;
 }
 .ui-slider-horizontal .ui-slider-range-min {
 	left: 0;
