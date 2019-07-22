@@ -28,7 +28,9 @@ include('static/js/vendor/jquery.min.js', function (){
             });
         })();
 
-        $( "select.field" ).selectmenu();
+        $( "select.field" ).selectmenu({
+            appendTo: $("select.field").parent()
+        });
         $( ".accordion" ).accordion({
             heightStyle: 'content',
             collapsible: true,
@@ -143,6 +145,7 @@ include('static/js/vendor/jquery.min.js', function (){
     if($('.modal')){
         var btnOpen = $('.modalOpen');
         btnOpen.click(function () {
+            $('.modal').fadeOut();
             var modalData = $(this).data("modal");
             $('.' + modalData).fadeIn(300);
             return false;

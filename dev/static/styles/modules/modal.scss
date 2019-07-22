@@ -9,8 +9,65 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,0.5);
+  overflow: auto;
   .regForm{
     margin-top: 0;
+  }
+  .field{
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .fieldTextarea{
+    min-height: 160px;
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  .ui-selectmenu-button.ui-button{
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .ui-selectmenu-text{
+    line-height: 35px;
+    font-size: 16px;
+  }
+  .ui-selectmenu-menu{
+    padding: 0;
+  }
+  .ui-selectmenu-icon.ui-icon{
+    background-color: transparent;
+    right: 6px;
+    top: 6px;
+    background-size: 15px;
+  }
+  .ui-selectmenu-button-open .ui-selectmenu-icon.ui-icon{
+    background-color: transparent;
+    transform: rotate(180deg);
+  }
+  .ui-menu .ui-menu-item{
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.06);
+    color: rgba(0, 0, 0, 0.5);
+
+    &:hover{
+      background-color: #DCDCDC;
+    }
+  }
+  .ui-menu .ui-menu-item-wrapper{
+    font-family: "RobotoLight";
+  }
+  .ui-menu .ui-state-active{
+    background-color: #DCDCDC;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "RobotoLight";
   }
 }
 .modal__box{
@@ -87,11 +144,27 @@
     min-width: 152px;
   }
 }
+.modal__boxInside{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__btnGroup{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
 
 @media (max-width: 767px) {
   .modal {
+    align-items: flex-start;
     .regFormText{
       display: none;
+    }
+    .button:not(:last-child){
+      margin-bottom: 20px;
     }
   }
   .modal__box{
@@ -107,5 +180,9 @@
     form{
       flex-direction: column;
     }
+  }
+  .modal__btnGroup{
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -220,8 +220,6 @@
 .ui-menu .ui-menu-item-wrapper {
 	position: relative;
 	padding: 0 7px;
-	height: 22px;
-	line-height: 22px;
 	&:before{
 		display: none;
 	}
@@ -386,9 +384,14 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-checkboxradio-label .ui-icon-background {
-	box-shadow: inset 1px 1px 1px #ccc;
-	border-radius: .12em;
+	width: 18px;
+	height: 18px;
+	background-color: rgba(0, 0, 0, 0.1);
 	border: none;
+	margin-right: 13px;
+}
+.ui-checkboxradio-label{
+	text-align: left;
 }
 .ui-checkboxradio-radio-label .ui-icon-background {
 	width: 16px;
@@ -704,7 +707,6 @@ button.ui-button::-moz-focus-inner {
 .ui-selectmenu-menu .ui-menu {
 	overflow: auto;
 	overflow-x: hidden;
-	padding-bottom: 1px;
 }
 .ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
 	font-size: 1em;

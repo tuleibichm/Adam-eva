@@ -30,3 +30,40 @@
         form
             input.field(type="text" placeholder="200" id="sum" name="sum")
             button.button#sendPay Add funds
+
+.modal.modalSendLetter(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title SEND LETTER
+        form
+            .modal__boxInside
+                input.field(type="text" placeholder="Your Email")
+                input.field(type="text" placeholder="Subject")
+                textarea.fieldTextarea
+                .modal__btnGroup
+                    button.button Sign up for free
+                    button.button.button-transparent + Add a picture
+
+.modal.modalSelectOptions
+    .modal__box
+        span.close
+        .modal__title SELECT OPTIONS
+        form
+            .modal__boxInside
+                span Please choose the type of letter you want to send
+                label.filter__label(for="")
+                    select.field(id="" name="")
+                        option(value="1")
+                            span 1 letter + responce translated for lady *
+                            span 10 USD
+                        option(value="2")
+                            span 1 letter + responce for lady *
+                            span 10 USD
+                label.checkbox__label(for="")
+                    input.checkbox(type="checkbox" placeholder="Subject")
+                    span Attach photo to latter - 2 USD
+                p.text-gray Please note! You can send emails absolutely free within our Matchmaking program and Romance tours. If you make a decision to take part in our programs in the future we will give back all your spending on correspondence.
+                p.text-gray We charge a fare for emails just to be sure that men have serious intentions.
+                .modal__btnGroup
+                    button.button Send Mail
+                    button.button.button-transparent Back

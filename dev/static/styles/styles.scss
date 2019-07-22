@@ -85,6 +85,10 @@ input, select{
   border: 0;
   outline: none;
 }
+textarea{
+  border: none;
+  outline: none;
+}
 b, strong{
   display: inline-block;
   margin-bottom: 12px;
@@ -184,6 +188,9 @@ h3{
   a:hover{
     color: #7B5431;
   }
+}
+.text-gray{
+  color: rgba(0, 0, 0, 0.5);
 }
 /****** end COMMON ******/
 //Модули
