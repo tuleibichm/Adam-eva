@@ -53,19 +53,11 @@
   align-items: center;
   margin-bottom: 20px;
   text-align: left;
-}
-.checkbox{
-  position: relative;
-  margin: 0;
-  opacity: 0;
-  z-index: -1;
-  &:before{
-    position: absolute;
-    content: '';
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: rgba(0, 0, 0, 0.1);
-    z-index: 1;
+  padding-left: 28px;
+  input{
+    opacity: 0;
+  }
+  label{
+    font-family: "RobotoLight";
   }
 }

@@ -69,7 +69,6 @@
 .ui-icon {
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: -.25em;
 	position: relative;
 	text-indent: -99999px;
 	overflow: hidden;
@@ -219,7 +218,8 @@
 }
 .ui-menu .ui-menu-item-wrapper {
 	position: relative;
-	padding: 0 7px;
+	padding: 0 22px;
+
 	&:before{
 		display: none;
 	}
@@ -388,10 +388,16 @@ button.ui-button::-moz-focus-inner {
 	height: 18px;
 	background-color: rgba(0, 0, 0, 0.1);
 	border: none;
-	margin-right: 13px;
+	margin-right: 10px;
+	position: absolute;
+	left: -28px;
+	background-position: center;
+	background-size: 15px;
 }
 .ui-checkboxradio-label{
 	text-align: left;
+	display: flex;
+	align-items: center;
 }
 .ui-checkboxradio-radio-label .ui-icon-background {
 	width: 16px;
@@ -411,9 +417,10 @@ button.ui-button::-moz-focus-inner {
 .ui-checkboxradio-disabled {
 	pointer-events: none;
 }
+
 .ui-datepicker {
-	width: 17em;
-	padding: .2em .2em 0;
+	width: 100%;
+	max-width: 323px;
 	display: none;
 }
 .ui-datepicker .ui-datepicker-header {
@@ -469,13 +476,17 @@ button.ui-button::-moz-focus-inner {
 	width: 100%;
 	font-size: .9em;
 	border-collapse: collapse;
-	margin: 0 0 .4em;
+}
+.ui-datepicker tr{
+	background-color: transparent;
+	box-shadow: none;
 }
 .ui-datepicker th {
 	padding: .7em .3em;
 	text-align: center;
-	font-weight: bold;
 	border: 0;
+	background-color: transparent;
+	font-size: 12px;
 }
 .ui-datepicker td {
 	border: 0;
@@ -487,6 +498,9 @@ button.ui-button::-moz-focus-inner {
 	padding: .2em;
 	text-align: right;
 	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	line-height: 22px;
 }
 .ui-datepicker .ui-datepicker-buttonpane {
 	background-image: none;
@@ -733,7 +747,7 @@ button.ui-button::-moz-focus-inner {
 	width: 120px;
 	background-color: rgba(0, 0, 0, 0.06);
 	height: 24px;
-	padding: 0 7px;
+	padding: 0 35px 0 22px;
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.5);
 	outline: none;

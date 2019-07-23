@@ -31,6 +31,13 @@ include('static/js/vendor/jquery.min.js', function (){
         $( "select.field" ).selectmenu({
             appendTo: $("select.field").parent()
         });
+
+        $( ".checkbox" ).checkboxradio();
+
+        $( ".datepicker" ).datepicker({
+            changeMonth: true
+        });
+
         $( ".accordion" ).accordion({
             heightStyle: 'content',
             collapsible: true,

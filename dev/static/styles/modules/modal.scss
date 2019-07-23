@@ -20,6 +20,7 @@
     width: 100%;
     margin-bottom: 10px;
     max-width: 100%;
+    padding: 0 22px;
   }
   .fieldTextarea{
     min-height: 160px;
@@ -31,7 +32,7 @@
     height: 35px;
     line-height: 35px;
     width: 100%;
-    margin: 20px 0;
+    margin-bottom: 10px;
   }
   .ui-selectmenu-text{
     line-height: 35px;
@@ -68,6 +69,11 @@
     background-color: #DCDCDC;
     color: rgba(0, 0, 0, 0.5);
     font-family: "RobotoLight";
+  }
+}
+.modalSelectOptions{
+  .ui-selectmenu-button.ui-button{
+    margin: 20px 0;
   }
 }
 .modal__box{
@@ -154,6 +160,25 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+  align-items: center;
+}
+
+.totalCost{
+  color: #000000;
+  font-size: 17px;
+  line-height: 21px;
+  font-family: 'RobotoRegular';
+}
+
+.dateTimePicker{
+  display: flex;
+  justify-content: space-between;
+}
+
+.datepicker{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 323px;
 }
 
 

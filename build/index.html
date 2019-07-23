@@ -322,7 +322,7 @@
           </form>
         </div>
       </div>
-      <div class="modal modalSelectOptions">
+      <div class="modal modalSelectOptions" style="display: none;">
         <div class="modal__box"><span class="close"></span>
           <div class="modal__title">SELECT OPTIONS</div>
           <form>
@@ -333,14 +333,60 @@
                   <option value="2"><span>1 letter + responce for lady *</span><span>10 USD</span></option>
                 </select>
               </label>
-              <label class="checkbox__label" for="">
-                <input class="checkbox" type="checkbox" placeholder="Subject"><span>Attach photo to latter - 2 USD</span>
-              </label>
+              <div class="checkbox__label">
+                <label for="addPhoto">Attach photo to latter - 2 USD</label>
+                <input class="checkbox" type="checkbox" id="addPhoto" placeholder="Subject">
+              </div>
               <p class="text-gray">Please note! You can send emails absolutely free within our Matchmaking program and Romance tours. If you make a decision to take part in our programs in the future we will give back all your spending on correspondence.</p>
               <p class="text-gray">We charge a fare for emails just to be sure that men have serious intentions.</p>
               <div class="modal__btnGroup">
-                <button class="button">Send Mail</button>
+                <button class="button">Send Mail</button><span class="totalCost">Total cost: 20$</span>
                 <button class="button button-transparent">Back</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalArrangeVideoDate" style="display: none;">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">ARRANGE VIDEO DATE</div>
+          <form>
+            <div class="modal__boxInside">
+              <input class="field" type="text" placeholder="Your skype">
+              <p>Your time zone</p>
+              <p class="text-gray">All times will be displayed according to your time zone</p>
+              <label class="filter__label" for="">
+                <select class="field" id="" name="">
+                  <option value="1">Ukraine</option>
+                  <option value="2">USA</option>
+                </select>
+              </label>
+              <label class="filter__label" for="">
+                <select class="field" id="" name="">
+                  <option value="1">Kiev (GMT+3:00) [DST]</option>
+                  <option value="2">New York (GMT+3:00) [DST]</option>
+                </select>
+              </label>
+              <div class="modal__btnGroup">
+                <button class="button">Send Mail</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal modalArrangeVideoDateCalendar">
+        <div class="modal__box"><span class="close"></span>
+          <div class="modal__title">ARRANGE VIDEO DATE</div>
+          <form>
+            <div class="modal__boxInside">
+              <p>Please select a convenient time</p>
+              <div class="dateTimePicker">
+                <div class="datepicker"></div>
+                <div class="timepicker"></div>
+              </div>
+              <div class="modal__btnGroup">
+                <button class="button">Send Mail</button><span class="totalCost">Video date cost: 150$</span>
+                <div></div>
               </div>
             </div>
           </form>

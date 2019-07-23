@@ -44,7 +44,7 @@
                     button.button Sign up for free
                     button.button.button-transparent + Add a picture
 
-.modal.modalSelectOptions
+.modal.modalSelectOptions(style="display: none;")
     .modal__box
         span.close
         .modal__title SELECT OPTIONS
@@ -59,11 +59,47 @@
                         option(value="2")
                             span 1 letter + responce for lady *
                             span 10 USD
-                label.checkbox__label(for="")
-                    input.checkbox(type="checkbox" placeholder="Subject")
-                    span Attach photo to latter - 2 USD
+                .checkbox__label
+                    label(for="addPhoto") Attach photo to latter - 2 USD
+                    input.checkbox(type="checkbox" id="addPhoto" placeholder="Subject")
                 p.text-gray Please note! You can send emails absolutely free within our Matchmaking program and Romance tours. If you make a decision to take part in our programs in the future we will give back all your spending on correspondence.
                 p.text-gray We charge a fare for emails just to be sure that men have serious intentions.
                 .modal__btnGroup
                     button.button Send Mail
+                    span.totalCost Total cost: 20$
                     button.button.button-transparent Back
+
+.modal.modalArrangeVideoDate(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title ARRANGE VIDEO DATE
+        form
+            .modal__boxInside
+                input.field(type="text" placeholder="Your skype")
+                p Your time zone
+                p.text-gray All times will be displayed according to your time zone
+                label.filter__label(for="")
+                    select.field(id="" name="")
+                        option(value="1") Ukraine
+                        option(value="2") USA
+                label.filter__label(for="")
+                    select.field(id="" name="")
+                        option(value="1") Kiev (GMT+3:00) [DST]
+                        option(value="2") New York (GMT+3:00) [DST]
+                .modal__btnGroup
+                    button.button Send Mail
+
+.modal.modalArrangeVideoDateCalendar()
+    .modal__box
+        span.close
+        .modal__title ARRANGE VIDEO DATE
+        form
+            .modal__boxInside
+                p Please select a convenient time
+                .dateTimePicker
+                    .datepicker
+                    .timepicker
+                .modal__btnGroup
+                    button.button Send Mail
+                    span.totalCost Video date cost: 150$
+                    div
