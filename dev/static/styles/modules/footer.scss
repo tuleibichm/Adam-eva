@@ -1,5 +1,8 @@
 .footer{
   background-color: #577C9B;
+  .container{
+    max-width: calc(1366px - 250px);
+  }
 }
 
 .footer__content{
@@ -9,7 +12,7 @@
 }
 
 .footer__info{
-  width: 30%;
+  width: 37%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,8 +27,11 @@
 }
 
 .footer__contacts{
-  column-count: 2;
+  display: flex;
+  flex-wrap: wrap;
   a{
+    width: 50%;
+    min-width: fit-content;
     padding-left: 25px;
     position: relative;
     display: flex;

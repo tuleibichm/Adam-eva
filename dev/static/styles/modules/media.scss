@@ -19,22 +19,28 @@
     flex-direction: column;
     align-items: center;
   }
+  .quickForm__formBox{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .field{
+      margin: 6px 0;
+      &:last-child{
+        margin-bottom: 37px;
+      }
+    }
+  }
 }
 @media (max-width: 767px){
   ol, ul {
-    padding: 0 0 0 15px;
+    padding: 0;
+    margin-top: 35px;
     li{
       font-family: "RobotoLight";
       line-height: 22px;
       margin-bottom: 24px;
+      padding-left: 14px;
       &:before{
-        content: '';
-        display: inline-block;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 22px;
-        width: 22px;
-        vertical-align: top;
+        background-position-x: 0;
       }
     }
   }
@@ -181,25 +187,31 @@
     font-family: "RobotoRegular";
   }
   /*-----------------quickForm Section------------------*/
-
+  .quickForm{
+    padding: 34px 0 52px;
+    background-size: auto 67%;
+    background-position-x: 13%;
+    .button{
+      margin-top: 31px;
+    }
+  }
   .quickForm__title{
     margin-bottom: 16px;
   }
   .quickForm__description{
     font-size: 20px;
     line-height: 32px;
-    margin-bottom: 36px;
+    margin-bottom: 14px;
   }
   .quickForm__wrapper{
     max-width: 500px;
   }
   .quickForm__formBox{
-    padding: 40px 20px 37px;
+    padding: 33px 20px 37px;
     flex-direction: column;
   }
   .quickForm__formBox{
     .field{
-      margin-bottom: 12px;
       &:last-child{
         margin-bottom: 37px;
       }

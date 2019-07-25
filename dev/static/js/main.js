@@ -29,7 +29,7 @@ include('static/js/vendor/jquery.min.js', function (){
         })();
 
         $( "select.field" ).selectmenu({
-            appendTo: $("select.field").parent()
+
         });
 
         $( ".checkbox" ).checkboxradio();
@@ -149,6 +149,7 @@ include('static/js/vendor/jquery.min.js', function (){
         }
         $('.video').click(videoControll);
     }
+
     if($('.modal')){
         var btnOpen = $('.modalOpen');
         btnOpen.click(function () {
@@ -177,6 +178,7 @@ include('static/js/vendor/jquery.min.js', function (){
             }
         });
     }
+
     if($('.percentLine')){
         $('.percentLine span').css("width", $('.percentLine').data("percent") + "%");
     }
