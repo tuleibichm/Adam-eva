@@ -896,6 +896,9 @@
   line-height: 20px;
   font-family: 'RobotoMedium';
 }
+.candidate__list-textPage{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /**/
 .candidateSlider__list{
   display: flex;
@@ -1683,4 +1686,38 @@
     margin-bottom: 8px;
   }
 }
+.quickPaymentButton{
+  display: flex;
+  align-items: center;
+  span{
+    font-size: 25px;
+    line-height: 45px;
+    color: #7B5431;
+    margin-right: 30px;
+    font-family: "RobotoRegular", sans-serif;
+  }
+  .button{
+    min-width: 112px;
+  }
+}
 /* end section promoInfo */
+/* gifts*/
+.gifts__item{
+  display: flex;
+  margin-bottom: 24px;
+  img{
+    float: left;
+    width: 180px;
+    height: 180px;
+    display: block;
+  }
+}
+.gifts__description{
+  margin: 0 45px;
+}
+.gifts__cost{
+  float: right;
+  height: 100%;
+  padding-top: 50px;
+}
+/* end gifts*/

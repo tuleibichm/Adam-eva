@@ -276,6 +276,14 @@
     background-color: #ffffff;
     padding: 15px;
   }
+  .quickPaymentButton{
+    width: 100%;
+    flex-direction: column;
+    span{
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 567px){
