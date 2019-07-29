@@ -13,10 +13,9 @@ module.exports = function () {
     });
 
     $.gulp.task('libsJS:build', () => {
-        return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
-            .pipe(concat('libs.min.js'))
+        return $.gulp.src([scriptsPATH.input + '/vendor/*.js'])
             .pipe(uglify())
-            .pipe($.gulp.dest(scriptsPATH.ouput));
+            .pipe($.gulp.dest(scriptsPATH.ouput + '/vendor'));
     });
 
     $.gulp.task('js:dev', () => {
@@ -35,8 +34,7 @@ module.exports = function () {
     });
 
     $.gulp.task('js:build-min', () => {
-        return $.gulp.src([scriptsPATH.input + '*.js',
-            '!' + scriptsPATH.input + 'libs.min.js'])
+        return $.gulp.src([scriptsPATH.input + '*.js'])
             .pipe(concat('main.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.ouput))
