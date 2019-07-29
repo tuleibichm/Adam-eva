@@ -4,7 +4,7 @@
   min-height: 100vh;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +27,11 @@
     margin-bottom: 23px;
     font-size: 16px;
     line-height: 1.2em;
+  }
+  .checkbox__label .fieldTextarea{
+    margin: 10px 0 0 -30px;
+    width: 100%;
+    max-width: 524px;
   }
   .ui-selectmenu-button.ui-button{
     height: 35px;
@@ -70,12 +75,62 @@
     color: rgba(0, 0, 0, 0.5);
     font-family: "RobotoLight";
   }
+  .gifts{
+    &::-webkit-scrollbar-track
+    {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &::-webkit-scrollbar
+    {
+      width: 8px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+      background-color: #D6BE9C;
+      cursor: pointer;
+    }
+    max-height: 500px;
+    padding-right: 45px;
+    overflow-y: auto;
+    .button{
+      min-width: 112px;
+    }
+  }
+  .gifts__cost{
+    b{
+      margin: 0 auto 12px;
+      text-align: center;
+      display: block;
+    }
+  }
+  .gifts__description{
+    margin: 0 35px;
+  }
+  .gifts__item{
+    margin-bottom: 20px;
+  }
 }
 .modalSelectOptions{
   .ui-selectmenu-button.ui-button{
     margin: 20px 0;
   }
 }
+.modalSendGift{
+  .modal__box{
+    max-width: 968px;
+    padding-bottom: 100px;
+  }
+}
+
+.modalAdditionalOptions{
+  .modal__box{
+    padding-bottom: 100px;
+  }
+
+}
+
 .modal__box{
   display: flex;
   justify-content: space-between;
@@ -161,6 +216,16 @@
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
+}
+
+.modal__btnGroup-absolute{
+  position: absolute;
+  right: 70px;
+  bottom: 35px;
+  max-width: 300px;
+  .button{
+    min-width: 138px;
+  }
 }
 
 .totalCost{

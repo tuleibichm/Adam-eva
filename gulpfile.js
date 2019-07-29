@@ -20,9 +20,7 @@ $.gulp.task('dev', $.gulp.series(
         'fonts',
         'styles:dev',
         'img:dev',
-        'libsJS:dev',
         'js:dev',
-        'svg'
     )
 ));
 

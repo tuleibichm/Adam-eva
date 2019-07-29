@@ -103,3 +103,70 @@
                     button.button Send Mail
                     span.totalCost Video date cost: 150$
                     div
+.modal.modalSendGift(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title SEND A GIFT
+        form
+            .modal__boxInside
+                p Choose the gift you want to send to <Name>
+                .gifts
+                    .gifts__item
+                        img(src="static/images/media/gift-1.png")
+                        .gifts__description
+                            p
+                                strong Passionate Red Roses
+                            p Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)
+                        .gifts__cost
+                            b 7$
+                            button.button Send
+                    .gifts__item
+                        img(src="static/images/media/gift-1.png")
+                        .gifts__description
+                            p
+                                strong Passionate Red Roses
+                            p Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)
+                        .gifts__cost
+                            b 7$
+                            button.button Send
+                    .gifts__item
+                        img(src="static/images/media/gift-1.png")
+                        .gifts__description
+                            p
+                                strong Passionate Red Roses
+                            p Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)
+                        .gifts__cost
+                            b 7$
+                            button.button Send
+.modal.modalAdditionalOptions(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title Additional options
+        form
+            .modal__boxInside
+                p Select additional options
+                .gifts
+                    .gifts__item
+                        img(src="static/images/media/gift-1.png")
+                        .gifts__description
+                            p
+                                strong Passionate Red Roses
+                            p Red roses on long stems — what will describe your feelings better? This bouquet is laconic but elegant. It is appropriate in any situation! The minimum amount is 3 roses. Choose the uneven amount only. (because of local cultural nuances)
+                        .gifts__cost
+                            b 7$
+                    .checkbox__label
+                        label(for="addMessage") Add message to your gift
+                        input.checkbox(type="checkbox" id="addMessage" placeholder="Subject")
+                        textarea.fieldTextarea
+                    .checkbox__label
+                        label(for="selectDay") Sellect specific day when we delver your present to lady
+                        input.checkbox(type="checkbox" id="selectDay" placeholder="Subject")
+                        .dateTimePicker
+                            .datepicker
+                            .timepicker
+                    .checkbox__label
+                        label(for="addVideo") Video of lady at delivery  -  29 USD
+                        input.checkbox(type="checkbox" id="addVideo" placeholder="Subject")
+                .modal__btnGroup.modal__btnGroup-absolute
+                    button.button Continue
+                    span.totalCost Total cost: 20$

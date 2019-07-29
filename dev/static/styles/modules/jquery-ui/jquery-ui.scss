@@ -417,6 +417,17 @@ button.ui-button::-moz-focus-inner {
 .ui-checkboxradio-disabled {
 	pointer-events: none;
 }
+.ui-state-checked{
+	&:after{
+		position: absolute;
+		content: '';
+		width: 12px;
+		height: 12px;
+		top: 3px;
+		left: 3px;
+		background-color: #C99445;
+	}
+}
 
 .ui-datepicker {
 	width: 100%;
