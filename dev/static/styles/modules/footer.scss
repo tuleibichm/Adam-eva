@@ -1,13 +1,12 @@
 .footer{
   background-color: #577C9B;
-  .container{
-    max-width: calc(1366px - 250px);
-  }
 }
 
 .footer__content{
-  padding: 34px 0;
+  padding: 36px 0 59px;
   display: flex;
+  max-width: calc(1366px - 250px);
+  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -30,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   a{
-    width: 50%;
+    width: 45%;
     min-width: fit-content;
     padding-left: 25px;
     position: relative;
@@ -99,7 +98,8 @@
   font-family: "RobotoMedium";
   font-size: 18px;
   border-bottom: 1px solid #ffffff;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
 }
 .footer__nav_list{
   column-count: 2;

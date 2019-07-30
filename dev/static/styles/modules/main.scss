@@ -2,7 +2,7 @@
 .cover{
   position: relative;
   display: flex;
-  height: 570px;
+  height: 573px;
   background-size: cover;
   background-position: center;
 }
@@ -30,16 +30,15 @@
   max-width: 328px;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 34px;
+  margin-bottom: 45px;
 }
 /* end section cover */
 /* section features */
 .features{
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 .features__list{
   display: flex;
-  padding-top: 9px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -47,17 +46,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 170px;
   position: relative;
   span{
-    width: 110px;
-    height: 110px;
+    width: 115px;
+    height: 115px;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 30px;
     background-size: contain;
   }
   p{
+    font-family: "RobotoRegular";
     text-align: center;
     font-size: 17px;
     line-height: 21px;
@@ -360,7 +360,7 @@
 .quickForm__wrapper{
   background-color: #ffffff;
   width: 100%;
-  max-width: 972px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 .quickForm__formBox{
@@ -376,7 +376,7 @@
 /* end section quickForm */
 /* section regForm */
 .regFormWrapper{
-  padding: 58px 0 48px;
+  padding: 48px 0 49px;
   background-size: cover;
   background-image: url("../images/bg_regFormWrapper.jpg");
   .container{
@@ -392,6 +392,7 @@
     margin: 0;
   }
   li{
+    font-family: "RobotoRegular";
     font-size: 18px;
     line-height: 21px;
     color: #ffffff;
@@ -412,7 +413,7 @@
   color: #ffffff;
   font-size: 30px;
   line-height: 38px;
-  margin-bottom: 62px;
+  margin-bottom: 59px;
   font-family: "RobotoMedium";
 }
 .regFormText__description{
@@ -424,8 +425,9 @@
 }
 .regForm{
   width: 100%;
-  max-width: 310px;
-  margin-top: -14px;
+  max-width: 296px;
+  margin-top: -4px;
+  transform: translate(-52px, 0);
   .field{
     font-size: 16px;
 
@@ -506,6 +508,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-top: -6px;
 }
 .videoTestimonial__item{
   width: calc((100% - 18px) / 2);
@@ -563,7 +566,7 @@
   background-image: url("../images/Love_stories.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 44px;
+  padding-bottom: 48px;
   .section__title{
     padding: 25px 0 42px;
   }
@@ -633,7 +636,7 @@
 }
 .tariffs__list{
   position: relative;
-  margin: -12px 0 -195px;
+  margin: -2px 0 -201px;
   display: flex;
   justify-content: space-between;
 }
@@ -684,7 +687,7 @@
   line-height: 23px;
   text-align: center;
   max-width: 306px;
-  margin: 0 auto 32px;
+  margin: 0 auto 29px;
 }
 .tariffs__descripion{
   max-width: 306px;
@@ -700,7 +703,8 @@
   width: 100%;
   flex-grow: 1;
   li{
-    margin-bottom: 12px;
+    margin-bottom: 18px;
+    line-height: 20px;
   }
 }
 .tariffs .button{
@@ -731,11 +735,11 @@
 .simpleInfo{
   background-position: center;
   background-size: cover;
-  min-height: 825px;
+  min-height: 797px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 80px 0;
+  padding: 59px 0;
   .container{
     display: flex;
     justify-content: flex-end;
@@ -781,11 +785,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 443px;
+  max-width: 484px;
   width: 100%;
   min-height: 369px;
   line-height: 30px;
   flex-direction: column;
+  padding: 0 30px;
 }
 .contacts__title{
   font-family: "RobotoMedium";
@@ -793,8 +798,15 @@
   line-height: 36px;
   color: #7b5431;
   width: 100%;
-  max-width: 256px;
+  max-width: 347px;
   margin-bottom: 13px;
+}
+.contacts__data{
+  max-width: 347px;
+  width: 100%;
+  span{
+    font-family: "RobotoLight";
+  }
 }
 /* end section contacts */
 .filter{
@@ -1528,21 +1540,26 @@
 .forMoreText{
   overflow: hidden;
   position: relative;
-  margin-bottom: 70px;
+  margin: 70px auto 113px;
+  text-align: justify;
+  max-width: 1020px;
+  p{
+    line-height: 28px;
+  }
   &.fullHeight{
     height: auto!important;
   }
 }
 .button-more{
   position: absolute;
-  bottom: 35px;
+  bottom: -75px;
   left: 50%;
   transform: translate(-50%);
-  min-width: 50px;
+  min-width: 64px;
   height: 50px;
   box-shadow: none;
   transition: all 0.3s;
-  background-size: 35px;
+  background-size: 45px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -1551,7 +1568,6 @@
   }
   &:hover{
     background-color: transparent;
-    bottom: 32px;
   }
 }
 
