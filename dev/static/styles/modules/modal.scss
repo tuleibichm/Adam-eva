@@ -111,12 +111,36 @@
   .gifts__item{
     margin-bottom: 20px;
   }
+  .video__view{
+    min-height: 255px;
+  }
 }
+
+.modalNotEnoughMoney{
+  .modal__box{
+    max-width: 636px;
+  }
+}
+
+.modalSendLetter, .modalConfirmAction{
+  .modal__box{
+    max-width: 634px;
+  }
+}
+
 .modalSelectOptions{
   .ui-selectmenu-button.ui-button{
     margin: 20px 0;
   }
 }
+
+.modalBookaCall{
+  .modal__box{
+    padding: 25px 43px 35px;
+    max-width: 487px;
+  }
+}
+
 .modalSendGift{
   .modal__box{
     max-width: 968px;
