@@ -1226,6 +1226,7 @@
   align-items: center;
   color: rgba(0, 0, 0, 0.9);
   position: relative;
+  margin-bottom: 10px;
   &:before{
     content: '';
     height: 40px;
@@ -1285,17 +1286,13 @@
   line-height: 16px;
   padding: 0 10px;
 }
-.aboutProfile__text{
-  font-family: 'RobotoLight';
 
-}
 .aboutProfile__button{
   font-family: 'RobotoLight';
   color: #577C9B;
 }
 .aboutProfile__strength{
   span{
-    font-family: 'RobotoLight';
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 8px;
@@ -1335,11 +1332,10 @@
 }
 .profile__content, .profile__contentBox{
   background-color: #ffffff;
-  padding: 30px 32px;
+  padding: 30px 50px;
   display: flex;
   position: relative;
   justify-content: space-between;
-  min-height: 100%;
 }
 .candidate__list-column{
   flex-direction: column;
@@ -1376,7 +1372,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 584px;
+  max-width: 514px;
   padding-left: 10px;
 }
 .profile__infoItem{
@@ -1388,7 +1384,7 @@
     font-size: 13px;
     line-height: 30px;
     color: #284269;
-    font-family: 'RobotoRegular';
+    font-family: 'RobotoMedium';
   }
   .controll__group{
     width: 100%;
@@ -1408,8 +1404,8 @@
   font-size: 14px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 19px;
+  right: 33px;
   cursor: pointer;
   text-align: right;
   line-height: 45px;

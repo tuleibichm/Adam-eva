@@ -71,6 +71,19 @@ nav{
   }
 }
 .dropdown{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12px;
+    height: 10px;
+    top: 16px;
+    right: -20px;
+  }
+
   &:hover{
     .dropdown__list{
       display: flex;
@@ -130,6 +143,24 @@ nav{
     &:hover{
       color: #E3D2BA;
     }
+  }
+}
+.header__account{
+  display: flex;
+  align-items: center;
+  .pictures{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+    img{
+      max-width: 100%;
+    }
+  }
+  .name{
+    color: #ffffff;
+    font-size: 16px;
   }
 }
 @media (max-width: 1365px){
