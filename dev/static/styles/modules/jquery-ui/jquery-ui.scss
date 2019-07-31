@@ -747,27 +747,27 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-selectmenu-text {
 	display: block;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 30px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
 .ui-selectmenu-button.ui-button {
 	text-align: left;
 	white-space: nowrap;
-	width: 120px;
+	width: 130px;
 	background-color: rgba(0, 0, 0, 0.06);
-	height: 24px;
-	padding: 0 35px 0 22px;
-	font-size: 14px;
+	height: 30px;
+	padding: 0 35px 0 8px;
+	font-size: 16px;
 	color: rgba(0, 0, 0, 0.5);
 	outline: none;
 }
 .ui-selectmenu-icon.ui-icon {
 	float: right;
 	margin-top: 0;
-	width: 24px;
-	height: 24px;
+	width: 30px;
+	height: 30px;
 	background-color: rgba(0, 0, 0, 0.06);
 	position: absolute;
 	right: 0;
@@ -787,10 +787,10 @@ button.ui-button::-moz-focus-inner {
 	width: 5px;
 	height: 20px;
 	background-color: #577C9B;
-	cursor: default;
 	-ms-touch-action: none;
 	touch-action: none;
 	outline: none;
+	cursor: pointer;
 }
 .ui-slider .ui-slider-range {
 	position: absolute;
@@ -810,6 +810,8 @@ button.ui-button::-moz-focus-inner {
 
 .ui-slider-horizontal {
 	height: 6px;
+	width: 120px;
+	margin: 12px 0 12px 25px;
 	background-color: rgba(0, 0, 0, 0.1);
 }
 .ui-slider-horizontal .ui-slider-handle {
@@ -833,8 +835,8 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-fromAge{
 	position: absolute;
-	left: -25px;
 	top: -3px;
+	left: -25px;
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.5);
 }

@@ -811,33 +811,29 @@
 /* end section contacts */
 .filter{
   .field{
-    height: 24px;
-    font-size: 14px;
-    padding: 3px 24px 3px 7px;
-    line-height: 16px;
+    height: 30px;
+    font-size: 16px;
+    padding: 6px 30px 6px 8px;
+    line-height: 19px;
     color: #7C7A7A;
+    max-width: 130px;
   }
 }
 .filter__box{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 37px;
+  padding: 12px 37px 19px;
   width: 100%;
-  min-height: 85px;
+  min-height: 94px;
   background-color: #ffffff;
-  margin-bottom: 49px;
+  margin-bottom: 40px;
   box-shadow: 8px 8px 45px rgba(208, 208, 208, 0.6);
-  border-radius: 10px;
 }
 .filter__fieldGroup{
-  max-width: 119px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  &:last-child{
-    max-width: 273px;
-  }
   >span{
     font-size: 16px;
     line-height: 19px;
@@ -846,11 +842,16 @@
     display: inline-block;
   }
 }
+.filter__fieldGroup-search{
+  .field{
+    max-width: 273px;
+  }
+}
 .filter__label{
   position: relative;
   .iconSearch{
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
@@ -986,12 +987,14 @@
   background: rgba(0, 0, 0, 0.04);
   width: fit-content;
   padding: 0 40px;
+  margin-top: 47px;
 }
 .pagination__item{
   color: #000000;
   display: block;
   width: 34px;
   height: 34px;
+  font-size: 18px;
   background-position: center;
   background-repeat: no-repeat;
   line-height: 34px;

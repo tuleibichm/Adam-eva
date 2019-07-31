@@ -15,9 +15,9 @@ block content
                         .filter__fieldGroup
                             span Age:
                             label.filter__label
-                                .ui-fromAge
                                 .ageSlider(data-min="18" data-max="56")
-                                .ui-toAge
+                                    .ui-fromAge
+                                    .ui-toAge
                         .filter__fieldGroup
                             span Children:
                             label.filter__label(for="children")
@@ -37,7 +37,7 @@ block content
                                 select.field(id="city" name="city")
                                     option(value="Yes") Yes
                                     option(value="No") No
-                        .filter__fieldGroup
+                        .filter__fieldGroup.filter__fieldGroup-search
                             span Search by Name, ID
                             label.filter__label(for="searchField")
                                 input.field(type="text" id="searchField" name="searchField")
@@ -91,7 +91,7 @@ block content
                     footer
                         span 30 y.o
                         span ID: sn0807
-            .button.button-white Show more ladies
+            a.viewAllButton Show more ladies
             .pagination
                .pagination__list
                    a.pagination__item.prevArrow.prevArrow-disable(href="#")
@@ -102,10 +102,10 @@ block content
                    a.pagination__item(href="#") ...
                    a.pagination__item(href="#") 5
                    a.pagination__item.nextArrow(href="#")
-    section.quickForm(style="background-image: url('static/images/BG_girl_in_blue_dress.jpg');')")
+    section.quickForm(style="background-image: url('static/images/quickForm-2.jpg');')")
         .container
-            .quickForm__title Take the first step to new relationships now. Get a personal consultation with an expert matchmaker on Skype absolutely free!
-            p.quickForm__description We will gladly help you to choose the best way to search for your second half
+            .quickForm__title Book an expert call to learn more about our programs! Up to 20% of girls' profiles that are in our database are posted on our website.
+            p.quickForm__description All other profiles are available as part of our matchmaking program and romance tours
             .quickForm__wrapper
                 form
                     .quickForm__formBox

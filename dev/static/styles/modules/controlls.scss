@@ -14,14 +14,14 @@
   }
 }
 .field{
-  background-color: #F1F1F1;
+  background-color: rgba(0, 0, 0, 0.06);
   color: #9C9C9C;
   padding: 0 10px;
-  height: 22px;
+  height: 30px;
   max-width: 330px;
   width: 100%;
-  line-height: 15px;
-  font-size: 13px;
+  line-height: 22px;
+  font-size: 16px;
   position: relative;
   font-family: "RobotoLight";
 }
@@ -60,5 +60,21 @@
   }
   label{
     font-family: "RobotoLight";
+  }
+}
+.viewAllButton{
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+  width: fit-content;
+  display: block;
+  color: #C9A876;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "RobotoLight";
+  border-bottom: 1px dashed #C9A876;
+  &:hover{
+    color: #7b5431;
+    border-color: #7b5431;
   }
 }
