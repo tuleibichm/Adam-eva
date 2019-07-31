@@ -525,7 +525,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 375px;
+  background-color: #E3E3E3;
   &:hover{
     .video__controlls{
       opacity: 1;
@@ -546,6 +546,17 @@
   border-radius: 50%;
   cursor: pointer;
   background-size: 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button-modalVideo{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  background-size: 20px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1019,11 +1030,11 @@
   padding-bottom: 70px;
 }
 .breadcrumbs{
-  padding: 50px 0;
+  padding: 48px 0;
   a{
-    color: #7B5431;
-    font-size: 20px;
-    line-height: 23px;
+    color: #915C00;
+    font-size: 18px;
+    line-height: 21px;
     &:not(:last-child):after{
       content: ">";
       display: inline-block;
@@ -1037,21 +1048,21 @@
   justify-content: space-between;
 }
 .candidateProfile__photo{
-  max-width: 312px;
+  max-width: 295px;
   width: 100%;
   margin-right: 10px;
   img{
     width: 100%;
-    margin: 0 auto 24px;
+    margin: 0 auto 30px;
     display: block;
   }
 }
 .thumbPhoto{
   display: grid;
-  grid-template-columns: 96px 96px 96px;
-  grid-template-rows: 96px 96px;
-  grid-gap: 14px 12px;
-  margin-bottom: 40px;
+  grid-template-columns: 88px 88px 88px;
+  grid-template-rows: 88px 88px;
+  grid-gap: 14px 16px;
+  margin-bottom: 20px;
   .thumbPhoto__item{
     cursor: pointer;
     overflow: hidden;
@@ -1079,7 +1090,9 @@
   height: 36px;
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  &:not(:last-child){
+    margin-bottom: 18px;
+  }
   box-shadow: 7px 7px 15px rgba(215, 179, 124, 0.4);
   &:before{
     content: '';
@@ -1156,11 +1169,32 @@
 }
 .candidateProfile__aboutText{
   width: 100%;
-  max-width: 789px;
-  padding: 30px;
-  background-color: #F0F0F0;
+  padding: 30px 35px;
+  background-color: #ffffff;
+  &:first-child{
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -38px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 38px 34px 0;
+      border-color: transparent #ffffff transparent transparent;
+    }
+  }
   &:not(:last-child){
     margin-bottom: 40px;
+  }
+  p, span{
+    font-size: 15px;
+  }
+  strong{
+    font-size: 15px;
+    font-family: 'RobotoMedium';
   }
 }
 .myProfile{
