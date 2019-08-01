@@ -170,3 +170,9 @@
 .decimalFeatures__img {
   background-image: url("../images/decimalFeatures.png");
 }
+
+@media(max-width: 767px){
+  .modal .close{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.61665 0L0.807129 1.80952L8.59405 9.59645L1.00003 17.1905L2.80955 19L10.4036 11.406L17.9976 19L19.8071 17.1905L12.2131 9.59645L20 1.80952L18.1905 0L10.4036 7.78693L2.61665 0Z' fill='white'/%3E%3C/svg%3E");
+  }
+}

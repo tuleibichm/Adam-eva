@@ -433,10 +433,11 @@ button.ui-button::-moz-focus-inner {
 	width: 100%;
 	max-width: 323px;
 	display: none;
+	padding: 32px 20px 20px;
 }
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
-	padding: .2em 0;
+	margin-bottom: 13px;
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
@@ -471,9 +472,12 @@ button.ui-button::-moz-focus-inner {
 	margin-top: -8px;
 }
 .ui-datepicker .ui-datepicker-title {
-	margin: 0 2.3em;
-	line-height: 1.8em;
+	line-height: 21px;
 	text-align: center;
+}
+.ui-datepicker-month{
+	font-size: 17px;
+	color: rgba(0, 0, 0, 0.9);
 }
 .ui-datepicker .ui-datepicker-title select {
 	font-size: 1em;
@@ -493,25 +497,47 @@ button.ui-button::-moz-focus-inner {
 	box-shadow: none;
 }
 .ui-datepicker th {
-	padding: .7em .3em;
 	text-align: center;
 	border: 0;
 	background-color: transparent;
-	font-size: 12px;
+	margin-bottom: 8px;
+	span{
+		font-size: 12px;
+		font-family: "RobotoLight";
+		color: rgba(0, 0, 0, 0.9);
+	}
 }
 .ui-datepicker td {
 	border: 0;
-	padding: 1px;
+	padding: 0;
+	height: 35px;
 }
 .ui-datepicker td span,
 .ui-datepicker td a {
 	display: block;
-	padding: .2em;
-	text-align: right;
+	padding: 0;
+	text-align: center;
+	width: 32px;
+	height: 20px;
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 12px;
 	line-height: 22px;
+	margin: 0 auto;
+}
+
+.ui-datepicker .ui-state-default{
+	cursor: pointer;
+	border-radius: 20px;
+	font-family: "RobotoLight";
+	&:hover{
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}
+.ui-datepicker .ui-state-active{
+	background-color: #C99445;
+	color: #ffffff;
+	font-family: "RobotoMedium";
 }
 .ui-datepicker .ui-datepicker-buttonpane {
 	background-image: none;
@@ -747,7 +773,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-selectmenu-text {
 	display: block;
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 30px;
 	overflow: hidden;
 	text-overflow: ellipsis;

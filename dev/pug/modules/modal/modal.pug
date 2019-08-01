@@ -26,7 +26,8 @@
     .modal__box
         span.close
         .modal__title Please top up your balance to proceed
-        label Account Balance:	$15.00
+        p
+            b Account Balance:	$15.00
         form
             .modal__boxInside
                 input.field(type="text" placeholder="200" id="sum" name="sum")
@@ -51,9 +52,9 @@
         .modal__title SELECT OPTIONS
         form
             .modal__boxInside
-                span Please choose the type of letter you want to send
+                p Please choose the type of letter you want to send
                 label.filter__label(for="")
-                    select.field(id="" name="")
+                    select.field(id="select-options" name="")
                         option(value="1")
                             span 1 letter + responce translated for lady *
                             span 10 USD
@@ -80,17 +81,17 @@
                 p Your time zone
                 p.text-gray All times will be displayed according to your time zone
                 label.filter__label(for="")
-                    select.field(id="" name="")
+                    select.field(id="select-city" name="")
                         option(value="1") Ukraine
                         option(value="2") USA
                 label.filter__label(for="")
-                    select.field(id="" name="")
+                    select.field(id="select-country" name="")
                         option(value="1") Kiev (GMT+3:00) [DST]
                         option(value="2") New York (GMT+3:00) [DST]
                 .modal__btnGroup
                     button.button Send Mail
 
-.modal.modalArrangeVideoDateCalendar(style="display: none;")
+.modal.modalArrangeVideoDateCalendar()
     .modal__box
         span.close
         .modal__title ARRANGE VIDEO DATE
@@ -100,8 +101,39 @@
                 .dateTimePicker
                     .datepicker
                     .timepicker
+                        .timepicker__title Select time
+                        .timepicker__box
+                            input(type="radio" id="9:00" name="timepicker")
+                            label(for="9:00") 9:00
+
+                            input(type="radio" id="9:30" name="timepicker")
+                            label(for="9:30") 9:30
+
+                            input(type="radio" id="10:00" name="timepicker")
+                            label(for="10:00") 10:00
+
+                            input(type="radio" id="10:30" name="timepicker")
+                            label(for="10:30") 10:30
+
+                            input(type="radio" id="11:00" name="timepicker")
+                            label(for="11:00") 11:00
+
+                            input(type="radio" id="11:30" name="timepicker")
+                            label(for="11:30") 11:30
+
+                            input(type="radio" id="12:00" name="timepicker")
+                            label(for="12:00") 12:00
+
+                            input(type="radio" id="12:30" name="timepicker")
+                            label(for="12:30") 12:30
+
+                            input(type="radio" id="13:00" name="timepicker")
+                            label(for="13:00") 13:00
+
+                            input(type="radio" id="13:30" name="timepicker")
+                            label(for="13:30") 13:30
                 .modal__btnGroup
-                    button.button Send Mail
+                    button.button Continue
                     span.totalCost Video date cost: 150$
                     div
 .modal.modalSendGift(style="display: none;")

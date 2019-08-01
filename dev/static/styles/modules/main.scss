@@ -1389,9 +1389,17 @@
   .controll__group{
     width: 100%;
     max-width: 330px;
+    margin-bottom: 15px;
+    justify-content: space-between;
     .field:nth-child(2){
       margin: 0 15px;
     }
+    .ui-selectmenu-button:nth-child(3){
+      margin: 0 15px;
+    }
+  }
+  .field{
+    margin-bottom: 15px;
   }
 }
 .profileValue{

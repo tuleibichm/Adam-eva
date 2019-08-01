@@ -9,7 +9,8 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,0.5);
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   .regForm{
     margin-top: 0;
   }
@@ -24,7 +25,7 @@
   }
   .fieldTextarea{
     min-height: 160px;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.2em;
   }
@@ -38,6 +39,10 @@
     line-height: 35px;
     width: 100%;
     margin-bottom: 10px;
+    padding-left: 22px;
+  }
+  .ui-selectmenu-text{
+    font-family: "RobotoLight";
   }
   .ui-selectmenu-text{
     line-height: 35px;
@@ -48,8 +53,8 @@
   }
   .ui-selectmenu-icon.ui-icon{
     background-color: transparent;
-    right: 6px;
-    top: 6px;
+    height: 35px;
+    width: 35px;
     background-size: 15px;
   }
   .ui-selectmenu-button-open .ui-selectmenu-icon.ui-icon{
@@ -57,7 +62,7 @@
     transform: rotate(180deg);
   }
   .ui-menu .ui-menu-item{
-    height: 35px;
+    min-height: 35px;
     line-height: 35px;
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.06);
@@ -120,8 +125,25 @@
   .modal__box{
     max-width: 636px;
   }
+  .modal__boxInside{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    .field{
+      max-width: 297px;
+      margin-bottom: 0;
+    }
+  }
 }
 
+.modalSelectOptions{
+  .modal__box{
+    max-width: 634px;
+    padding: 25px 55px 35px;
+  }
+}
 .modalSendLetter, .modalConfirmAction{
   .modal__box{
     max-width: 634px;
@@ -130,11 +152,11 @@
 
 .modalSelectOptions{
   .ui-selectmenu-button.ui-button{
-    margin: 20px 0;
+    margin-bottom: 20px;
   }
 }
 
-.modalBookaCall{
+.modalArrangeVideoDate, .modalBookaCall{
   .modal__box{
     padding: 25px 43px 35px;
     max-width: 487px;
@@ -155,6 +177,12 @@
 
 }
 
+.modalArrangeVideoDateCalendar{
+  .modal__box{
+    max-width: 552px;
+  }
+}
+
 .modal__box{
   display: flex;
   justify-content: space-between;
@@ -166,6 +194,9 @@
   padding: 25px 70px 35px;
   &.modal__box-row{
     flex-direction: row;
+  }
+  p{
+    font-family: "RobotoLight";
   }
 }
 .close{
@@ -240,6 +271,7 @@
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
+  margin-top: 13px;
 }
 
 .modal__btnGroup-absolute{
@@ -262,6 +294,7 @@
 .dateTimePicker{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .datepicker{
@@ -269,7 +302,64 @@
   width: 100%;
   max-width: 323px;
 }
+.timepicker{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 0;
+  max-width: 101px;
+  width: 100%;
+  padding: 55px 20px 40px 15px;
+}
+.timepicker__title{
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.timepicker__box{
+  max-height: 163px;
+  overflow-y: auto;
+  &::-webkit-scrollbar-track
+  {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  &::-webkit-scrollbar
+  {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 
+  &::-webkit-scrollbar-thumb
+  {
+    background-color: #D6BE9C;
+    cursor: pointer;
+  }
+  >input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    &:checked + label{
+      background-color: #C99445;
+      color: #ffffff;
+      font-family: 'RobotoRegular';
+    }
+  }
+  >label{
+    font-size: 12px;
+    line-height: 22px;
+    min-width: 42px;
+    max-width: 42px;
+    font-family: "RobotoLight";
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    margin-bottom: 2px;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
 
 @media (max-width: 767px) {
   .modal {
@@ -280,23 +370,88 @@
     .button:not(:last-child){
       margin-bottom: 20px;
     }
+    .close{
+      top: -65px;
+      right: -28px;
+    }
+    .field{
+      padding: 0 9px;
+    }
   }
-  .modal__box{
+  .modal .modal__box{
+    top: 100px;
     padding-left: 38px;
     padding-right: 38px;
     justify-content: center;
+    max-width: 296px;
     background-image: none!important;
   }
   .successMessage{
     bottom: 0;
   }
   .modalNotEnoughMoney{
-    form{
+    .modal__boxInside{
       flex-direction: column;
+      .field{
+        margin-bottom: 23px;
+      }
     }
   }
   .modal__btnGroup{
     flex-direction: column;
     align-items: center;
+  }
+  .totalCost{
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .modalArrangeVideoDateCalendar{
+    .modal__title, .modal__boxInside p{
+      padding: 0 38px;
+    }
+    .modal__box{
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
+  }
+  .dateTimePicker{
+    flex-direction: column;
+  }
+  .datepicker{
+    border-left: 0;
+    border-right: 0;
+  }
+  .timepicker{
+    max-width: 100%;
+    padding: 25px 33px 20px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+  .timepicker__box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    &::-webkit-scrollbar-track
+    {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &::-webkit-scrollbar
+    {
+      width: 8px;
+      height: 8px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+      background-color: #D6BE9C;
+      cursor: pointer;
+    }
+    >label{
+      margin: 0 2px 9px;
+    }
   }
 }
