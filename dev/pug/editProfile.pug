@@ -25,9 +25,9 @@ block content
                     include modules/sidebar/sidebar
                 .profile
                     .tabs
-                        a.tabs__item.tabs__item-active(href="#") Main info
+                        a.tabs__item(href="#") Main info
                         a.tabs__item(href="#") Personal Details
-                        a.tabs__item(href="#") Ideal lady
+                        a.tabs__item.tabs__item-active(href="#") Ideal lady
                     form
                         .profile__content
                             .profile__photoBox
@@ -47,7 +47,7 @@ block content
                                     input.field(type="text")
                                 .profile__infoItem
                                     label Date of birth:
-                                    .controll__group
+                                    .controll__group.controll__group-birth
                                         select.field(name="")
                                             option(value="1") 01
                                             option(value="2") 02
@@ -91,4 +91,4 @@ block content
                                     label
                                     .profile__buttonWrapper
                                         button.button Save
-                                        button.button.button-red Cancel
+                                        button.button.button-tuscany Cancel

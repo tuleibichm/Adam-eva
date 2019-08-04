@@ -22,42 +22,65 @@ block content
         .container
             .myProfile__box
                 include modules/sidebar/sidebar
-                .profile
+                .profile.profileEditIdealLady
                     .tabs
                         a.tabs__item(href="#") Main info
-                        a.tabs__item.tabs__item-active(href="#") Personal Details
-                        a.tabs__item(href="#") Ideal lady
+                        a.tabs__item(href="#") Personal Details
+                        a.tabs__item.tabs__item-active(href="#") Ideal lady
                     .profile__content
                         .profile__DetailsList
                             .profile__DetailsItem
                                 label.profileKey Her age:
-                                input.field(type="text")
+                                div.flex
+                                    .controll__group.controll__group-fromTo
+                                        span.fromTo__label From:
+                                        select.field(name="age")
+                                            option(value="150") 150
+                                            option(value="170") 170
+                                    .controll__group.controll__group-fromTo
+                                        span.fromTo__label To:
+                                        select.field(name="age")
+                                            option(value="150") 150
+                                            option(value="170") 170
                             .profile__DetailsItem
                                 label.profileKey Her height:
-                                input.field(type="text")
+                                div.flex
+                                    .controll__group.controll__group-fromTo
+                                        span.fromTo__label From:
+                                        select.field(name="age")
+                                            option(value="150") 150
+                                            option(value="170") 170
+                                    .controll__group.controll__group-fromTo
+                                        span.fromTo__label To:
+                                        select.field(name="age")
+                                            option(value="150") 150
+                                            option(value="170") 170
                             .profile__DetailsItem
                                 label.profileKey Her hair color:
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey Her eyes color:
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(name="age")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey Her children:
                                 .controll__group
-                                    select.field(type="range" name="age")
+                                    select.field(name="age")
                                         option(value="Yes") Yes
                                         option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey Describe the lady’s personality that suit you best:
-                                .controll__group
-                                    select.field(type="range" name="age")
-                                        option(value="Yes") Yes
-                                        option(value="No") No
+                                textarea.fieldTextarea
                             .profile__DetailsItem
                                 label.profileKey Other important criteria for your match:
-                                input.field(type="text")
+                                textarea.fieldTextarea
                             .profile__DetailsItem
                                 label.profileKey
                                 .profile__buttonWrapper
                                     button.button Save
-                                    button.button.button-red Cancel
+                                    button.button.button-tuscany Cancel

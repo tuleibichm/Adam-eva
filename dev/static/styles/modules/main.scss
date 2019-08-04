@@ -1385,10 +1385,13 @@
   width: 100%;
   max-width: 514px;
   padding-left: 10px;
+  .ui-selectmenu-button.ui-button{
+    width: 100%;
+  }
 }
 .profile__infoItem{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   label, .profileKey{
     width: 155px;
     display: inline-block;
@@ -1409,8 +1412,16 @@
       margin: 0 15px;
     }
   }
+  .controll__group-birth{
+    .field, .ui-selectmenu-button.ui-button{
+      width: 89px;
+    }
+  }
   .field{
     margin-bottom: 15px;
+  }
+  .ui-selectmenu-icon.ui-icon{
+    background-color: transparent;
   }
 }
 .profileValue{
@@ -1454,6 +1465,7 @@
 }
 .profile__DetailsItem{
   display: flex;
+  justify-content: space-between;
   margin-bottom: 15px;
   label, .profileKey{
     display: inline-block;
@@ -1472,9 +1484,25 @@
       margin: 0 15px;
     }
   }
+  .controll__group-fromTo{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: space-between;
+    .fromTo__label{
+      font-size: 13px;
+      line-height: 30px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-right: 19px;
+      margin-left: 30px;
+    }
+    .ui-selectmenu-button.ui-button{
+      width: 110px;
+    }
+  }
   .profileValue{
     padding-left: 15px;
-    max-width: 307px;
+    width: 100%;
   }
   .ui-selectmenu-button.ui-button{
     max-width: 100%;
@@ -1488,6 +1516,15 @@
     min-height: 97px;
     max-width: 330px;
   }
+}
+.profileEditIdealLady{
+  .field, .fieldTextarea, .profile__DetailsItem .controll__group, .profile__buttonWrapper{
+    max-width: 399px;
+  }
+  .profile__DetailsItem label, .profile__DetailsItem .profileKey{
+    max-width: 294px;
+  }
+
 }
 .servicesList{
   background-color: #ffffff;
