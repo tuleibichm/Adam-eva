@@ -91,7 +91,7 @@
                 .modal__btnGroup
                     button.button Send Mail
 
-.modal.modalArrangeVideoDateCalendar()
+.modal.modalArrangeVideoDateCalendar(style="display: none;")
     .modal__box
         span.close
         .modal__title ARRANGE VIDEO DATE
@@ -99,7 +99,8 @@
             .modal__boxInside
                 p Please select a convenient time
                 .dateTimePicker
-                    .datepicker
+                    input(type="hidden" data-id="arrangeVideoDateCalendar")
+                    .datepicker#arrangeVideoDateCalendar
                     .timepicker
                         .timepicker__title Select time
                         .timepicker__box
@@ -136,6 +137,21 @@
                     button.button Continue
                     span.totalCost Video date cost: 150$
                     div
+.modal.modalArrageLiveDate(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title Arrage live date
+        form
+            .modal__boxInside
+                input.field(type="text" placeholder="Your phone number")
+                p Please select a convenient time
+                .dateTimePicker
+                    input(type="hidden" data-id="arrageLiveDate")
+                    .datepicker#arrageLiveDate
+                .modal__btnGroup
+                    button.button Continue
+                    span.totalCost Сost: 150$
+                    div
 .modal.modalSendGift(style="display: none;")
     .modal__box
         span.close
@@ -171,7 +187,7 @@
                         .gifts__cost
                             b 7$
                             button.button Send
-.modal.modalAdditionalOptions(style="display: none;")
+.modal.modalAdditionalOptions()
     .modal__box
         span.close
         .modal__title Additional options
@@ -188,18 +204,17 @@
                         .gifts__cost
                             b 7$
                     .checkbox__label
-                        label(for="addMessage") Add message to your gift
-                        input.checkbox(type="checkbox" id="addMessage" placeholder="Subject")
+                        label(for="additionalOptionsAddMessage") Add message to your gift
+                        input.checkbox(type="checkbox" id="additionalOptionsAddMessage" placeholder="Subject")
                         textarea.fieldTextarea
                     .checkbox__label
-                        label(for="selectDay") Sellect specific day when we delver your present to lady
-                        input.checkbox(type="checkbox" id="selectDay" placeholder="Subject")
+                        label(for="additionalOptionsSelectDay") Sellect specific day when we delver your present to lady
+                        input.checkbox(type="checkbox" id="additionalOptionsSelectDay" placeholder="Subject")
                         .dateTimePicker
                             .datepicker
-                            .timepicker
                     .checkbox__label
-                        label(for="addVideo") Video of lady at delivery  -  29 USD
-                        input.checkbox(type="checkbox" id="addVideo" placeholder="Subject")
+                        label(for="additionalOptionsAddVideo") Video of lady at delivery  -  29 USD
+                        input.checkbox(type="checkbox" id="additionalOptionsAddVideo" placeholder="Subject")
                 .modal__btnGroup.modal__btnGroup-absolute
                     button.button Continue
                     span.totalCost Total cost: 20$

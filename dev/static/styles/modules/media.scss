@@ -284,6 +284,155 @@
       text-align: center;
     }
   }
+
+
+/*   modal   */
+  .modal {
+    align-items: flex-start;
+    .regFormText{
+      display: none;
+    }
+    .button:not(:last-child){
+      margin-bottom: 20px;
+    }
+    .close{
+      top: -65px;
+      right: -28px;
+    }
+    .field{
+      padding: 0 9px;
+    }
+    .gifts{
+      padding: 0 38px;
+    }
+    .gifts__description{
+      margin: 0;
+    }
+    .gifts__cost{
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: right;
+      b{
+        margin: 0;
+      }
+    }
+  }
+  .modal .modal__box{
+    top: 100px;
+    padding-left: 38px;
+    padding-right: 38px;
+    justify-content: center;
+    max-width: 296px;
+    background-image: none!important;
+  }
+  .successMessage{
+    bottom: 0;
+  }
+  .modalNotEnoughMoney{
+    .modal__boxInside{
+      flex-direction: column;
+      .field{
+        margin-bottom: 23px;
+      }
+    }
+  }
+  .modal__btnGroup{
+    flex-direction: column;
+    align-items: center;
+  }
+  .totalCost{
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .modalArrangeVideoDateCalendar, .modalArrageLiveDate, .modalSendGift, .modalAdditionalOptions{
+    .modal__title, .modal__boxInside p{
+      padding: 0 38px;
+    }
+    .field{
+      width: calc(100% - 76px);
+      margin: 0 auto 10px;
+    }
+    .modal__box{
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 15px;
+    }
+  }
+  .dateTimePicker{
+    flex-direction: column;
+  }
+  .datepicker{
+    border-left: 0;
+    border-right: 0;
+  }
+  .timepicker{
+    max-width: 100%;
+    padding: 25px 33px 20px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+  .timepicker__box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    &::-webkit-scrollbar-track
+    {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &::-webkit-scrollbar
+    {
+      width: 8px;
+      height: 8px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+      background-color: #D6BE9C;
+      cursor: pointer;
+    }
+    >label{
+      margin: 0 2px 9px;
+    }
+  }
+  .modalSendGift, .modalAdditionalOptions{
+    .gifts__item{
+      flex-direction: column;
+      margin-bottom: 38px;
+      img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 12px;
+      }
+      p{
+        padding: 0;
+      }
+    }
+  }
+  .modalAdditionalOptions{
+    .modal__boxInside{
+      padding-bottom: 100px;
+    }
+  }
+  .modal__btnGroup-absolute{
+    bottom: 0;
+    left: 0;
+  }
+  .checkbox__label .dateTimePicker{
+    width: 288px;
+    position: relative;
+    left: -38px;
+  }
+  .modal .checkbox__label .fieldTextarea{
+    width: 222px;
+    left: 0;
+    position: relative;
+  }
+
 }
 
 @media (max-width: 567px){
