@@ -59,13 +59,13 @@ block content
                                         option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey Height *
-                                span.profileValue 178 cm
+                                input.field(type="text")
                             .profile__DetailsItem
                                 label.profileKey Weight *
-                                span.profileValue 88 kg
+                                input.field(type="text")
                             .profile__DetailsItem
                                 label.profileKey What is your native language?
-                                span.profileValue American
+                                input.field(type="text")
                             .profile__DetailsItem
                                 label.profileKey What foreign languages do you speak?
                                 .controll__group
@@ -74,16 +74,25 @@ block content
                                         option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey Marital status:
-                                span.profileValue None
+                                .controll__group
+                                    select.field(name="")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey If you are divorced, please, give us the termination dates of all your previous marriages
-                                span.profileValue Never married
+                                textarea.fieldTextarea
                             .profile__DetailsItem
                                 label.profileKey Is social drinking acceptable for you?
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(name="")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey Do you have any major health problems?
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(name="")
+                                        option(value="Yes") Yes
+                                        option(value="No") No
                             .profile__DetailsItem
                                 label.profileKey If yes then, please, specify:
                                 input.field(type="text")
@@ -92,23 +101,29 @@ block content
                                 input.field(type="text")
                             .profile__DetailsItem
                                 label.profileKey Your religion:
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(name="religion")
+                                        option(value="Christian") Christian
+                                        option(value="other") other
                             .profile__DetailsItem
                                 label.profileKey Description:
-                                input.field(type="text")
+                                textarea.fieldTextarea
                             .profile__DetailsItem
                                 label.profileKey Give at least 5 reasons why you can be good husband?
-                                input.field(type="text")
+                                textarea.fieldTextarea
                             .profile__DetailsItem
                                 label.profileKey How will a woman's live improve when she becomes your wife?
-                                input.field(type="text")
+                                textarea.fieldTextarea
                             .profile__DetailsItem
                                 label.profileKey Indicate city and country where you plan to reside when you get married?
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(name="city")
+                                        option(value="New York") New York
+                                        option(value="London") London
                             .profile__DetailsItem
                                 label.profileKey Do you own property where you live at the moment?
                                 .controll__group
-                                    select.field(type="range" name="age")
+                                    select.field(name="age")
                                         option(value="Yes") Yes
                                         option(value="No") No
                             .profile__DetailsItem
@@ -118,4 +133,4 @@ block content
                                 label.profileKey
                                 .profile__buttonWrapper
                                     button.button Save
-                                    button.button.button-red Cancel
+                                    button.button.button-tuscany Cancel

@@ -725,9 +725,11 @@
 .button-red{
   background-color: #D57C55;
   box-shadow: 10px 10px 20px rgba(255, 142, 61, 0.55);
-  &:hover{}
-  background-color: #DD5F29;
+  &:hover{
+    background-color: #DD5F29;
+  }
 }
+
 .button-pink{
   background: #EF6082;
   box-shadow: 10px 10px 20px rgba(239, 106, 180, 0.55);
@@ -735,6 +737,15 @@
     background-color: #E32C58;
   }
 }
+
+.button-tuscany{
+  background: #D29D86;
+  box-shadow: 10px 10px 20px rgba(213, 162, 126, 0.55);
+  &:hover{
+    background-color: #BE7F64;
+  }
+}
+
 .tariffs .slick-list{
   margin: 0 -9px;
 }
@@ -1210,7 +1221,7 @@
   font-family: 'RobotoMedium';
   color: #7B5431;
   font-size: 30px;
-  line-height: 28px;
+  line-height: 40px;
   width: 100%;
   max-width: 309px;
 }
@@ -1440,10 +1451,10 @@
 .profile__DetailsList{
   width: 100%;
   margin: 0 auto;
-  max-width: 772px;
 }
 .profile__DetailsItem{
   display: flex;
+  margin-bottom: 15px;
   label, .profileKey{
     display: inline-block;
     font-size: 13px;
@@ -1456,6 +1467,7 @@
   .controll__group{
     width: 100%;
     max-width: 330px;
+    align-items: flex-start;
     .field:nth-child(2){
       margin: 0 15px;
     }
@@ -1463,6 +1475,18 @@
   .profileValue{
     padding-left: 15px;
     max-width: 307px;
+  }
+  .ui-selectmenu-button.ui-button{
+    max-width: 100%;
+    width: 100%;
+  }
+  .ui-selectmenu-icon.ui-icon{
+    background-color: transparent;
+  }
+  .fieldTextarea{
+    width: 100%;
+    min-height: 97px;
+    max-width: 330px;
   }
 }
 .servicesList{

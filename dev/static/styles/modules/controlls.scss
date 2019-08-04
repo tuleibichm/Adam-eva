@@ -28,10 +28,11 @@
 .fieldTextarea{
   background-color: rgba(0, 0, 0, 0.06);
   padding: 7px;
-  font-family: "RobotoLight";
+  font-family: "RobotoRegular";
   line-height: 15px;
   font-size: 13px;
-  color: #9C9C9C;
+  color: rgba(0, 0, 0, 0.5);
+  resize: none;
 }
 .controll__group{
   display: flex;
