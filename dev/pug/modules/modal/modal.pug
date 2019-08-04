@@ -81,11 +81,11 @@
                 p Your time zone
                 p.text-gray All times will be displayed according to your time zone
                 label.filter__label(for="")
-                    select.field(id="select-city" name="")
+                    select.field.select-city(name="")
                         option(value="1") Ukraine
                         option(value="2") USA
                 label.filter__label(for="")
-                    select.field(id="select-country" name="")
+                    select.field.select-country(name="")
                         option(value="1") Kiev (GMT+3:00) [DST]
                         option(value="2") New York (GMT+3:00) [DST]
                 .modal__btnGroup
@@ -187,7 +187,7 @@
                         .gifts__cost
                             b 7$
                             button.button Send
-.modal.modalAdditionalOptions()
+.modal.modalAdditionalOptions(style="display: none;")
     .modal__box
         span.close
         .modal__title Additional options
@@ -245,12 +245,58 @@
                 p Your time zone
                 p.text-gray All times will be displayed according to your time zone
                 label.filter__label(for="")
-                    select.field(id="" name="")
+                    select.field.select-city(name="")
                         option(value="1") Ukraine
                         option(value="2") USA
                 label.filter__label(for="")
-                    select.field(id="" name="")
+                    select.field.select-country(name="")
                         option(value="1") Kiev (GMT+3:00) [DST]
                         option(value="2") New York (GMT+3:00) [DST]
                 .modal__btnGroup
                     button.button Continue
+.modal.modalBookaCallCalendar(style="display: none;")
+    .modal__box
+        span.close
+        .modal__title Book a Call
+        form
+            .modal__boxInside
+                p Please select a convenient time
+                .dateTimePicker
+                    input(type="hidden" data-id="arrangeVideoDateCalendar")
+                    .datepicker#modalBookaCallCalendar
+                    .timepicker
+                        .timepicker__title Select time
+                        .timepicker__box
+                            input(type="radio" id="9:00" name="timepicker")
+                            label(for="9:00") 9:00
+
+                            input(type="radio" id="9:30" name="timepicker")
+                            label(for="9:30") 9:30
+
+                            input(type="radio" id="10:00" name="timepicker")
+                            label(for="10:00") 10:00
+
+                            input(type="radio" id="10:30" name="timepicker")
+                            label(for="10:30") 10:30
+
+                            input(type="radio" id="11:00" name="timepicker")
+                            label(for="11:00") 11:00
+
+                            input(type="radio" id="11:30" name="timepicker")
+                            label(for="11:30") 11:30
+
+                            input(type="radio" id="12:00" name="timepicker")
+                            label(for="12:00") 12:00
+
+                            input(type="radio" id="12:30" name="timepicker")
+                            label(for="12:30") 12:30
+
+                            input(type="radio" id="13:00" name="timepicker")
+                            label(for="13:00") 13:00
+
+                            input(type="radio" id="13:30" name="timepicker")
+                            label(for="13:30") 13:30
+                .modal__btnGroup
+                    button.button Continue
+                    span.totalCost Video date cost: 150$
+                    div
