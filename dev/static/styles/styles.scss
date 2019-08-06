@@ -102,6 +102,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
+  max-width: 760px;
 }
 tr{
   background-color: #F5F5F5;
@@ -118,8 +119,14 @@ tr:first-child{
 }
 td{
   height: 40px;
-  padding: 10px 45px;
+  padding: 10px 10px;
   vertical-align: middle;
+  &:first-child{
+    text-align: center;
+  }
+  &:nth-child(2){
+    font-family: "RobotoLight";
+  }
 }
 a{
   text-decoration: none;

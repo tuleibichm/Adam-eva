@@ -8,20 +8,8 @@ block content
     section.myProfileHeader
         .container
             h1 Карта страниц сайта
-            div(style="display: flex;")
-                div(style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: flex-start; width: 50%;")
-                    button.button.modalOpen(data-modal="modalNotEnoughMoney") modal Not Enough Money
-                    button.button.modalOpen(data-modal="modalSendLetter") modal Send Letter
-                    button.button.modalOpen(data-modal="modalSelectOptions") modal Select Options
-                    button.button.modalOpen(data-modal="modalArrangeVideoDate") modal Arrange video date
-                    button.button.modalOpen(data-modal="modalArrangeVideoDateCalendar") modal Arrange video date calendar
-                div(style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: flex-start; width: 50%;")
-                    button.button.modalOpen(data-modal="modalArrageLiveDate") modal Arrage Live Date
-                    button.button.modalOpen(data-modal="modalSendGift") modal Send a gift
-                    button.button.modalOpen(data-modal="modalAdditionalOptions") modal Additional Options
-                    button.button.modalOpen(data-modal="modalBookaCall") modal Book a Call
-                    button.button.modalOpen(data-modal="modalBookaCallCalendar") modal Book a Call calendar
-                    button.button.modalOpen(data-modal="modalConfirmAction") modal Confirm action
+
+            h2 Основные страницы
             ul(style="column-count:2;")
                 li
                     a(href="/") Main
@@ -52,12 +40,14 @@ block content
                 li
                     a(href="specialOffers.html") Special Offer
                 li
+                    a(href="pricing.html") Pricing
+                li
                     a(href="matchmaking.html") Matchmaking
                 li
                     a(href="romanceTours.html") Romance Tours
-                li
-                    a(href="pricing.html") Pricing
 
+
+            h2 Дополнительные страницы
             hr
             ul(style="column-count: 2;")
                 li
@@ -84,3 +74,20 @@ block content
                     a(href="translation.html") Translation
                 li
                     a(href="gifts.html") Gifts
+
+            h2 Модальные окна
+            hr
+            div(style="display: flex;")
+                div(style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: flex-start; width: 50%;")
+                    button.button.modalOpen(data-modal="modalNotEnoughMoney") modal Not Enough Money
+                    button.button.modalOpen(data-modal="modalSendLetter") modal Send Letter
+                    button.button.modalOpen(data-modal="modalSelectOptions") modal Select Options
+                    button.button.modalOpen(data-modal="modalArrangeVideoDate") modal Arrange video date
+                    button.button.modalOpen(data-modal="modalArrangeVideoDateCalendar") modal Arrange video date calendar
+                div(style="display: flex; flex-direction: column; flex-wrap: wrap; align-items: flex-start; width: 50%;")
+                    button.button.modalOpen(data-modal="modalArrageLiveDate") modal Arrage Live Date
+                    button.button.modalOpen(data-modal="modalSendGift") modal Send a gift
+                    button.button.modalOpen(data-modal="modalAdditionalOptions") modal Additional Options
+                    button.button.modalOpen(data-modal="modalBookaCall") modal Book a Call
+                    button.button.modalOpen(data-modal="modalBookaCallCalendar") modal Book a Call calendar
+                    button.button.modalOpen(data-modal="modalConfirmAction") modal Confirm action

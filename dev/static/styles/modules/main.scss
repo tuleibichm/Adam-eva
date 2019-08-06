@@ -1343,10 +1343,11 @@
 }
 .profile__content, .profile__contentBox{
   background-color: #ffffff;
-  padding: 30px 50px;
+  padding: 30px 50px 50px;
   display: flex;
   position: relative;
   justify-content: space-between;
+  height: 100%;
 }
 .candidate__list-column{
   flex-direction: column;
@@ -1569,13 +1570,17 @@
   width: 60px;
   margin: 0 auto;
   border-bottom: 1px dashed #C9A876;
+  cursor: pointer;
+  &:hover{
+    color: #7B5431;
+  }
 }
 .balance{
   flex-direction: column;
 }
 .balance__title{
   font-family: 'RobotoMedium';
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   color: #7B5431;
   font-size: 30px;
   line-height: 35px;
@@ -1583,13 +1588,14 @@
 .balance__add{
   display: flex;
   align-items: center;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   .field{
     height: 40px;
     font-size: 25px;
     line-height: 29px;
     width: 214px;
     margin-right: 28px;
+    font-family: "RobotoRegular";
   }
   .button{
     height: 45px;
@@ -1600,23 +1606,37 @@
   width: 100%;
   display: flex;
   height: fit-content;
-  align-items: flex-end;
   min-height: 180px;
+  background: linear-gradient(90deg, #E1E1E1 1.57%, rgba(255, 255, 255, 0.3) 100%), url("../images/specialOffer.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/specialOffer.jpg");
-  padding: 40px 50px 0;
+  padding: 38px 20px 10px 52px;
   max-width: 1020px;
   margin: 0 auto;
   .button{
-    margin-bottom: 45px;
+    position: relative;
+    top: 51px;
+  }
+}
+.specialOffer-long{
+  padding: 38px 20px 4px 38px;
+  margin-bottom: -6px;
+  .specialOffer__textWrapper{
+    max-width: 617px;
+  }
+  .specialOffer__title{
+    margin-bottom: 16px;
+  }
+  .specialOffer__description{
+    margin-bottom: 40px;
   }
 }
 .specialOffer__textWrapper{
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 100%;
+  max-width: 420px;
   padding-right: 50px;
 }
 .specialOffer__title{
@@ -1624,20 +1644,21 @@
   font-size: 26px;
   line-height: 32px;
   color: #7B5431;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 .specialOffer__description{
   color: rgba(0, 0, 0, 0.9);
   font-size: 18px;
   line-height: 21px;
   font-family: 'RobotoLight';
-  margin-bottom: 36px;
+  margin-bottom: 19px;
 }
 .specialOffer__date{
   color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
   line-height: 18px;
   font-family: 'RobotoLight';
+  margin-bottom: 10px;
 }
 .forMoreText{
   overflow: hidden;
@@ -1677,6 +1698,7 @@
 .pricingTours__list{
   display: flex;
   justify-content: space-between;
+  margin-top: -8px;
 }
 .pricingTours__item{
   display: flex;
@@ -1716,10 +1738,11 @@
   font-family: "RobotoBold";
 }
 .pricingTours__title{
-  font-size: 16px;
   line-height: 20px;
   margin-bottom: 33px;
-  font-family: 'RobotoLight';
+  font-size: 18px;
+  font-family: 'RobotoMedium';
+  color: #7B5431;
 }
 .pricingTours__features{
   padding: 0;
@@ -1729,13 +1752,36 @@
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  li{
+    margin-bottom: 17px;
+    padding-left: 34px;
+    min-height: 22px;
+  }
+  .hide{
+    display: none;
+  }
 }
-.pricingTours__features li {
-  margin-bottom: 12px;
+.pricingTours__features .pricingTours__emptyItem{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  &:before{
+    display: none;
+  }
+  > span{
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+    background-position: center;
+    background-size: contain;
+  }
 }
 .pricingTours__sum{
   color: #C99445;
-  margin: 30px 0;
+  margin: 30px 0 22px;
   font-size: 30px;
   line-height: 35px;
   font-family: 'RobotoMedium';
@@ -1754,12 +1800,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .regularActions{
   width: 100%;
-  max-width: 418px;
+  max-width: 413px;
   margin-right: 15px;
+  .section__title{
+    font-family: "RobotoRegular";
+    font-size: 25px;
+    line-height: 29px;
+    padding-bottom: 17px;
+    padding-top: 60px;
+  }
+  .button{
+    margin-top: 15px;
+  }
 }
+
 .regularActions__list{
   width: 100%;
   display: flex;
@@ -1776,32 +1834,46 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 23px 0 33px;
+  span:first-child{
+    font-family: "RobotoLight";
+  }
   &:nth-child(2n){
     background-color: #E3E3E3;
-  }
-  &:last-child{
-    margin-bottom: 20px;
   }
 }
 .matchmakingService{
   .specialOffer{
     width: 100%;
     display: flex;
-    align-items: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/specialOffer-match.png);
     padding: 27px 60px 25px;
     flex-grow: 1;
+    .button{
+      top: 123px;
+    }
   }
   .specialOffer__textWrapper{
-    width: 70%;
+    width: 100%;
+    max-width: 457px;
+    padding-right: 20px;
   }
   .specialOffer__title{
     font-size: 23px;
     line-height: 30px;
-    font-family: 'RobotoBold';
-    margin-bottom: 8px;
+    font-family: 'RobotoRegular';
+    margin-bottom: 10px;
+  }
+  .section__title{
+    font-family: "RobotoRegular";
+    font-size: 25px;
+    line-height: 29px;
+    padding-bottom: 17px;
+    padding-top: 60px;
+  }
+  .specialOffer__description{
+    margin-bottom: 31px;
   }
 }
 .quickPaymentButton{
