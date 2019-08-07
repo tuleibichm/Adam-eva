@@ -21,13 +21,13 @@
   line-height: 47px;
   font-family: "RobotoBold";
   width: 100%;
-  max-width: 415px;
+  max-width: 504px;
   margin-bottom: 40px;
 }
 .cover_description{
   font-family: "RobotoMedium";
   width: 100%;
-  max-width: 328px;
+  max-width: 349px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 45px;
@@ -82,7 +82,8 @@
 /* end section features */
 /* section decimalFeatures */
 .decimalFeatures{
-  height: 700px;
+  height: 692px;
+  padding-top: 10px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.03) 100%);
 }
 .decimalFeatures__img{
@@ -97,60 +98,43 @@
   position: absolute;
 }
 .decimalFeatures__item-1{
-  top: 20px;
+  top: 35px;
   left: 0;
   .decimalFeatures__head{
     &:after{
       right: -50px;
-      bottom: -7px;
+      bottom: -6px;
       transform: rotate(15deg);
-      border-bottom: 1px dashed #7B5431;
     }
   }
 }
 .decimalFeatures__item-2{
-  top: 170px;
+  top: 211px;
   left: 0;
   .decimalFeatures__head{
     &:after{
       right: -50px;
-      bottom: -7px;
+      bottom: -8px;
       transform: rotate(15deg);
     }
   }
 }
 .decimalFeatures__item-3{
-  bottom: 30px;
+  bottom: 5px;
   .decimalFeatures__head{
     &:after{
-      right: -7px;
+      right: -8px;
       bottom: 16px;
       transform: rotate(45deg);
     }
   }
 }
-.decimalFeatures__item-5{
-  top: 170px;
-  right: 0;
-  padding-right: 86px;
-  padding-left: 0;
-  .decimalFeatures__num{
-    right: 0;
-    left: auto;
-  }
-  .decimalFeatures__head{
-    &:after{
-      left: -50px;
-      bottom: -7px;
-      transform: rotate(-15deg);
-    }
-  }
-}
 .decimalFeatures__item-4{
-  top: 20px;
+  top: 211px;
   right: 0;
   padding-right: 86px;
   padding-left: 0;
+  text-align: right;
   .decimalFeatures__num{
     right: 0;
     left: auto;
@@ -158,11 +142,30 @@
   .decimalFeatures__head{
     &:after{
       left: -50px;
-      bottom: -7px;
+      bottom: -8px;
       transform: rotate(-15deg);
     }
   }
 }
+.decimalFeatures__item-5{
+  top: 35px;
+  right: 0;
+  padding-right: 86px;
+  padding-left: 0;
+  text-align: right;
+  .decimalFeatures__num{
+    right: 0;
+    left: auto;
+  }
+  .decimalFeatures__head{
+    &:after{
+      left: -50px;
+      bottom: -8px;
+      transform: rotate(-15deg);
+    }
+  }
+}
+
 .decimalFeatures__box{
   display: flex;
   justify-content: center;
@@ -182,14 +185,15 @@
   line-height: 25px;
   font-family: 'RobotoBold';
   color: #7B5431;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
   position: relative;
-  border-bottom: 1px dashed #7B5431;
+  border-bottom: 2px dashed #7B5431;
   &:after{
     content: '';
     width: 50px;
     position: absolute;
-    border-bottom: 1px dashed #7B5431;
+    border-bottom: 2px dashed #7B5431;
   }
 }
 .decimalFeatures__description{
@@ -199,7 +203,7 @@
 /* end section decimalFeatures */
 /* section romanceTour */
 .romanceTour{
-  padding: 60px 0;
+  padding: 51px 0 71px;
   background: linear-gradient(180deg, #7CA4C6 0%, #527694 100%);
 }
 .romanceTour__title{
@@ -207,7 +211,7 @@
   line-height: 35px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   font-family: "RobotoMedium";
 }
 .romanceTour__list{
@@ -223,23 +227,73 @@
 }
 .romanceTour__picture{
   min-width: 310px;
-  min-height: 270px;
+  min-height: 350px;
   background-position: center;
+  position: relative;
+  background-size: cover;
 }
-.romanceTour__description{
+.romanceTour__cost{
+  background-color: rgba(201,148,69, 0.6);
+  width: 135px;
+  font-size: 20px;
+  line-height: 50px;
+  border-bottom-left-radius: 100px;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  font-family: "RobotoBold";
+  top: 0;
+  right: 0;
+}
+.romanceTour__label{
+  background-color: #C99445;
+  font-size: 17px;
+  line-height: 29px;
+  padding-right: 20px;
+  padding-left: 15px;
+  border-top-right-radius: 100px;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  font-family: "RobotoBold";
+  bottom: 0;
+  left: 0;
+}
+.romanceTour__info{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
+  align-items: flex-start;
   width: 100%;
-  padding-bottom: 20px;
+  padding: 64px 14px 25px 30px;
+  .button{
+    height: 30px;
+    min-width: 110px;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0 auto;
+    display: block;
+  }
   ul{
     padding: 0;
     margin: 0;
     flex-grow: 1;
     li{
       margin: 0;
-      font-size: 16px;
-      line-height: 30px;
+      font-size: 15px;
+      line-height: 28px;
+      position: relative;
+      padding-left: 30px;
+      span{
+        display: block;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 30px;
+      }
     }
   }
   .learnMore{
@@ -252,25 +306,45 @@
     border-bottom: 1px dotted #C9A876;
   }
 }
+.romanceTour__btnWrapper{
+  width: 100%;
+}
 .romanceTour__head{
   height: 50px;
   width: 100%;
   text-align: center;
-  font-family: "RobotoMedium";
-  border-bottom: 3px solid #C99445;
-  border-right: 3px solid #C99445;
+  font-family: "RobotoBold";
   border-bottom-right-radius: 100px;
-  color: #CEA05A;
+  color: #ffffff;
   font-size: 20px;
   line-height: 50px;
-  margin-bottom: 20px;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%)
+  margin-bottom: 15px;
+  background-color: #C99445;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.romanceTour__price{
-  color: #C99445;
-  font-size: 25px;
-  line-height: 29px;
+.romanceTour__description{
+  font-size: 16px;
+  line-height: 22px;
   font-family: "RobotoMedium";
+  color: #7B5431;
+  padding-left: 7px;
+  margin-bottom: 10px;
+}
+.romanceTour__link{
+  color: #C9A876;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "RobotoMedium";
+  border-bottom: 2px dashed #C9A876;
+  margin-left: 7px;
+  padding-bottom: 2px;
+  margin-bottom: 7px;
+  &:hover{
+    color: #7B5431;
+    border-color: #C9A876;
+  }
 }
 /* end section romanceTour */
 /* section scrollingBox */
