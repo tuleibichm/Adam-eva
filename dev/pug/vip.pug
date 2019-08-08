@@ -1,0 +1,161 @@
+extends template/main
+
+block variables
+
+    - var title = 'Туры'
+
+block content
+    section.cover(style="background-image: url(static/images/bg_cover-7.jpg), linear-gradient(270deg, #F1EEDC 7.12%, #EEEDDB 13.79%, #E6E3CD 15.54%, #E8E7CE 20.36%, #DED5B6 25.01%, #EAE9D3 32.2%, #E9E2C3 41.76%, rgba(255, 255, 255, 0) 47.05%)")
+        .container.container-tourPage
+            .coverTour
+                .coverTour__header VIP matchmaking tour
+                .coverTour__info
+                    span.coverTour__title 15 days/ 14 nights tour
+                    .coverTour__featch Unlimited introductions
+                        span.mark-new new
+                    .coverTour__featch Unlimited correspondence with ladies
+                        span.mark-new new
+                    .coverTour__featch 5 free video dates with ladies
+                        span.mark-bonus bonus
+                    .coverTour__featch Matchmaker’s support during the tour
+                    .coverTour__select
+                        span Select city
+                        select.field(id="" name="")
+                            option(value="Odessa") Odessa
+                            option(value="Kiev") Kiev
+                    .coverTour__totalCost Total cost:
+                        span 7,680 USD
+                button.button Book a tour
+    section.ladiesInCity
+        .container
+            .tabs
+                a.tabs__item.tabs__item-active(href="#") Ladies from selected cities
+                a.tabs__item(href="#") Favorite ladies from selected cities
+            .candidateSlider__list.slider#seenSlider
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image1.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image2.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image6.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image7.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+    section.tourMainDescription(style="background-image: url('static/images/girl-16.jpg'), linear-gradient(90deg, rgba(0, 0, 0, 0) 40.1%, rgba(0, 0, 0, 0.04) 100%);")
+        .container
+             .tourMainDescription__text Say 'Bye' to bachelors life!  Do every effort to join our comprehensive 15 days matchmaking programm. This revolution tour package composed for you to hit the target. We are going to succeed and have you engaged in the end of this tour. Your 15 days matchmaking programm is not just a pleasant Ukrainian vacation! You work hard together with us at  this programm. We ask you to be attentive, analytical, critical, motivated and organized to take most of this  programm and actually decide who is your soul mate. We do not give our secrets out- just mention, that with your powerful 15 days matchmaking programm you get all tools needed to complete you search. Interested? Your  future is so close now, as never before. But remember: we don't entertain you, we have you married!
+    section.tourDetails(style="background-image: url('static/images/bg_tourDetails-4.jpg'), linear-gradient(270deg, #E6F1F5 68.91%, rgba(230, 241, 245, 0) 100%);")
+        .container
+            .tourDetails__textBox
+                .section__title Tour details
+                ul
+                    li Transportation from and to airport
+                    li High class apartment/ 3-4* approved hotel
+                    li Unlimited introductions
+                        span.mark-new new
+                    li Unlimited correspondence with ladies you meet on your tour
+                        span.mark-new new
+                    li 2 video dates with selected ladies
+                        span.mark-bonus bonus
+                    li Transportation from and to airport
+                    li High class apartment/ 3-4* approved hotel
+                    li Unlimited introductions
+                    li Unlimited correspondence with ladies you meet on your tour
+                    li 3 video dates with selected ladies
+                    li 40% discount on other videodates
+                    li 2 Excursions of the city
+                    li 2 Visit to cosmetologist
+                    li Personal assistant
+                    li Tour can cover 2 cities
+                    li Matchmaker’s consultancy before you come
+    section.reasons
+        .container
+            .section__title Persuasive reasons to choose this package:
+            ul.reasonsList
+                li.reasons__item  HIGHER CHANCES – you have a solid chance to succeed as you have more time to date and consider here
+                    span.listMark.star
+                li.reasons__item  STAY CONNECTED – with package you get local cell phone to be always easy-to reach so all dates happen!
+                    span.listMark.star
+                li.reasons__item  SIGHTSEEING – package includes wonderfully interesting excursion of Odessa sights and history
+                    span.listMark.star
+                li.reasons__item  MATCHMAKER'S ASSISTANCE – package includes consulting of our  matchmaker
+                    span.listMark.star
+                li.reasons__item.reasons__attention Attention! We recommend that you make all possible efforts to meet at least twice 2  ladies whom you like most of your dates.
+                    span.listMark.attention
+    section.decimalFeatures
+        .container
+            .section__title Why you should take romance tour with us:
+            .decimalFeatures__box
+                .decimalFeatures__img
+                .decimalFeatures__item.decimalFeatures__item-1
+                    .decimalFeatures__num 1
+                    .decimalFeatures__head HIGHEST SUCCESS RATE IN INDUSTRY
+                    .decimalFeatures__description 75% of our customers finish the tour engaged/in direct relationships. Hard to believe? Attempt it yourself!
+                .decimalFeatures__item.decimalFeatures__item-2
+                    .decimalFeatures__num 2
+                    .decimalFeatures__head TRULY INTERESTED WOMEN
+                    .decimalFeatures__description You meet only selected ladies approved by matchmaker and  interested in you as a potential life partner.
+                .decimalFeatures__item.decimalFeatures__item-3
+                    .decimalFeatures__num 3
+                    .decimalFeatures__head LOTS OF MATCHMAKING
+                    .decimalFeatures__description Our matchmaker consults you before, during and after your tour, helping you to analyze and choose the right woman.
+                .decimalFeatures__item.decimalFeatures__item-5
+                    .decimalFeatures__head DEDICATED ASSISTANCE
+                    .decimalFeatures__description You will be amazed by how professional and helpful our staff is, working together with you for your goal to find a wife.
+                    .decimalFeatures__num 5
+                .decimalFeatures__item.decimalFeatures__item-4
+                    .decimalFeatures__head SMARTLY COMPOSED TOURS
+                    .decimalFeatures__description We included all essential services into each package so your stay is mostly efficient with dates, matchmaking etc.
+                    .decimalFeatures__num 4
+            button.button Book a tour
+    section.contactsWrapper
+        .map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.150641118089!2d30.7336534155504!3d46.48532947912625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631962cbb44c1%3A0x1dbe78653ee6c8ba!2z0JPQsNCy0LDQvdC90LDRjyDRg9C7Liwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1561150906772!5m2!1sru!2sua" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen)
+        .contacts
+            .contacts__title Contact us
+            .contacts__data
+                div
+                    strong Adress:
+                    a Street, Odessa, Ukraine
+                div
+                    strong Phone number:
+                    a +38 (068) 120-03-00
+                div
+                    strong E-mail:
+                    a info@adam-and-eva.com
+                div
+                    strong Skype:
+                    a odesa_135

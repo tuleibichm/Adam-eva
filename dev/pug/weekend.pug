@@ -1,0 +1,142 @@
+extends template/main
+
+block variables
+
+    - var title = 'Туры'
+
+block content
+    section.cover(style="background-image: url(static/images/bg_cover-4.jpg), linear-gradient(90deg, rgba(141, 243, 250, 0) 47.28%, #9AE2F6 64.54%, #CBDDEB 100%)")
+        .container.container-tourPage
+            .coverTour
+                .coverTour__header Romantic weekend getaway
+                .coverTour__info
+                    span.coverTour__title 4 days/ 3 nights tour
+                    .coverTour__featch Unlimited introductions
+                        span.mark-new new
+                    .coverTour__featch Unlimited correspondence with ladies
+                        span.mark-new new
+                    .coverTour__select
+                        span Select city
+                        select.field(id="" name="")
+                            option(value="Odessa") Odessa
+                            option(value="Kiev") Kiev
+                    .coverTour__totalCost Total cost:
+                        span 1,570 USD
+                button.button Book a tour
+    section.ladiesInCity
+        .container
+            .tabs
+                a.tabs__item.tabs__item-active(href="#") Ladies from selected cities
+                a.tabs__item(href="#") Favorite ladies from selected cities
+            .candidateSlider__list.slider#seenSlider
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image1.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image2.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image6.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image7.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+                a.candidateSlider__item(href="ladiesItem.html")
+                    img(src="static/images/media/image8.jpg")
+                    .candidateSlider__title Name, City
+                    footer
+                        span 30 y.o
+                        span ID: sn0807
+    section.tourMainDescription(style="background-image: url('static/images/girl-12.jpg'), linear-gradient(90deg, rgba(0, 0, 0, 0) 40.1%, rgba(0, 0, 0, 0.04) 100%);")
+        .container
+             .tourMainDescription__text This easy-to-do romantic tour package is very popular especially among European clients due to convenient chance to come for a weekend escape and finally meet ladies live.  This may turn to true start of special relationships with bright perspective for your next visit in the future. Take this chance and meet potential life partner!
+    section.tourDetails(style="background-image: url('static/images/girl-13.jpg'), linear-gradient(90deg, #E6F1F5 0%, #E6F1F5 0%, rgba(225, 247, 255, 0.3) 100%, rgba(158, 199, 214, 0.6) 100%);")
+        .container
+            .tourDetails__textBox
+                .section__title Tour details
+                ul
+                    li 4 days/ 3 nights tour
+                    li Transportation from and to airport
+                    li High class apartment/ 3-4* approved hotel
+                    li Unlimited introductions
+                        span.mark-new new
+                    li Unlimited correspondence with ladies you meet on your tour
+                        span.mark-new new
+    section.reasons
+        .container
+            .section__title Persuasive reasons to choose this package:
+            ul.reasonsList
+                li.reasons__item You may notice that 3 days tour  includes only 1 hour of  matchmaker’s services. We knowingly did not include more due to very short term of this tour. However, if you choose to get extra matchmaker's assistance, let us know.There is high probablity that you really like some of your dates, then matchmaker's assistance is more then actual!
+                    span.listMark.star
+                li.reasons__item If you work hard on your search strategy together with our matchmaker before you come to Odessa, your chances for success may be as high as with longer tour packages. Just plan your time and efforts effectively together with our matchmaker.
+                    span.listMark.star
+                li.reasons__item.reasons__attention Attention! We recommend that you make all possible efforts to meet at least twice 2  ladies whom you like most of your dates.
+                    span.listMark.attention
+    section.decimalFeatures
+        .container
+            .section__title Why you should take romance tour with us:
+            .decimalFeatures__box
+                .decimalFeatures__img
+                .decimalFeatures__item.decimalFeatures__item-1
+                    .decimalFeatures__num 1
+                    .decimalFeatures__head HIGHEST SUCCESS RATE IN INDUSTRY
+                    .decimalFeatures__description 75% of our customers finish the tour engaged/in direct relationships. Hard to believe? Attempt it yourself!
+                .decimalFeatures__item.decimalFeatures__item-2
+                    .decimalFeatures__num 2
+                    .decimalFeatures__head TRULY INTERESTED WOMEN
+                    .decimalFeatures__description You meet only selected ladies approved by matchmaker and  interested in you as a potential life partner.
+                .decimalFeatures__item.decimalFeatures__item-3
+                    .decimalFeatures__num 3
+                    .decimalFeatures__head LOTS OF MATCHMAKING
+                    .decimalFeatures__description Our matchmaker consults you before, during and after your tour, helping you to analyze and choose the right woman.
+                .decimalFeatures__item.decimalFeatures__item-5
+                    .decimalFeatures__head DEDICATED ASSISTANCE
+                    .decimalFeatures__description You will be amazed by how professional and helpful our staff is, working together with you for your goal to find a wife.
+                    .decimalFeatures__num 5
+                .decimalFeatures__item.decimalFeatures__item-4
+                    .decimalFeatures__head SMARTLY COMPOSED TOURS
+                    .decimalFeatures__description We included all essential services into each package so your stay is mostly efficient with dates, matchmaking etc.
+                    .decimalFeatures__num 4
+            button.button Book a tour
+    section.contactsWrapper
+        .map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.150641118089!2d30.7336534155504!3d46.48532947912625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631962cbb44c1%3A0x1dbe78653ee6c8ba!2z0JPQsNCy0LDQvdC90LDRjyDRg9C7Liwg0J7QtNC10YHRgdCwLCDQntC00LXRgdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1561150906772!5m2!1sru!2sua" width="100%" height="369" frameborder="0" style="border:0" allowfullscreen)
+        .contacts
+            .contacts__title Contact us
+            .contacts__data
+                div
+                    strong Adress:
+                    a Street, Odessa, Ukraine
+                div
+                    strong Phone number:
+                    a +38 (068) 120-03-00
+                div
+                    strong E-mail:
+                    a info@adam-and-eva.com
+                div
+                    strong Skype:
+                    a odesa_135

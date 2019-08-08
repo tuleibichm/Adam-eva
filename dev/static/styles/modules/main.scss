@@ -82,9 +82,11 @@
 /* end section features */
 /* section decimalFeatures */
 .decimalFeatures{
-  height: 692px;
-  padding-top: 10px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.03) 100%);
+  padding-bottom: 60px;
+  .button{
+    display: block;
+    margin: 60px auto 0;
+  }
 }
 .decimalFeatures__img{
   display: block;
@@ -103,7 +105,7 @@
   .decimalFeatures__head{
     &:after{
       right: -50px;
-      bottom: -6px;
+      bottom: -8px;
       transform: rotate(15deg);
     }
   }
@@ -1409,6 +1411,7 @@
   line-height: 40px;
   height: 40px;
   color: #000000;
+  cursor: pointer;
 }
 .tabs__item-active{
   color: #ffffff;
@@ -1985,3 +1988,202 @@
   padding-top: 50px;
 }
 /* end gifts*/
+/* tours  */
+.container-tourPage{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.coverTour{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 1.28%, rgba(255, 255, 255, 0.63) 55.78%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  max-width: 502px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.coverTour__header{
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'RobotoMedium';
+  background-color: #CEA05A;
+  height: 56px;
+  line-height: 56px;
+  margin-bottom: 30px;
+}
+.coverTour__info{
+  max-width: 295px;
+  width: 100%;
+}
+.coverTour__title{
+  color: #C9A876;
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+  line-height: 18px;
+  margin-bottom: 19px;
+  font-family: 'RobotoMedium';
+  border-bottom: 2px dashed #C9A876;
+}
+.coverTour__featch{
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-family: "RobotoRegular", sans-serif;
+  position: relative;
+}
+.coverTour__select{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6px;
+  padding-top: 15px;
+  >span{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'RobotoMedium';
+    margin-bottom: 13px;
+  }
+  .field, .ui-selectmenu-button.ui-button{
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 35px;
+    width: 100%;
+  }
+  .ui-selectmenu-text{
+    height: 35px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .ui-selectmenu-icon.ui-icon{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+  }
+}
+.coverTour__totalCost{
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  width: 100%;
+  >span{
+    color: #C99445;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'RobotoMedium';
+    padding: 0 18px;
+  }
+}
+.mark-new, .mark-bonus{
+  background-color: #6FCF97;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 15px;
+  height: 16px;
+  font-family: 'RobotoBold';
+  padding: 0 3px;
+  position: absolute;
+  left: -45px;
+  border-radius: 5px;
+}
+.mark-bonus{
+  background-color: #F2994A;
+  left: -57px;
+}
+.ladiesInCity{
+  padding: 62px 0 46px;
+  background-color: #ffffff;
+  .tabs{
+    margin-bottom: 39px;
+  }
+}
+.tourMainDescription{
+  display: flex;
+  align-items: center;
+  min-height: 240px;
+  background-repeat: no-repeat;
+  padding: 65px 0;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.tourMainDescription__text{
+  font-size: 17px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  max-width: 726px;
+}
+.tourDetails{
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding-bottom: 41px;
+  .section__title{
+    text-align: left;
+    padding-bottom: 42px;
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      font-family: "RobotoRegular";
+      font-size: 16px;
+      line-height: 22px;
+      color: rgba(0, 0, 0, 0.9);
+      margin-bottom: 12px;
+      padding-left: 38px;
+      position: relative;
+      .mark-new, .mark-bonus{
+        left: auto;
+        transform: translateX(20px);
+      }
+    }
+  }
+}
+.tourDetails__textBox{
+  padding-left: 50px;
+  max-width: 620px;
+  width: 100%;
+}
+.reasons{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 40px;
+  .section__title{
+    padding-bottom: 31px;
+  }
+}
+.reasonsList{
+  margin-top: 0;
+}
+.reasons__item{
+  font-family: "RobotoRegular";
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 45px;
+  max-width: 1069px;
+  margin: 0 auto 12px;
+  position: relative;
+  .listMark{
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+}
+.reasons__attention{
+  font-family: 'RobotoMedium';
+  margin-top: 25px;
+}
+/* end tours  */
