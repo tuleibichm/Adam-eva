@@ -294,18 +294,62 @@
   .pagination{
     justify-content: center;
   }
+  .pagination__list{
+    padding: 0;
+    margin-top: 27px;
+  }
   .filter__box{
     flex-wrap: wrap;
     padding: 14px;
     border-radius: 0;
-    margin-bottom: 32px;
+    margin-bottom: 41px;
+    min-height: 60px;
+  }
+  .filter__fieldGroup{
+    width: auto;
+    margin-top: 10px;
+    >span{
+      margin-bottom: 13px;
+    }
   }
   .filter__fieldGroup:last-child{
-      order: 1;
-      width: 100%;
+    order: -1;
+    width: calc(100% - 30px);
+    margin-top: 0;
+    .field{
+      max-width: 100%;
+    }
+    >span{
+      display: none;
+    }
+  }
+  .filter__fieldGroup-search.mobHide{
+    display: block;
+    .iconSearch{
+      top: -6px;
+    }
+  }
+  .mobHide{
+    display: none;
+  }
+  .ui-selectmenu-button.ui-button, .filter .field{
+    max-width: 119px;
+  }
+  .filterOpenBtn{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -35px;
+    top: 0;
   }
   .candidate__list{
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .candidate__item{
+    min-width: 134px;
   }
   .candidateProfile__box{
     flex-direction: column;

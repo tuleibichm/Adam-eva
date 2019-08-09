@@ -931,18 +931,23 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
   >span{
     font-size: 16px;
     line-height: 19px;
     color: black;
     margin-bottom: 16px;
     display: inline-block;
+    color: rgba(0, 0, 0, 0.9);
   }
 }
 .filter__fieldGroup-search{
   .field{
     max-width: 273px;
   }
+}
+.filterOpenBtn{
+  display: none;
 }
 .filter__label{
   position: relative;

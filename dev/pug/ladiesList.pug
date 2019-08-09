@@ -11,32 +11,33 @@ block content
             .filter
                 form(action)
                     .filter__box
-                        .filter__fieldGroup
+                        .filter__fieldGroup.mobHide
                             span Age:
                             label.filter__label
                                 .ageSlider(data-min="18" data-max="56")
                                     .ui-fromAge
                                     .ui-toAge
-                        .filter__fieldGroup
+                        .filter__fieldGroup.mobHide
                             span Children:
                             label.filter__label(for="children")
                                 select.field(id="children" name="children")
                                     option(value="Yes") Yes
                                     option(value="No") No
-                        .filter__fieldGroup
+                        .filter__fieldGroup.mobHide
                             span Hair color:
                             label.filter__label(for="hairColor")
                                 select.field(id="hairColor" name="hairColor")
                                     option(value="Yes") Yes
                                     option(value="No") No
                                     option(value="Any") Any
-                        .filter__fieldGroup
+                        .filter__fieldGroup.mobHide
                             span City:
                             label.filter__label(for="city")
                                 select.field(id="city" name="city")
                                     option(value="Yes") Yes
                                     option(value="No") No
-                        .filter__fieldGroup.filter__fieldGroup-search
+                        .filter__fieldGroup.filter__fieldGroup-search.mobHide
+                            .filterOpenBtn
                             span Search by Name, ID
                             label.filter__label(for="searchField")
                                 input.field(type="text" id="searchField" name="searchField")
