@@ -140,13 +140,15 @@
     column-count: 2;
     margin-bottom: 50px;
     a{
-      font-size: 13px;
+      font-size: 14px;
       line-height: 27px;
+      margin-bottom: 0;
     }
   }
   .footer__content{
     flex-direction: column;
     align-items: center;
+    padding-top: 39px;
   }
   .footer__logo{
     width: 147px;
@@ -162,5 +164,12 @@
     &:not(:last-child){
       margin-bottom: 50px;
     }
+  }
+  .footer__nav_title{
+    margin-bottom: 17px;
+  }
+  .footer__copy{
+    height: 50px;
+    line-height: 50px;
   }
 }

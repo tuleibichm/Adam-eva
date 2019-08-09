@@ -69,21 +69,20 @@
     }
   }
   .section__title{
-    font-size: 24px;
-    line-height: 28px;
+    line-height: 40px;
     padding: 40px 0 30px;
   }
   /*-----------------COVER Section------------------*/
   .cover{
-    background-image: url("../images/bg_cover-mob.jpg");
+    height: 587px;
   }
   .cover__content{
-    padding: 30px 0 40px;
+    padding: 33px 0 40px;
   }
   .cover__title{
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .cover_description{
     flex-grow: 1;
@@ -91,9 +90,12 @@
   /*-----------------features Section------------------*/
   .features{
     background-color: #ffffff;
+    padding-top: 18px;
+    padding-bottom: 8px;
   }
   .features__list{
     flex-wrap: wrap;
+    padding-top: 20px;
   }
   .features__item{
     width: 45%;
@@ -106,6 +108,7 @@
       font-size: 17px;
       line-height: 21px;
       font-family: "RobotoRegular";
+      margin-bottom: 50px;
     }
   }
   /*-----------------featuresMini Section------------------*/
@@ -121,18 +124,20 @@
 
   .tariffs{
     background: #ffffff;
+    padding-top: 21px;
   }
   .tariffs__list{
     flex-direction: column;
     align-items: center;
-    margin: 0 0 -30px;
+    margin-bottom: 60px;
+    padding-top: 14px;
   }
   .tariffs__item{
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     max-width: 450px;
     width: 100%;
     &:not(:last-child){
-      margin-bottom: 60px;
+      margin-bottom: 40px;
     }
   }
   .tariffs__descripion{
@@ -144,7 +149,7 @@
   /*-----------------regFormWrapper Section------------------*/
 
   .regFormWrapper{
-    padding: 47px 0 98px;
+    padding: 61px 0 47px;
     background-position-y: 40%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -155,23 +160,32 @@
     align-items: center;
   }
   .regFormText__title{
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
   .regFormText__description{
     font-size: 21px;
     line-height: 34px;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
-  .regFormText ul{
-    margin-bottom: 80px;
+  .regFormText {
+    ul{
+      margin-bottom: 80px;
+    }
+    li{
+      padding-left: 28px;
+      margin-bottom: 21px;
+    }
+
   }
   .regForm{
     margin-top: 0;
+    transform: translate(0);
   }
   /*-----------------simpleInfo Section------------------*/
 
   .simpleInfo{
     padding-bottom: 60px;
+    padding-top: 49px;
     min-height: 693px;
     background-position: right;
   }
@@ -179,23 +193,23 @@
     max-width: 100%;
   }
   .simpleInfo__title{
-    font-size: 24px;
-    line-height: 28px;
+    line-height: 40px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .simpleInfo__text {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
   }
   /*-----------------videoTestimonials Section------------------*/
 
   .videoTestimonials{
     background: #ffffff;
+    padding-top: 18px;
     .slick-list{
       margin: 0;
     }
     .slick-dots{
-      bottom: 10px;
+      bottom: -3px;
     }
   }
   .video__view{
@@ -209,6 +223,32 @@
   .video__title{
     font-size: 16px;
     font-family: "RobotoRegular";
+  }
+  .videoTestimonials__list{
+    margin-top: 0;
+  }
+  /*-----------------stories Section------------------*/
+  .stories{
+    padding-bottom: 65px;
+    .slick-dots{
+      bottom: -40px;
+    }
+  }
+  .stories .section__title{
+    padding: 62px 0 42px;
+
+  }
+  .elipseFrame{
+    width: 160px;
+    height: 160px;
+    border-width: 8px;
+    margin-bottom: 43px;
+  }
+  .story__title{
+    margin-bottom: 29px;
+  }
+  .story__description p{
+    line-height: 25px;
   }
   /*-----------------quickForm Section------------------*/
   .quickForm{
@@ -249,7 +289,7 @@
   }
   .contacts{
     max-width: 100%;
-    min-height: 350px;
+    min-height: 295px;
   }
   .pagination{
     justify-content: center;
