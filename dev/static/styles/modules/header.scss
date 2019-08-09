@@ -52,11 +52,13 @@ nav{
   display: block;
   color: #ffffff;
   font-size: 18px;
-  height: 42px;
+  min-height: 42px;
   line-height: 42px;
   margin: 0 23px;
   font-weight: 500;
   position: relative;
+  cursor: pointer;
+  font-family: "RobotoMedium";
   &:hover{
     &:after{
       content: '';
@@ -72,14 +74,14 @@ nav{
 }
 .dropdown{
   position: relative;
-  &:before{
+  &:after{
     content: '';
     display: block;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    width: 12px;
-    height: 10px;
+    width: 14px;
+    height: 16px;
     top: 16px;
     right: -20px;
   }
@@ -104,8 +106,8 @@ nav{
 }
 .dropdown__item{
   font-size: 18px;
-  line-height: 30px;
-  height: 30px;
+  line-height: 32px;
+  min-height: 32px;
   font-family: "RobotoMedium";
   color: rgba(0, 0, 0, 0.5);
   padding: 0 20px;
@@ -190,6 +192,9 @@ nav{
   .navigation__item{
     margin: 0 10px;
   }
+  .dropdown:before{
+    right: -15px;
+  }
 }
 @media (max-width: 768px){
   .header__content:before{
@@ -239,8 +244,11 @@ nav{
       font-family: "RobotoMedium";
     }
   }
-  .header__topLine{
+  .header__topLine, .header__account .name{
     display: none;
+  }
+  .header__account .pictures{
+    margin: 0;
   }
   nav{
     display: none;
@@ -267,7 +275,28 @@ nav{
     font-weight: 500;
     font-size: 23px;
     line-height: 27px;
-    margin-bottom: 40px;
-    height: 27px;
+    margin-bottom: 34px;
+    min-height: 27px;
+    &:hover:after{
+      display: none;
+    }
+  }
+  .dropdown:after{
+    transform: rotate(-90deg);
+    position: relative;
+    display: inline-block;
+    top: auto;
+    right: auto;
+  }
+  .dropdown__list{
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    padding: 24px 0;
+  }
+  .dropdown__item{
+    color: #ffffff;
+    line-height: 42px;
+    min-height: 42px;
   }
 }
