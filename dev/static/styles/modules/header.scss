@@ -74,7 +74,7 @@ nav{
 }
 .dropdown{
   position: relative;
-  &:after{
+  >span{
     content: '';
     display: block;
     position: absolute;
@@ -82,7 +82,7 @@ nav{
     background-position: center;
     width: 14px;
     height: 16px;
-    top: 16px;
+    top: 12px;
     right: -20px;
   }
 
@@ -192,7 +192,7 @@ nav{
   .navigation__item{
     margin: 0 10px;
   }
-  .dropdown:before{
+  .dropdown>span{
     right: -15px;
   }
 }
@@ -277,14 +277,20 @@ nav{
     line-height: 27px;
     margin-bottom: 34px;
     min-height: 27px;
-    &:hover:after{
-      display: none;
+    &:hover{
+      &:after{
+        display: none;
+      }
+      span{
+        transform: rotate(0);
+      }
     }
   }
-  .dropdown:after{
+  .dropdown>span{
     transform: rotate(-90deg);
     position: relative;
     display: inline-block;
+    margin-left: 5px;
     top: auto;
     right: auto;
   }
