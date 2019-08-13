@@ -52,6 +52,7 @@
     padding-bottom: 13px;
     height: auto;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .aboutProfile__text{
     width: 100%;
@@ -66,6 +67,19 @@
   .specialOffer .button{
     top: auto;
     max-width: 180px;
+  }
+
+  .profile__infoList{
+    max-width: 280px;
+  }
+  .sidebar, .sidebar__title{
+    max-width: 250px;
+  }
+  .profile__galleryList{
+    flex-wrap: wrap;
+  }
+  .profile__galleryItem{
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 767px){
@@ -452,6 +466,38 @@
   .candidateProfile__interaction{
     margin-right: 0;
     margin-bottom: 36px;
+  }
+  .tabs{
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .tabs__item{
+    height: 54px;
+    line-height: 54px;
+  }
+  .profile__content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile__photoBox{
+    max-width: 280px;
+  }
+  .profile__infoList{
+    padding: 0;
+    position: relative;
+  }
+  .profile__galleryItem{
+    width: 85px;
+    height: 85px;
+  }
+  .editProfile{
+    font-size: 0;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    top: 0;
+    right: 0;
   }
 
 

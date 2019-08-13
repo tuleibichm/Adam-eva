@@ -1403,7 +1403,6 @@
 }
 .tabs{
   display: flex;
-  background: #FFFFFF;
   position: relative;
   z-index: 1;
   box-shadow: 10px 10px 40px rgba(208, 208, 208, 0.6);
@@ -1416,6 +1415,7 @@
   height: 40px;
   color: #000000;
   cursor: pointer;
+  background-color: white;
 }
 .tabs__item-active{
   color: #ffffff;
@@ -1443,6 +1443,10 @@
 .profile__avatar{
   width: 100%;
   margin-bottom: 17px;
+  >img{
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .profile__galleryList{
   display: flex;
