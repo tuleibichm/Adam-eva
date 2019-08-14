@@ -70,7 +70,7 @@
   }
 
   .profile__infoList{
-    max-width: 280px;
+    max-width: 290px;
   }
   .sidebar, .sidebar__title{
     max-width: 250px;
@@ -80,6 +80,28 @@
   }
   .profile__galleryItem{
     margin-bottom: 15px;
+  }
+  .profile__infoItem .controll__group-birth .field, .profile__infoItem .controll__group-birth .ui-selectmenu-button.ui-button {
+    width: 57px;
+    padding: 0px 15px 0 5px;
+  }
+  .ui-selectmenu-icon.ui-icon{
+    width: 20px;
+    background-size: 14px;
+  }
+  .profile__infoList .ui-selectmenu-button.ui-button{
+    max-width: 100%;
+  }
+  .profile__buttonWrapper{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile__buttonWrapper .button{
+    margin: 0;
+    &:first-child{
+      margin-bottom: 20px;
+    }
+
   }
 }
 @media (max-width: 767px){
@@ -313,7 +335,7 @@
     font-size: 24px;
   }
   .contactsWrapper{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .contacts{
     max-width: 100%;
@@ -376,12 +398,26 @@
   .candidate__list{
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .candidate__item{
+  .candidate__item {
     min-width: 134px;
-    footer{
+    footer {
       height: 24px;
-      font-size: 15px;
-      line-height: 24px;
+
+      span {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+  .section__text .candidate__item{
+    footer{
+      span{
+        font-size: 14px;
+        line-height: 18px;
+        &:last-child{
+          border: 2px solid #C99445;
+        }
+      }
     }
   }
   .candidate__title{
@@ -499,6 +535,47 @@
     top: 0;
     right: 0;
   }
+  .profile__infoList{
+    max-width: 280px;
+  }
+  .gifts__item{
+    margin-bottom: 38px;
+    img{
+      width: 70px;
+      height: 70px;
+      margin-bottom: 12px;
+    }
+    p{
+      padding: 0;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+
+  .gifts__description{
+    margin: 0 15px;
+  }
+  .gifts__cost{
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    b{
+      margin: 0;
+    }
+  }
+  .haveQuestions{
+    padding-bottom: 60px;
+    .button{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .haveQuestions__title{
+    text-align: center;
+  }
 
 
 /*   modal   */
@@ -541,6 +618,7 @@
     justify-content: center;
     max-width: 296px;
     background-image: none!important;
+    margin-bottom: 35px;
   }
   .successMessage{
     bottom: 0;

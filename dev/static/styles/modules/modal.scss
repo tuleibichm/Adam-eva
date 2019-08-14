@@ -40,6 +40,7 @@
     width: 100%;
     margin-bottom: 10px;
     padding-left: 22px;
+    max-width: 100%;
   }
   .ui-selectmenu-text{
     font-family: "RobotoLight";
@@ -377,5 +378,7 @@
 }
 
 @media (max-width: 767px) {
-
+  .modal .video__view{
+    min-height: 115px;
+  }
 }
