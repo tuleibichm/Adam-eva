@@ -6,6 +6,33 @@
   .candidateProfile__aboutText:first-child:before{
     display: none;
   }
+  .candidate__item footer{
+    span{
+      font-size: 15px;
+    }
+  }
+  .decimalFeatures__head:after{
+    display: none;
+  }
+  .decimalFeatures__img{
+    width: 200px;
+    height: 200px;
+    top: 53px;
+    position: relative;
+    background-position: 50% 0%;
+  }
+  .romanceTour__picture{
+    min-width: 250px;
+    min-height: 300px;
+  }
+  .romanceTour__item{
+    max-width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .features__item.arrowStep{
+    width: 120px;
+  }
 }
 @media (max-width: 1023px){
   .container{
@@ -14,6 +41,9 @@
   .candidate__list{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px 12px
+  }
+  .myProfile .candidate__list{
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .candidate__item{
     min-width: 147px;
@@ -84,6 +114,23 @@
   .profile__infoItem .controll__group-birth .field, .profile__infoItem .controll__group-birth .ui-selectmenu-button.ui-button {
     width: 57px;
     padding: 0px 15px 0 5px;
+    margin: 0;
+  }
+  .profile__infoItem .controll__group .field:nth-child(2){
+    margin: 0 6px;
+  }
+  .profile__DetailsItem .fieldTextarea{
+    max-height: 97px;
+    width: 49%;
+  }
+  .profile__DetailsItem label, .profile__DetailsItem .profileKey{
+    width: 49%;
+  }
+  .profile__DetailsItem .controll__group{
+    width: 49%;
+  }
+  .profile__DetailsItem input.field{
+    width: 49%;
   }
   .ui-selectmenu-icon.ui-icon{
     width: 20px;
@@ -103,6 +150,37 @@
     }
 
   }
+  .servicesList{
+    padding: 40px 20px;
+  }
+  .romanceTour__list{
+    display: flex;
+    flex-direction: column;
+  }
+  .romanceTour__item{
+    margin-bottom: 30px;
+  }
+  .decimalFeatures__img{
+    display: none;
+  }
+  .decimalFeatures__box{
+    height: auto;
+    flex-direction: column;
+  }
+  .decimalFeatures__item{
+    padding-left: 70px;
+    width: 350px;
+    text-align: justify;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+  .decimalFeatures__item-5, .decimalFeatures__item-4{
+    padding-left: 0;
+    padding-right: 70px;
+  }
 }
 @media (max-width: 767px){
   ol, ul {
@@ -117,6 +195,9 @@
         background-position-x: 0;
       }
     }
+  }
+  td:first-child{
+    text-align: left;
   }
   .section__title{
     line-height: 40px;
@@ -400,6 +481,7 @@
   }
   .candidate__item {
     min-width: 134px;
+    max-width: 200px;
     footer {
       height: 24px;
 
@@ -576,6 +658,33 @@
   .haveQuestions__title{
     text-align: center;
   }
+  .profile__DetailsItem .controll__group-fromTo .ui-selectmenu-button.ui-button, .profile__DetailsItem .controll__group-fromTo .field{
+    min-width: 64px;
+    max-width: 64px;
+    padding: 0 20px 0 5px;
+    margin: 0!important;
+  }
+  .profile__DetailsItem .controll__group-fromTo .fromTo__label{
+    margin-right: 5px;
+    margin-left: 15px;
+  }
+  .controll__group-fromTo{
+    width: 50%;
+  }
+  .servicesList{
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+  }
+  .services__item{
+    max-width: 335px;
+    margin-bottom: 30px;
+    min-height: 225px;
+  }
+  .myProfile .candidate__list{
+    grid-template-columns: 1fr 1fr;
+  }
+
 
 
 /*   modal   */
@@ -776,6 +885,19 @@
   }
   .breadcrumbs{
     padding: 40px 0 25px;
+  }
+  .matchmakingPage, .romanceToursPage{
+    .cover__title{
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
+  .ui-accordion .ui-accordion-header{
+    padding-right: 45px;
+  }
+  .scrollingBox{
+    background-size: cover;
+    background-image: url('../images/bg_scrollingBox-mob.png');
   }
 }
 

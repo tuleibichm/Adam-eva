@@ -106,9 +106,9 @@ table {
   max-width: 760px;
 }
 tr{
-  background-color: #F5F5F5;
+  background-color: #EBEBEB;
   &:nth-child(2n+1){
-    background-color: rgba(231, 231, 231, 0.3);
+    background-color: #F5F5F5;
   }
 }
 tr:first-child{
@@ -122,6 +122,7 @@ td{
   height: 40px;
   padding: 10px 10px;
   vertical-align: middle;
+  line-height: 19px;
   &:first-child{
     text-align: center;
   }

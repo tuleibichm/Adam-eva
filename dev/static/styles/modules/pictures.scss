@@ -4,6 +4,16 @@
     background-image: url('../images/bg_cover-indexPage.jpg');
   }
 }
+.matchmakingPage{
+  .cover{
+    background-image: url('../images/bg_cover-matchmakingPage.jpg');
+  }
+}
+.romanceToursPage{
+  .cover{
+    background-image: url('../images/bg_cover-romanceToursPage.jpg');
+  }
+}
 
 
 
@@ -242,6 +252,16 @@
   .indexPage{
     .cover{
       background-image: url('../images/bg_cover-indexPage-mob.jpg');
+    }
+  }
+  .matchmakingPage{
+    .cover{
+      background-image: url('../images/bg_cover-matchmakingPage-mob.jpg');
+    }
+  }
+  .romanceToursPage{
+    .cover{
+      background-image: url('../images/bg_cover-romanceToursPage-mob.jpg');
     }
   }
 
