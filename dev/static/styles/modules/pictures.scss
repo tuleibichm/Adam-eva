@@ -14,7 +14,14 @@
     background-image: url('../images/bg_cover-romanceToursPage.jpg');
   }
 }
-
+.weekendPage{
+  .cover{
+    background-image: url('../images/bg_cover-weekendPagePage.jpg'), linear-gradient(90deg, rgba(141, 243, 250, 0) 47.28%, #9AE2F6 64.54%, #CBDDEB 100%);
+  }
+}
+.tourDetails{
+  background-image: url('../images/bg_tourDetails.jpg'), linear-gradient(90deg, #E6F1F5 0%, #E6F1F5 0%, rgba(225, 247, 255, 0.3) 100%, rgba(158, 199, 214, 0.6) 100%);
+}
 
 
 .regFormWrapper{
@@ -262,6 +269,11 @@
   .romanceToursPage{
     .cover{
       background-image: url('../images/bg_cover-romanceToursPage-mob.jpg');
+    }
+  }
+  .weekendPage{
+    .cover{
+      background-image: url('../images/bg_cover-weekendPagePage-mob.jpg'), linear-gradient(90deg, rgba(141, 243, 250, 0) 47.28%, #9AE2F6 64.54%, #CBDDEB 100%);
     }
   }
 

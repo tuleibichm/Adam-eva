@@ -713,9 +713,6 @@
     right: auto;
     width: 100%;
     margin-bottom: 60px;
-    &:last-child{
-      margin-bottom: 0;
-    }
   }
   .decimalFeatures__item-5, .decimalFeatures__item-4{
     padding-right: 0;
@@ -724,6 +721,10 @@
       right: auto;
       left: 0;
     }
+  }
+  .decimalFeatures__item-5{
+    margin-bottom: 0;
+    order: 6;
   }
   .romanceTour__picture{
     min-height: 245px;
@@ -777,6 +778,36 @@
   }
   .features_description{
     margin-top: 0;
+  }
+  .ladiesInCity {
+    .tabs{
+      padding: 0;
+    }
+    .tabs__item{
+      line-height: 1.6;
+    }
+  }
+  .tourMainDescription{
+    background-size: cover;
+  }
+  .tourDetails{
+    background: linear-gradient(270deg, #E6F1F5 32.81%, rgba(230, 241, 245, 0.35) 100%);
+  }
+  .coverTour__info{
+    max-width: 250px;
+    transform: translateX(15px);
+  }
+  .mark-new, .mark-bonus{
+    left: -38px;
+  }
+  .coverTour__totalCost > span{
+    padding: 0 15px;
+  }
+  .tourDetails__textBox{
+    padding-left: 0;
+  }
+  .tourDetails ul li .mark-new, .tourDetails ul li .mark-bonus{
+    transform: translateX(10px);
   }
 
 
@@ -1005,5 +1036,9 @@
     > img {
       width: calc(100% - 175px);
     }
+  }
+  .coverTour__header{
+    line-height: 40px;
+    padding: 8px 0;
   }
 }
