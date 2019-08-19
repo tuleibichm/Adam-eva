@@ -732,6 +732,10 @@
   .romanceTour__label{
     bottom: auto;
     top: 0;
+    max-width: 140px;
+    text-align: left;
+    line-height: 19px;
+    padding: 6px 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 100px;
   }
@@ -798,7 +802,7 @@
     transform: translateX(15px);
   }
   .mark-new, .mark-bonus{
-    left: -38px;
+    left: -48px;
   }
   .coverTour__totalCost > span{
     padding: 0 15px;
