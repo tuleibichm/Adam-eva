@@ -64,7 +64,11 @@ block content
                                 input.field(type="text")
                             .profile__DetailsItem
                                 label.profileKey What is your native language?
-                                input.field(type="text")
+                                .controll__group
+                                    select.field(type="range" name="age")
+                                        option(value="En") En
+                                        option(value="Ru") Ru
+                                        option(value="Ua") Ua
                             .profile__DetailsItem
                                 label.profileKey What foreign languages do you speak?
                                 .controll__group

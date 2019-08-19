@@ -24,6 +24,9 @@
   max-width: 504px;
   margin-bottom: 40px;
 }
+.indexPage .cover__title{
+  max-width: 401px;
+}
 .cover_description{
   font-family: "RobotoMedium";
   width: 100%;
@@ -31,6 +34,9 @@
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 45px;
+}
+.indexPage .cover_description{
+  max-width: 328px;
 }
 /* end section cover */
 /* section features */
@@ -78,6 +84,7 @@
 }
 .features_description{
   margin-top: 45px;
+  font-family: "RobotoRegular";
 }
 /* end section features */
 /* section decimalFeatures */
@@ -592,6 +599,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: stretch;
 }
 .video__view{
   margin-bottom: 25px;
@@ -1560,7 +1568,7 @@
     width: 100%;
     max-width: 450px;
     color: #284269;
-    font-family: 'RobotoRegular';
+    font-family: 'RobotoMedium';
   }
   .controll__group{
     width: 100%;
