@@ -33,6 +33,11 @@
   .features__item.arrowStep{
     width: 120px;
   }
+  .matchmakingService .specialOffer{
+    padding: 27px 30px 25px;
+    height: auto;
+    background-position-x: 75%;
+  }
 }
 @media (max-width: 1023px){
   .container{
@@ -197,6 +202,16 @@
   }
   .features__item:nth-child(6).arrowStep{
     margin-top: 50px;
+  }
+  .matchmakingService .specialOffer{
+    .specialOffer__description{
+      margin-bottom: 10px;
+    }
+    .button{
+      top: auto;
+      bottom: 20px;
+      position: absolute;
+    }
   }
 }
 @media (max-width: 767px){
@@ -813,6 +828,14 @@
   .tourDetails ul li .mark-new, .tourDetails ul li .mark-bonus{
     transform: translateX(10px);
   }
+  .promoInfo .container{
+    flex-direction: column;
+  }
+  .regularActions{
+    max-width: 100%;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+  }
 
 
 /*   modal   */
@@ -1026,6 +1049,25 @@
   .scrollingBox{
     background-size: cover;
     background-image: url('../images/bg_scrollingBox-mob.png');
+  }
+  .promoInfo{
+    .container{
+      padding: 0;
+    }
+  }
+  .matchmakingService .specialOffer{
+    .specialOffer{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .specialOffer__description{
+      margin-bottom: 109px;
+    }
+    .button{
+      top: auto;
+      bottom: 90px;
+      position: absolute;
+    }
   }
 }
 
