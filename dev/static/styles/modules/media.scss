@@ -39,6 +39,16 @@
     background-position-x: 75%;
   }
 }
+@media (max-width: 1365px){
+  #pricingToursSwiper{
+    &.swiper-container{
+      padding-bottom: 100px;
+    }
+    .swiper-pagination{
+      opacity: 1;
+    }
+  }
+}
 @media (max-width: 1023px){
   .container{
     padding: 0 20px;
@@ -213,6 +223,14 @@
       position: absolute;
     }
   }
+  #storiesSwiper{
+    &.swiper-container{
+      padding-bottom: 45px;
+    }
+    .swiper-pagination{
+      opacity: 1;
+    }
+  }
 }
 @media (max-width: 767px){
   ol, ul {
@@ -363,6 +381,14 @@
     margin-bottom: 33px;
   }
   /*-----------------videoTestimonials Section------------------*/
+  #testimonialsSwiper{
+    &.swiper-container{
+      margin-bottom: 60px;
+    }
+    .swiper-pagination{
+      opacity: 1;
+    }
+  }
 
   .videoTestimonials{
     background: transparent;
@@ -712,6 +738,7 @@
     margin-bottom: 30px;
     min-height: 225px;
   }
+
   .myProfile .candidate__list{
     grid-template-columns: 1fr 1fr;
   }

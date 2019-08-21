@@ -14,13 +14,8 @@
   position: relative;
   overflow: hidden;
   list-style: none;
-  padding: 0 0 100px;
   /* Fix of Webkit flickering */
   z-index: 1;
-}
-#testimonialsSwiper.swiper-container{
-  margin-bottom: 60px;
-  padding-bottom: 50px;
 }
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
@@ -217,6 +212,7 @@
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  opacity: 0;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
