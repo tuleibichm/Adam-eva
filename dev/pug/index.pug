@@ -115,21 +115,23 @@ block content
     section.videoTestimonials
         .container
             .section__title Testimonials
-            .videoTestimonials__list.slider#testimonialsSlider
-                .videoTestimonial__item
-                    .video.paused
-                        .video__view
-                            video
-                                source(src="/static/video/big_buck_bunny.mp4" type="video/mp4")
-                            .video__controlls
-                        span.video__title Sam, 42 y.o. from US
-                .videoTestimonial__item
-                    .video.paused
-                        .video__view
-                            video
-                                source
-                            .video__controlls
-                        span.video__title Sam, 42 y.o. from US
+            .swiper-container#testimonialsSwiper
+                .videoTestimonials__list.swiper-wrapper
+                    .videoTestimonial__item.swiper-slide
+                        .video.paused
+                            .video__view
+                                video
+                                    source(src="/static/video/big_buck_bunny.mp4" type="video/mp4")
+                                .video__controlls
+                            span.video__title Sam, 42 y.o. from US
+                    .videoTestimonial__item.swiper-slide
+                        .video.paused
+                            .video__view
+                                video
+                                    source
+                                .video__controlls
+                            span.video__title Sam, 42 y.o. from US
+                .swiper-pagination
     section.stories
         .container
             .section__title Love Stories

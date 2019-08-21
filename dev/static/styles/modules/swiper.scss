@@ -18,6 +18,10 @@
   /* Fix of Webkit flickering */
   z-index: 1;
 }
+#testimonialsSwiper.swiper-container{
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
 }

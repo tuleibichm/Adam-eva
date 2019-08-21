@@ -555,7 +555,7 @@
 /* end section regForm */
 /* section featuresMini */
 .featuresMini{
-  background: linear-gradient(90deg, #E6E4E4 0.77%, #F7F6F6 100%)
+  background:  rgba(0, 0, 0, 0.04);
 }
 .featuresMini__list{
   display: flex;
@@ -589,7 +589,6 @@
 .videoTestimonials__list{
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   margin-top: -6px;
 }
 .videoTestimonial__item{
