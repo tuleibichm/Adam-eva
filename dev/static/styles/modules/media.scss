@@ -321,10 +321,16 @@
     }
   }
   .tariffs__descripion{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .tariffs__features{
     display: none;
+  }
+  .tariffs__item{
+    .viewAll{
+      display: block;
+      margin-bottom: 30px;
+    }
   }
   /*-----------------regFormWrapper Section------------------*/
 

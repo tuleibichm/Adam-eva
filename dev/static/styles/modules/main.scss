@@ -754,6 +754,9 @@
   align-items: center;
   min-height: 100%;
   width: calc((100% - 32px) / 3);
+  .viewAll{
+    display: none;
+  }
 }
 .tariffs__mark{
   width: 40px;
@@ -808,6 +811,7 @@
   li{
     margin-bottom: 18px;
     line-height: 20px;
+    padding-left: 30px;
   }
 }
 .tariffs .button{
